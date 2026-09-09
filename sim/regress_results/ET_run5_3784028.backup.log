@@ -1,0 +1,98 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Tue Sep  8 13:46:51 2026
+# Process ID         : 3784028
+# Current directory  : /home/nashita/Desktop/practice/axi_xbar/sim
+# Command line       : xsim -log regress_results/ET_run5.log -mode tcl -source {xsim.dir/tb_top_snap/xsim_script.tcl}
+# Log file           : /home/nashita/Desktop/practice/axi_xbar/sim/regress_results/ET_run5.log
+# Journal file       : /home/nashita/Desktop/practice/axi_xbar/sim/xsim.jou
+# Running On         : vlsi-vivado
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+# CPU Frequency      : 800.000 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 41875 MB
+# Swap memory        : 27648 MB
+# Total Virtual      : 69524 MB
+# Available Virtual  : 61365 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_top_snap/xsim_script.tcl
+# xsim {tb_top_snap} -testplusarg ET -autoloadwcfg -runall -sv_seed 6
+Time resolution is 1 ps
+run -all
+[0] RUNNING ERROR TEST
+[0] INSIDE THE BASE TEST CONSTRUCTOR
+[0] ENV: before agent
+[0] SLAVE CONSTRUCTED
+[0] MASTER MONITOR CONSTRUCTED
+[0] MASTER MONITOR CONSTRUCTED
+[0] SLAVE MONITOR CONSTRUCTED
+[0] SLAVE MONITOR CONSTRUCTED
+[0] ARB MONITOR CONSTRUCTED
+GENERATOR CONSTRUCTED
+[0] ENV: after agent
+[0] ENV: before scoreboard
+[0] ENV: after scoreboard
+[0] RESET ASSERTED
+[35000] RESET DEASSERTED
+[35000] GENERATING DECODE ERROR TRANSACTION
+[35000] [GEN-DIRECTED] mst_id=0 s_id=0 awaddr=20000010 awid=11 awlen=3 awsize=3 awburst=1 wdata=[9999aaaabbbbcccc 5555666677778888 1111222233334444 aabbccdd11223344 ] wstrb=[ff ff ff ff ] bresp=0 bid=0
+[35000] GENERATING NORMAL WRITE TRANSACTION
+[35000] [GEN-DIRECTED] mst_id=0 s_id=0 awaddr=10 awid=101 awlen=0 awsize=3 awburst=1 wdata=[11223344aabbccdd ] wstrb=[ff ] bresp=0 bid=0
+[35000] MASTER_DRIVER0 received transaction, op=AXI_WRITE
+[55000] MASTER 0 AW_VALID_RDY Handshake
+[75000] MASTER 0 W_VALID_RDY Handshake beat=0 wlast=0
+[85000] MASTER 0 W_VALID_RDY Handshake beat=1 wlast=0
+[95000] MASTER 0 W_VALID_RDY Handshake beat=2 wlast=0
+[105000] MASTER_DRIVER0 received transaction, op=AXI_WRITE
+[105000] MASTER 0 W_VALID_RDY Handshake beat=3 wlast=1
+[115000] MASTER 0 B_VALID_RDY Handshake
+[115000] [MASTER MONITOR] mst_id=0 awid=3 awaddr=20000010 DECODE_ERROR bresp=11 bid=11
+[115000] MASTER 0 RECEIVED BRESP. BRESP=11
+[115000] [MASTER DRIVER] mst_id=0 s_id=0 awaddr=20000010 awid=11 awlen=3 awsize=3 awburst=1 wdata=[9999aaaabbbbcccc 5555666677778888 1111222233334444 aabbccdd11223344 ] wstrb=[ff ff ff ff ] bresp=11 bid=11
+[115000] SCOREBOARD MATCH: decode_err expected = 1, actual =1
+[115000] SCOREBOARD MATCH: bresp (decode error) expected = 11, actual =11
+[115000] [SCOREBOARD-M] mst_id=0 awid=3 awaddr=20000010 DECODE_ERROR bresp=11 bid=11
+[115000] SCOREBOARD: Transaction 1 received. pass=2 fail=0
+[115000] ALL PASS. Total transactions: 1
+[125000] MASTER 0 AW_VALID_RDY Handshake
+[135000] AXI S0_AWVALID_RDY HANDSHAKE
+[135000] ARB MONITOR: slave=0 m0_req=1 m1_req=0 winner=0
+[145000] MASTER 0 W_VALID_RDY Handshake beat=0 wlast=1
+[155000] AXI S0_WVALID_RDY HANDSHAKE
+[155000] S0 MEMORY WRITE beat=0 addr=00000010 data=11223344aabbccdd id=05
+[155000] AXI S0_WVALID_RDY HANDSHAKE
+[165000] AXI S0_BVALID_RDY HANDSHAKE
+[165000] [SLAVE MONITOR] mst_id=0 s_id=0 awaddr=10 awid=101 awlen=0 awsize=3 awburst=1 wdata=[11223344aabbccdd ] wstrb=[ff ] bresp=0 bid=101
+[165000] SLAVE0 sent B resp, id=5
+[185000] MASTER 0 RECEIVED BRESP. BRESP=0
+[185000] [MASTER DRIVER] mst_id=0 s_id=0 awaddr=10 awid=101 awlen=0 awsize=3 awburst=1 wdata=[11223344aabbccdd ] wstrb=[ff ] bresp=0 bid=101
+[185000] MASTER 0 B_VALID_RDY Handshake
+[185000] [MASTER MONITOR] mst_id=0 s_id=0 awaddr=10 awid=101 awlen=0 awsize=3 awburst=1 wdata=[11223344aabbccdd ] wstrb=[ff ] bresp=0 bid=101
+[185000] SCOREBOARD MATCH: decode_err expected = 0, actual =0
+[185000] SCOREBOARD MATCH: slave_id expected = 0, actual =0
+[185000] SCOREBOARD MATCH: awaddr passthrough expected = 10, actual =10
+[185000] SCOREBOARD MATCH: awlen passthrough expected = 0, actual =0
+[185000] SCOREBOARD MATCH: awsize passthrough expected = 3, actual =3
+[185000] SCOREBOARD MATCH: awburst passthrough expected = 1, actual =1
+[185000] SCOREBOARD MATCH: wdata size check expected = 1, actual =1
+[185000] SCOREBOARD MATCH: wdata passthrough beat=0 expected = 11223344aabbccdd, actual =11223344aabbccdd
+[185000] SCOREBOARD MATCH: wstrb size check expected = 1, actual =1
+[185000] SCOREBOARD MATCH: wstrb passthrough beat=0 expected = ff, actual =ff
+[185000] SCOREBOARD MATCH: bresp passthrough expected = 0, actual =0
+[185000] SCOREBOARD MATCH: response routed to correct master (write) expected = 0, actual =0
+[185000] [SCOREBOARD-M] mst_id=0 s_id=0 awaddr=10 awid=101 awlen=0 awsize=3 awburst=1 wdata=[11223344aabbccdd ] wstrb=[ff ] bresp=0 bid=101
+[185000] [SCOREBOARD-S] mst_id=0 s_id=0 awaddr=10 awid=101 awlen=0 awsize=3 awburst=1 wdata=[11223344aabbccdd ] wstrb=[ff ] bresp=0 bid=101
+[185000] SCOREBOARD: Transaction 2 received. pass=14 fail=0
+[185000] SCOREBOARD: Expected 2 transactions completed, PASS=14 FAIL=0
+[185000] ALL PASS. Total transactions: 2
+[185000] ALL TRANSACTIONS MONITORED
+$finish called at time : 205 ns : File "/home/nashita/Desktop/practice/axi_xbar/tb/top/axi_tb_top.sv" Line 206
+exit
+INFO: xsimkernel Simulation Memory Usage: 289412 KB (Peak: 337816 KB), Simulation CPU Usage: 1150 ms
+INFO: [Common 17-206] Exiting xsim at Tue Sep  8 13:46:55 2026...

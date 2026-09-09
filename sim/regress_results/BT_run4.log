@@ -1,0 +1,83 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Sep  9 16:58:54 2026
+# Process ID         : 1595602
+# Current directory  : /home/nashita/Desktop/practice/axi_xbar/sim
+# Command line       : xsim -log regress_results/BT_run4.log -mode tcl -source {xsim.dir/tb_top_snap/xsim_script.tcl}
+# Log file           : /home/nashita/Desktop/practice/axi_xbar/sim/regress_results/BT_run4.log
+# Journal file       : /home/nashita/Desktop/practice/axi_xbar/sim/xsim.jou
+# Running On         : vlsi-vivado
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+# CPU Frequency      : 4007.114 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 41875 MB
+# Swap memory        : 27648 MB
+# Total Virtual      : 69524 MB
+# Available Virtual  : 62572 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_top_snap/xsim_script.tcl
+# xsim {tb_top_snap} -testplusarg BT -autoloadwcfg -runall -sv_seed 5
+Time resolution is 1 ps
+run -all
+[0] RUNNING BASE TEST
+[0] INSIDE THE BASE TEST CONSTRUCTOR
+[0] ENV: before agent
+[0] SLAVE CONSTRUCTED
+[0] MASTER MONITOR CONSTRUCTED
+[0] MASTER MONITOR CONSTRUCTED
+[0] SLAVE MONITOR CONSTRUCTED
+[0] SLAVE MONITOR CONSTRUCTED
+[0] ARB MONITOR CONSTRUCTED
+GENERATOR CONSTRUCTED
+[0] ENV: after agent
+[0] ENV: before scoreboard
+[0] ENV: after scoreboard
+[15000] [SEQUENCER] mst_id=1 s_id=0 awaddr=1eae9588 awid=1111 awlen=1 awsize=3 awburst=1 wdata=[] wstrb=[] bresp=0 bid=0
+[15000] [SEQUENCER] mst_id=0 s_id=0 awaddr=4065850 awid=100 awlen=1 awsize=3 awburst=1 wdata=[] wstrb=[] bresp=0 bid=0
+[15000] [SEQUENCER] READ mst_id=0 s_id=0 araddr=583d60 arid=1 arlen=1 arsize=3 arburst=1 rid=[] rresp=[] rdata=[]
+[15000] [SEQUENCER] READ mst_id=0 s_id=0 araddr=965b308 arid=2 arlen=1 arsize=3 arburst=1 rid=[] rresp=[] rdata=[]
+[15000] [SEQUENCER] mst_id=0 s_id=0 awaddr=236618 awid=1001 awlen=1 awsize=3 awburst=1 wdata=[] wstrb=[] bresp=0 bid=0
+[15000] [SEQUENCER] mst_id=0 s_id=0 awaddr=496a330 awid=1010 awlen=1 awsize=3 awburst=1 wdata=[] wstrb=[] bresp=0 bid=0
+[15000] [SEQUENCER] mst_id=0 s_id=0 awaddr=15ea0768 awid=1001 awlen=1 awsize=3 awburst=1 wdata=[] wstrb=[] bresp=0 bid=0
+[15000] [SEQUENCER] mst_id=1 s_id=0 awaddr=1135f8f0 awid=1011 awlen=1 awsize=3 awburst=1 wdata=[] wstrb=[] bresp=0 bid=0
+[15000] [SEQUENCER] READ mst_id=0 s_id=0 araddr=1d5daa30 arid=6 arlen=1 arsize=3 arburst=1 rid=[] rresp=[] rdata=[]
+[15000] [SEQUENCER] READ mst_id=1 s_id=0 araddr=b686eb8 arid=2 arlen=1 arsize=3 arburst=1 rid=[] rresp=[] rdata=[]
+[15000] MASTER_DRIVER1 received transaction, op=AXI_WRITE
+[15000] MASTER_DRIVER0 received transaction, op=AXI_WRITE
+[35000] MASTER 1 AW_VALID_RDY Handshake
+[35000] MASTER 0 AW_VALID_RDY Handshake
+[35000] MASTER_DRIVER1 received transaction, op=AXI_WRITE
+[35000] MASTER_DRIVER0 received transaction, op=AXI_READ
+[45000] ARB MONITOR: slave=0 m0_req=1 m1_req=0 winner=0
+[45000] ARB MONITOR: slave=1 m0_req=0 m1_req=1 winner=1
+[45000] AXI S1_AWVALID_RDY HANDSHAKE
+[45000] AXI S0_AWVALID_RDY HANDSHAKE
+[55000] MASTER 1 W_VALID_RDY Handshake beat=0 wlast=0
+[55000] MASTER 0 W_VALID_RDY Handshake beat=0 wlast=0
+[55000] MASTER_DRIVER1 received transaction, op=AXI_READ
+[55000] MASTER_DRIVER0 received transaction, op=AXI_READ
+[65000] MASTER 0 W_VALID_RDY Handshake beat=1 wlast=1
+[65000] MASTER 1 W_VALID_RDY Handshake beat=1 wlast=1
+[65000] ARB MONITOR: slave=0 m0_req=1 m1_req=0 winner=0
+[65000] AXI S0_ARVALID_RDY HANDSHAKE
+[65000] MEMORY READ MISS beat=0 addr=583d60 -> default data id=1
+[65000] S1 MEMORY WRITE beat=0 addr=1eae9588 data=0000000000000000 id=1f
+[65000] AXI S0_WVALID_RDY HANDSHAKE
+[65000] S0 MEMORY WRITE beat=0 addr=04065850 data=0000000000000000 id=04
+[75000] AXI S0_WVALID_RDY HANDSHAKE
+[75000] S0 MEMORY WRITE beat=1 addr=04065858 data=0000000000000000 id=04
+[75000] S1 MEMORY WRITE beat=1 addr=1eae9590 data=0000000000000000 id=1f
+[75000] MEMORY READ MISS beat=1 addr=583d68 -> default data id=1
+[75000] SLAVE 0 R_VALID_RDY Handshake beat=0 rlast=0
+FATAL_ERROR: Vivado Simulator kernel has discovered an exceptional condition from which it cannot recover. Process will terminate. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.
+Time: 75 ns  Iteration: 0  Process: /axi_env_pkg/master_driver::run/Block15_20
+  File: /home/nashita/Desktop/practice/axi_xbar/tb/agent/axi_master_driver.sv
+exit
+INFO: xsimkernel Simulation Memory Usage: 289456 KB (Peak: 337856 KB), Simulation CPU Usage: 1180 ms
+INFO: [Common 17-206] Exiting xsim at Wed Sep  9 16:58:58 2026...

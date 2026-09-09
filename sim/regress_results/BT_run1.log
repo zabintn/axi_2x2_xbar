@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Sep  9 17:03:48 2026
+# Process ID         : 1602526
+# Current directory  : /home/nashita/Desktop/practice/axi_xbar/sim
+# Command line       : xsim -log regress_results/BT_run1.log -mode tcl -source {xsim.dir/tb_top_snap/xsim_script.tcl}
+# Log file           : /home/nashita/Desktop/practice/axi_xbar/sim/regress_results/BT_run1.log
+# Journal file       : /home/nashita/Desktop/practice/axi_xbar/sim/xsim.jou
+# Running On         : vlsi-vivado
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+# CPU Frequency      : 4091.830 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 41875 MB
+# Swap memory        : 27648 MB
+# Total Virtual      : 69524 MB
+# Available Virtual  : 62797 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_top_snap/xsim_script.tcl
+# xsim {tb_top_snap} -testplusarg BT -autoloadwcfg -runall -sv_seed 2
+Time resolution is 1 ps
+run -all
+[0] RUNNING BASE TEST
+[0] INSIDE THE BASE TEST CONSTRUCTOR
+[0] ENV: before agent
+[0] SLAVE CONSTRUCTED
+[0] MASTER MONITOR CONSTRUCTED
+[0] MASTER MONITOR CONSTRUCTED
+[0] SLAVE MONITOR CONSTRUCTED
+[0] SLAVE MONITOR CONSTRUCTED
+[0] ARB MONITOR CONSTRUCTED
+GENERATOR CONSTRUCTED
+[0] ENV: after agent
+[0] ENV: before scoreboard
+[0] ENV: after scoreboard
+[15000] [SEQUENCER] mst_id=0 s_id=0 awaddr=22b3330 awid=1111 awlen=1 awsize=3 awburst=1 wdata=[98c755ef17422fbf b9d1c4b5076fa4db ] wstrb=[10 41 ] bresp=0 bid=0
+[15000] [SEQUENCER] READ mst_id=1 s_id=0 araddr=3840300 arid=0 arlen=1 arsize=3 arburst=1 rid=[] rresp=[] rdata=[]
+[15000] [SEQUENCER] READ mst_id=1 s_id=0 araddr=13c0f6c8 arid=1 arlen=1 arsize=3 arburst=1 rid=[] rresp=[] rdata=[]
+[15000] [SEQUENCER] READ mst_id=0 s_id=0 araddr=1f613df0 arid=1 arlen=1 arsize=3 arburst=1 rid=[] rresp=[] rdata=[]
+[15000] [SEQUENCER] mst_id=1 s_id=0 awaddr=16e0a2e8 awid=1001 awlen=1 awsize=3 awburst=1 wdata=[38f6520fe9626f10 d436ab209f13e4e7 ] wstrb=[4c 99 ] bresp=0 bid=0
+[15000] [SEQUENCER] mst_id=1 s_id=0 awaddr=150e1d20 awid=101 awlen=1 awsize=3 awburst=1 wdata=[11f76593db747021 f83a9a163d563fd0 ] wstrb=[f3 be ] bresp=0 bid=0
+[15000] [SEQUENCER] READ mst_id=1 s_id=0 araddr=13bfd410 arid=4 arlen=1 arsize=3 arburst=1 rid=[] rresp=[] rdata=[]
+[15000] [SEQUENCER] mst_id=0 s_id=0 awaddr=2432cc8 awid=100 awlen=1 awsize=3 awburst=1 wdata=[1fb79bc0fa325f4b 3ad7f2bf1f3f30a9 ] wstrb=[4c cf ] bresp=0 bid=0
+[15000] [SEQUENCER] mst_id=0 s_id=0 awaddr=1bdb76c0 awid=1010 awlen=1 awsize=3 awburst=1 wdata=[a11d3a9481cfaa4c ca905befd2185b95 ] wstrb=[4d 93 ] bresp=0 bid=0
+[15000] [SEQUENCER] mst_id=1 s_id=0 awaddr=1b293bf0 awid=1100 awlen=1 awsize=3 awburst=1 wdata=[dcc7ffd986b95fa 8bd0bd788b7bdc6b ] wstrb=[2f 4 ] bresp=0 bid=0
+[15000] MASTER_DRIVER0 received transaction, op=AXI_WRITE
+[15000] MASTER_DRIVER1 received transaction, op=AXI_READ
+[35000] MASTER 0 AW_VALID_RDY Handshake
+[35000] MASTER_DRIVER0 received transaction, op=AXI_READ
+[35000] MASTER_DRIVER1 received transaction, op=AXI_READ
+[45000] ARB MONITOR: slave=0 m0_req=1 m1_req=0 winner=0
+[45000] ARB MONITOR: slave=0 m0_req=0 m1_req=1 winner=1
+[45000] AXI S0_ARVALID_RDY HANDSHAKE
+[45000] MEMORY READ MISS beat=0 addr=3840300 -> default data id=16
+[45000] AXI S0_AWVALID_RDY HANDSHAKE
+[55000] MEMORY READ MISS beat=1 addr=3840308 -> default data id=16
+[55000] SLAVE 0 R_VALID_RDY Handshake beat=0 rlast=0
+[55000] MASTER 0 W_VALID_RDY Handshake beat=0 wlast=0
+[55000] MASTER_DRIVER0 received transaction, op=AXI_WRITE
+FATAL_ERROR: Vivado Simulator kernel has discovered an exceptional condition from which it cannot recover. Process will terminate. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.
+Time: 55 ns  Iteration: 0  Process: /axi_env_pkg/master_driver::run/Block15_20
+  File: /home/nashita/Desktop/practice/axi_xbar/tb/agent/axi_master_driver.sv
+exit
+INFO: xsimkernel Simulation Memory Usage: 289464 KB (Peak: 337864 KB), Simulation CPU Usage: 1220 ms
+INFO: [Common 17-206] Exiting xsim at Wed Sep  9 17:03:51 2026...
