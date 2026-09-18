@@ -1,3 +1,4 @@
+
 import axi_param_pkg::*;
 
 class arb_monitor;
@@ -25,8 +26,11 @@ class arb_monitor;
     task run();
         forever begin
             @(posedge axi_vif.aclk);
-            track_accept();   // entry events
-            track_grant();    // exit events + check
+  
+  	    track_grant();    // exit events + check
+  
+	    track_accept();   // entry events
+  
         end
     endtask
 
@@ -108,3 +112,4 @@ class arb_monitor;
         mon2sb_arb.put(evt);
     endtask
 endclass
+

@@ -60,7 +60,7 @@ class refmodel;
         if (!m0_req && m1_req) return 1;
         if (m0_req && m1_req)
             return (last_aw_granted[slave_id] == 0) ? 1 : 0;
-        return -1; // neither requesting - shouldn't be called
+        return -1; // neither requesting
     endfunction
 
     function void update_w_arb_state(int slave_id, int observed_winner);
@@ -72,7 +72,7 @@ class refmodel;
         if (!m0_req && m1_req) return 1;
         if (m0_req && m1_req)
             return (last_ar_granted[slave_id] == 0) ? 1 : 0;
-        return -1; // neither requesting - shouldn't be called
+        return -1; // neither requesting
     endfunction
 
     function void update_r_arb_state(int slave_id, int observed_winner);

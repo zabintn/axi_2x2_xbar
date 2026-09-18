@@ -144,12 +144,12 @@ module axi_xbar_ar #(    parameter ADDR_WIDTH  = 32,
 	  assign s1_accept=(|s1_grant && s1_arready);
 
 
-	  assign m0_s0_req= !m0_fifo_empty && !m0_decode_error_saved && (m0_slave_sel == 2'b00);
-	  assign m1_s0_req= !m1_fifo_empty && !m1_decode_error_saved && (m1_slave_sel == 2'b00);
+	  assign m0_s0_req= !m0_fifo_empty && !m0_decode_error_saved && (m0_slave_sel == 2'b00) && !(s1_locked && s1_owner==1'b0);
+	  assign m1_s0_req= !m1_fifo_empty && !m1_decode_error_saved && (m1_slave_sel == 2'b00) && !(s1_locked && s1_owner==1'b1);
 	  assign s0_req= {m1_s0_req, m0_s0_req};
 	
-	  assign m0_s1_req= !m0_fifo_empty && !m0_decode_error_saved && (m0_slave_sel == 2'b01);
-	  assign m1_s1_req= !m1_fifo_empty && !m1_decode_error_saved && (m1_slave_sel == 2'b01);
+	  assign m0_s1_req= !m0_fifo_empty && !m0_decode_error_saved && (m0_slave_sel == 2'b01) && !(s0_locked && s0_owner==1'b0);
+	  assign m1_s1_req= !m1_fifo_empty && !m1_decode_error_saved && (m1_slave_sel == 2'b01) && !(s1_locked && s1_owner==1'b1); 
 	  assign s1_req= {m1_s1_req, m0_s1_req};
 	 
 	  rr_arbiter #(.NUM_REQ(2)) slave_0_arbiter ( .clk(aclk), .resetn(arst_n), 

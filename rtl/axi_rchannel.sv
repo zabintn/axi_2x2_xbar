@@ -97,7 +97,6 @@ module axi_rchannel #(parameter ADDR_WIDTH  = 32,
 		.master_sel(s1_master_sel));
 
 		//when master decided, check request
-		//
 	    wire s0_req_m0, s1_req_m0;
 	    wire s0_req_m1, s1_req_m1;
 	    assign s0_req_m0 = (s0_master_sel == 1'b0) && !s0_rfifo_empty;
@@ -121,7 +120,6 @@ module axi_rchannel #(parameter ADDR_WIDTH  = 32,
 	    wire		m1_error_rlast;
 
 
-	    //fix instantiation here (needs to add ports)
 	    
 	   read_error #(.ID_WIDTH(ID_WIDTH)) m0_error_response (
 		    .clk     (aclk),

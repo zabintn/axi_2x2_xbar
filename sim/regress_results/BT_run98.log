@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Tue Sep  8 16:08:01 2026
-# Process ID         : 3990601
+# Start of session at: Fri Sep 11 12:07:16 2026
+# Process ID         : 759623
 # Current directory  : /home/nashita/Desktop/practice/axi_xbar/sim
 # Command line       : xsim -log regress_results/BT_run98.log -mode tcl -source {xsim.dir/tb_top_snap/xsim_script.tcl}
 # Log file           : /home/nashita/Desktop/practice/axi_xbar/sim/regress_results/BT_run98.log
@@ -13,13 +13,13 @@
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 24.04.4 LTS
 # Processor Detail   : Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
-# CPU Frequency      : 4101.910 MHz
+# CPU Frequency      : 3999.994 MHz
 # CPU Physical cores : 6
 # CPU Logical cores  : 12
 # Host memory        : 41875 MB
 # Swap memory        : 27648 MB
 # Total Virtual      : 69524 MB
-# Available Virtual  : 60425 MB
+# Available Virtual  : 62499 MB
 #-----------------------------------------------------------
 source xsim.dir/tb_top_snap/xsim_script.tcl
 # xsim {tb_top_snap} -testplusarg BT -autoloadwcfg -runall -sv_seed 99
@@ -38,56 +38,42 @@ GENERATOR CONSTRUCTED
 [0] ENV: after agent
 [0] ENV: before scoreboard
 [0] ENV: after scoreboard
-[15000] [SEQUENCER] READ mst_id=0 s_id=0 araddr=1152d620 arid=0 arlen=1 arsize=3 arburst=1 rid=[] rresp=[] rdata=[]
-[15000] [SEQUENCER] mst_id=0 s_id=0 awaddr=c170150 awid=100 awlen=1 awsize=3 awburst=1 wdata=[] wstrb=[] bresp=0 bid=0
-[15000] [SEQUENCER] mst_id=0 s_id=0 awaddr=6ef3d38 awid=1100 awlen=1 awsize=3 awburst=1 wdata=[] wstrb=[] bresp=0 bid=0
-[15000] [SEQUENCER] mst_id=1 s_id=0 awaddr=1e741880 awid=1011 awlen=1 awsize=3 awburst=1 wdata=[] wstrb=[] bresp=0 bid=0
-[15000] [SEQUENCER] mst_id=1 s_id=0 awaddr=1fe63bb8 awid=1101 awlen=1 awsize=3 awburst=1 wdata=[] wstrb=[] bresp=0 bid=0
-[15000] [SEQUENCER] READ mst_id=0 s_id=0 araddr=10997bf0 arid=3 arlen=1 arsize=3 arburst=1 rid=[] rresp=[] rdata=[]
-[15000] [SEQUENCER] mst_id=1 s_id=0 awaddr=e899a40 awid=1000 awlen=1 awsize=3 awburst=1 wdata=[] wstrb=[] bresp=0 bid=0
-[15000] [SEQUENCER] mst_id=1 s_id=0 awaddr=1b9f2fa8 awid=1000 awlen=1 awsize=3 awburst=1 wdata=[] wstrb=[] bresp=0 bid=0
-[15000] [SEQUENCER] mst_id=0 s_id=0 awaddr=14cc1ec8 awid=110 awlen=1 awsize=3 awburst=1 wdata=[] wstrb=[] bresp=0 bid=0
-[15000] [SEQUENCER] mst_id=1 s_id=0 awaddr=1adb9e20 awid=1001 awlen=1 awsize=3 awburst=1 wdata=[] wstrb=[] bresp=0 bid=0
+[15000] [SEQUENCER] READ mst_id=0 s_id=0 araddr=81c9450 arid=0 arlen=1 arsize=3 arburst=1 rid=[] rresp=[] rdata=[]
+[15000] [SEQUENCER] mst_id=0 s_id=0 awaddr=1bfa3bc8 awid=100 awlen=1 awsize=3 awburst=0 wdata=[9621c42ce80b66c2 dd4ef242e797782f ] wstrb=[1f e5 ] bresp=0 bid=0
+[15000] [SEQUENCER] mst_id=0 s_id=0 awaddr=1ac0dc58 awid=1100 awlen=6 awsize=3 awburst=0 wdata=[30db3053a9b2872c b376b542ddb1f620 37eb3b321c21a4f5 c5d42c2134423201 91f42821e8c66b85 4e8107af94ae164 2d8d1365c9df6353 ] wstrb=[9b d8 86 ff 52 da 64 ] bresp=0 bid=0
+[15000] [SEQUENCER] mst_id=1 s_id=0 awaddr=194abad0 awid=1011 awlen=6 awsize=7 awburst=0 wdata=[eb0ca100e90b6c45 f8d9ef55ccb87598 fc7a0384e5810b6f ce8c77b4b20b043c fec379d5e786a485 cd07aff4c766670a f9716b46fb3d7d59 ] wstrb=[a8 de 1b b2 d2 75 f9 ] bresp=0 bid=0
+[15000] [SEQUENCER] mst_id=1 s_id=0 awaddr=138d50b0 awid=1101 awlen=7 awsize=6 awburst=0 wdata=[fc12858d0e6c1747 f6310534b0f6adf7 c436f48b9b566e9d a9c285e4c0f21819 f1e8c610c0497a19 db9fe8b69ff38b18 e0e5a331361fba9c f66934b505626e9b ] wstrb=[42 b3 6b de e5 6 93 27 ] bresp=0 bid=0
 [15000] MASTER_DRIVER0 received transaction, op=AXI_READ
 [15000] MASTER_DRIVER1 received transaction, op=AXI_WRITE
 [35000] MASTER 1 AW_VALID_RDY Handshake
 [35000] MASTER_DRIVER0 received transaction, op=AXI_WRITE
+[45000] ARB MONITOR: slave=0 m0_req=1 m1_req=0 winner=0
 [45000] ARB MONITOR: slave=1 m0_req=0 m1_req=1 winner=1
-[45000] ARB MONITOR: slave=1 m0_req=1 m1_req=0 winner=0
 [45000] AXI S0_ARVALID_RDY HANDSHAKE
-[45000] MEMORY READ MISS beat=0 addr=1152d620 -> default data id=0
+[45000] MEMORY READ MISS beat=0 addr=81c9450 -> default data id=0
 [45000] AXI S1_AWVALID_RDY HANDSHAKE
-[55000] MEMORY READ MISS beat=1 addr=1152d628 -> default data id=0
-[55000] SLAVE 1 R_VALID_RDY Handshake beat=0 rlast=0
+[55000] MEMORY READ MISS beat=1 addr=81c9458 -> default data id=0
+[55000] SLAVE 0 R_VALID_RDY Handshake beat=0 rlast=0
 [55000] MASTER 1 W_VALID_RDY Handshake beat=0 wlast=0
 [55000] MASTER 0 AW_VALID_RDY Handshake
-[65000] MASTER_DRIVER1 received transaction, op=AXI_WRITE
-[65000] MASTER 1 W_VALID_RDY Handshake beat=1 wlast=1
-[65000] ARB MONITOR: slave=0 m0_req=1 m1_req=0 winner=0
-[65000] SLAVE 1 R_VALID_RDY Handshake beat=1 rlast=1
-[65000] [SLAVE MONITOR AR] READ mst_id=0 s_id=1 araddr=1152d620 arid=0 arlen=1 arsize=3 arburst=1 rid=[00] rresp=[00] rdata=[baadf00d12345678baadf00d12345678]
-[65000] AXI S1_WVALID_RDY HANDSHAKE
-[65000] S1 MEMORY WRITE beat=0 addr=1e741880 data=0000000000000000 id=1b
-[65000] AXI S0_AWVALID_RDY HANDSHAKE
-[75000] S1 MEMORY WRITE beat=1 addr=1e741888 data=0000000000000000 id=1b
-[75000] AXI S1_WVALID_RDY HANDSHAKE
+[65000] MASTER 1 W_VALID_RDY Handshake beat=1 wlast=0
+[65000] SLAVE 0 R_VALID_RDY Handshake beat=1 rlast=1
+[65000] [SLAVE MONITOR] READ mst_id=0 s_id=0 araddr=81c9450 arid=0 arlen=1 arsize=3 arburst=1 rid=[00] rresp=[00] rdata=[baadf00d12345678baadf00d12345678]
+[65000] S1 MEMORY WRITE beat=0 addr=194abad0 data=eb0ca100e90b6c45 id=1b
+[75000] S1 MEMORY WRITE beat=1 addr=194abad0 data=f8d9ef55ccb87598 id=1b
+[75000] MASTER 1 W_VALID_RDY Handshake beat=2 wlast=0
 [75000] MASTER 0 R_VALID_RDY Handshake beat=0 rlast=0
 [75000] MASTER 0 W_VALID_RDY Handshake beat=0 wlast=0
-[85000] [MASTER DRIVER] READ mst_id=0 s_id=0 araddr=1152d620 arid=0 arlen=1 arsize=3 arburst=1 rid=[00] rresp=[00] rdata=[baadf00d12345678baadf00d12345678]
+[85000] [MASTER DRIVER] READ mst_id=0 s_id=0 araddr=81c9450 arid=0 arlen=1 arsize=3 arburst=1 rid=[00] rresp=[00] rdata=[baadf00d12345678baadf00d12345678]
 [85000] MASTER_DRIVER0 received transaction, op=AXI_WRITE
 [85000] MASTER 0 W_VALID_RDY Handshake beat=1 wlast=1
 [85000] MASTER 0 R_VALID_RDY Handshake beat=1 rlast=1
-[85000] [MASTER MONITOR] READ mst_id=0 s_id=1 araddr=1152d620 arid=0 arlen=1 arsize=3 arburst=1 rid=[00] rresp=[00] rdata=[baadf00d12345678baadf00d12345678]
-[85000] MASTER 1 AW_VALID_RDY Handshake
-[85000] AXI S1_BVALID_RDY HANDSHAKE
-[85000] [SLAVE MONITOR] mst_id=1 s_id=1 awaddr=1e741880 awid=1011 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=11011
-[85000] AXI S0_WVALID_RDY HANDSHAKE
-[85000] SLAVE1 sent B resp, id=11
-[85000] AXI S0_WVALID_RDY HANDSHAKE
-[85000] S0 MEMORY WRITE beat=0 addr=0c170150 data=0000000000000000 id=04
+[85000] [MASTER MONITOR] READ mst_id=0 s_id=0 araddr=81c9450 arid=0 arlen=1 arsize=3 arburst=1 rid=[00] rresp=[00] rdata=[baadf00d12345678baadf00d12345678]
+[85000] MASTER 1 W_VALID_RDY Handshake beat=3 wlast=0
+[85000] S1 MEMORY WRITE beat=2 addr=194abad0 data=fc7a0384e5810b6f id=1b
 [85000] SCOREBOARD MATCH: decode_err expected = 0, actual =0
-[85000] SCOREBOARD MATCH: slave_id expected = 1, actual =1
-[85000] SCOREBOARD MATCH: araddr passthrough expected = 1152d620, actual =1152d620
+[85000] SCOREBOARD MATCH: slave_id expected = 0, actual =0
+[85000] SCOREBOARD MATCH: araddr passthrough expected = 81c9450, actual =81c9450
 [85000] SCOREBOARD MATCH: arlen passthrough expected = 1, actual =1
 [85000] SCOREBOARD MATCH: arsize passthrough expected = 3, actual =3
 [85000] SCOREBOARD MATCH: arburst passthrough expected = 1, actual =1
@@ -99,305 +85,190 @@ GENERATOR CONSTRUCTED
 [85000] SCOREBOARD MATCH: rresp passthrough beat=1 expected = 0, actual =0
 [85000] SCOREBOARD MATCH: response routed to correct master (read beat 0) expected = 0, actual =0
 [85000] SCOREBOARD MATCH: response routed to correct master (read beat 1) expected = 0, actual =0
-[85000] [SCOREBOARD-M] READ mst_id=0 s_id=1 araddr=1152d620 arid=0 arlen=1 arsize=3 arburst=1 rid=[00] rresp=[00] rdata=[baadf00d12345678baadf00d12345678]
-[85000] [SCOREBOARD-S] READ mst_id=0 s_id=1 araddr=1152d620 arid=0 arlen=1 arsize=3 arburst=1 rid=[00] rresp=[00] rdata=[baadf00d12345678baadf00d12345678]
+[85000] [SCOREBOARD-M] READ mst_id=0 s_id=0 araddr=81c9450 arid=0 arlen=1 arsize=3 arburst=1 rid=[00] rresp=[00] rdata=[baadf00d12345678baadf00d12345678]
+[85000] [SCOREBOARD-S] READ mst_id=0 s_id=0 araddr=81c9450 arid=0 arlen=1 arsize=3 arburst=1 rid=[00] rresp=[00] rdata=[baadf00d12345678baadf00d12345678]
 [85000] SCOREBOARD: Transaction 1 received. pass=14 fail=0
 [85000] ALL PASS. Total transactions: 1
-[95000] AXI S0_WVALID_RDY HANDSHAKE
-[95000] S0 MEMORY WRITE beat=1 addr=0c170158 data=0000000000000000 id=04
-[95000] AXI S1_AWVALID_RDY HANDSHAKE
-[95000] AXI S0_WVALID_RDY HANDSHAKE
-[95000] ARB MONITOR: slave=1 m0_req=0 m1_req=1 winner=1
-[105000] MASTER 1 RECEIVED BRESP. BRESP=0
-[105000] [MASTER DRIVER] mst_id=1 s_id=0 awaddr=1e741880 awid=1011 awlen=1 awsize=3 awburst=1 wdata=[] wstrb=[] bresp=0 bid=1011
+[95000] S1 MEMORY WRITE beat=3 addr=194abad0 data=ce8c77b4b20b043c id=1b
+[95000] MASTER 1 W_VALID_RDY Handshake beat=4 wlast=0
 [105000] MASTER 0 AW_VALID_RDY Handshake
-[105000] MASTER 1 W_VALID_RDY Handshake beat=0 wlast=0
-[105000] MASTER 1 B_VALID_RDY Handshake
-[105000] [MASTER MONITOR] mst_id=1 s_id=1 awaddr=1e741880 awid=1011 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=1011
-[105000] AXI S0_BVALID_RDY HANDSHAKE
-[105000] [SLAVE MONITOR] mst_id=0 s_id=0 awaddr=c170150 awid=100 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=100
-[105000] SLAVE0 sent B resp, id=4
-[105000] SCOREBOARD MATCH: decode_err expected = 0, actual =0
-[105000] SCOREBOARD MATCH: slave_id expected = 1, actual =1
-[105000] SCOREBOARD MATCH: awaddr passthrough expected = 1e741880, actual =1e741880
-[105000] SCOREBOARD MATCH: awlen passthrough expected = 1, actual =1
-[105000] SCOREBOARD MATCH: awsize passthrough expected = 3, actual =3
-[105000] SCOREBOARD MATCH: awburst passthrough expected = 1, actual =1
-[105000] SCOREBOARD MATCH: wdata size check expected = 2, actual =2
-[105000] SCOREBOARD MATCH: wdata passthrough beat=0 expected = 0, actual =0
-[105000] SCOREBOARD MATCH: wdata passthrough beat=1 expected = 0, actual =0
-[105000] SCOREBOARD MATCH: wstrb size check expected = 2, actual =2
-[105000] SCOREBOARD MATCH: wstrb passthrough beat=0 expected = 0, actual =0
-[105000] SCOREBOARD MATCH: wstrb passthrough beat=1 expected = 0, actual =0
-[105000] SCOREBOARD MATCH: bresp passthrough expected = 0, actual =0
-[105000] SCOREBOARD MATCH: response routed to correct master (write) expected = 1, actual =1
-[105000] [SCOREBOARD-M] mst_id=1 s_id=1 awaddr=1e741880 awid=1011 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=1011
-[105000] [SCOREBOARD-S] mst_id=1 s_id=1 awaddr=1e741880 awid=1011 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=11011
-[105000] SCOREBOARD: Transaction 2 received. pass=28 fail=0
-[105000] ALL PASS. Total transactions: 2
-[115000] AXI S0_AWVALID_RDY HANDSHAKE
-[115000] S1 MEMORY WRITE beat=0 addr=1fe63bb8 data=0000000000000000 id=1d
-[115000] AXI S1_WVALID_RDY HANDSHAKE
-[115000] ARB MONITOR: slave=0 m0_req=1 m1_req=0 winner=0
-[115000] MASTER 1 W_VALID_RDY Handshake beat=1 wlast=1
+[105000] MASTER 1 W_VALID_RDY Handshake beat=5 wlast=0
+[105000] S1 MEMORY WRITE beat=4 addr=194abad0 data=fec379d5e786a485 id=1b
+[115000] S1 MEMORY WRITE beat=5 addr=194abad0 data=cd07aff4c766670a id=1b
+[115000] MASTER 1 W_VALID_RDY Handshake beat=6 wlast=1
 [115000] MASTER_DRIVER1 received transaction, op=AXI_WRITE
-[125000] MASTER 0 RECEIVED BRESP. BRESP=0
-[125000] [MASTER DRIVER] mst_id=0 s_id=0 awaddr=c170150 awid=100 awlen=1 awsize=3 awburst=1 wdata=[] wstrb=[] bresp=0 bid=100
 [125000] MASTER 0 W_VALID_RDY Handshake beat=0 wlast=0
-[125000] MASTER 0 B_VALID_RDY Handshake
-[125000] [MASTER MONITOR] mst_id=0 s_id=0 awaddr=c170150 awid=100 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=100
-[125000] AXI S1_WVALID_RDY HANDSHAKE
-[125000] S1 MEMORY WRITE beat=1 addr=1fe63bc0 data=0000000000000000 id=1d
-[125000] SCOREBOARD MATCH: decode_err expected = 0, actual =0
-[125000] SCOREBOARD MATCH: slave_id expected = 0, actual =0
-[125000] SCOREBOARD MATCH: awaddr passthrough expected = c170150, actual =c170150
-[125000] SCOREBOARD MATCH: awlen passthrough expected = 1, actual =1
-[125000] SCOREBOARD MATCH: awsize passthrough expected = 3, actual =3
-[125000] SCOREBOARD MATCH: awburst passthrough expected = 1, actual =1
-[125000] SCOREBOARD MATCH: wdata size check expected = 2, actual =2
-[125000] SCOREBOARD MATCH: wdata passthrough beat=0 expected = 0, actual =0
-[125000] SCOREBOARD MATCH: wdata passthrough beat=1 expected = 0, actual =0
-[125000] SCOREBOARD MATCH: wstrb size check expected = 2, actual =2
-[125000] SCOREBOARD MATCH: wstrb passthrough beat=0 expected = 0, actual =0
-[125000] SCOREBOARD MATCH: wstrb passthrough beat=1 expected = 0, actual =0
-[125000] SCOREBOARD MATCH: bresp passthrough expected = 0, actual =0
-[125000] SCOREBOARD MATCH: response routed to correct master (write) expected = 0, actual =0
-[125000] [SCOREBOARD-M] mst_id=0 s_id=0 awaddr=c170150 awid=100 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=100
-[125000] [SCOREBOARD-S] mst_id=0 s_id=0 awaddr=c170150 awid=100 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=100
-[125000] SCOREBOARD: Transaction 3 received. pass=42 fail=0
-[125000] ALL PASS. Total transactions: 3
-[135000] AXI S0_WVALID_RDY HANDSHAKE
-[135000] S0 MEMORY WRITE beat=0 addr=06ef3d38 data=0000000000000000 id=0c
-[135000] SLAVE1 sent B resp, id=13
-[135000] AXI S0_WVALID_RDY HANDSHAKE
-[135000] AXI S1_BVALID_RDY HANDSHAKE
-[135000] [SLAVE MONITOR] mst_id=1 s_id=1 awaddr=1fe63bb8 awid=1101 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=11101
+[125000] S1 MEMORY WRITE beat=6 addr=194abad0 data=f9716b46fb3d7d59 id=1b
+[135000] SLAVE1 sent B resp, id=11
+[135000] [SLAVE MONITOR] mst_id=1 s_id=1 awaddr=194abad0 awid=1011 awlen=6 awsize=7 awburst=0 wdata=[eb0ca100e90b6c45 f8d9ef55ccb87598 fc7a0384e5810b6f ce8c77b4b20b043c fec379d5e786a485 cd07aff4c766670a f9716b46fb3d7d59 ] wstrb=[a8 de 1b b2 d2 75 f9 ] bresp=0 bid=11011
 [135000] MASTER 1 AW_VALID_RDY Handshake
-[135000] MASTER 0 W_VALID_RDY Handshake beat=1 wlast=1
-[135000] MASTER_DRIVER0 received transaction, op=AXI_READ
-[145000] AXI S0_WVALID_RDY HANDSHAKE
-[145000] AXI S0_WVALID_RDY HANDSHAKE
-[145000] S0 MEMORY WRITE beat=1 addr=06ef3d40 data=0000000000000000 id=0c
-[155000] SLAVE0 sent B resp, id=12
-[155000] AXI S0_BVALID_RDY HANDSHAKE
-[155000] [SLAVE MONITOR] mst_id=0 s_id=0 awaddr=6ef3d38 awid=1100 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=1100
+[135000] MASTER 0 W_VALID_RDY Handshake beat=1 wlast=0
+[145000] MASTER 0 W_VALID_RDY Handshake beat=2 wlast=0
+[145000] ARB MONITOR: slave=1 m0_req=1 m1_req=1 winner=0
+[145000] AXI S1_AWVALID_RDY HANDSHAKE
+[145000] SCOREBOARD MATCH: arbitration winner (slave 1) expected = 0, actual =0
+[155000] S1 MEMORY WRITE beat=0 addr=1bfa3bc8 data=9621c42ce80b66c2 id=04
 [155000] MASTER 1 W_VALID_RDY Handshake beat=0 wlast=0
 [155000] MASTER 1 B_VALID_RDY Handshake
-[155000] [MASTER MONITOR] mst_id=1 s_id=1 awaddr=1fe63bb8 awid=1101 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=1101
-[155000] MASTER_DRIVER0 received transaction, op=AXI_WRITE
+[155000] [MASTER MONITOR] mst_id=1 s_id=1 awaddr=194abad0 awid=1011 awlen=6 awsize=7 awburst=0 wdata=[eb0ca100e90b6c45 f8d9ef55ccb87598 fc7a0384e5810b6f ce8c77b4b20b043c fec379d5e786a485 cd07aff4c766670a f9716b46fb3d7d59 ] wstrb=[a8 de 1b b2 d2 75 f9 ] bresp=0 bid=1011
+[155000] MASTER 0 W_VALID_RDY Handshake beat=3 wlast=0
 [155000] MASTER 1 RECEIVED BRESP. BRESP=0
-[155000] [MASTER DRIVER] mst_id=1 s_id=0 awaddr=1fe63bb8 awid=1101 awlen=1 awsize=3 awburst=1 wdata=[] wstrb=[] bresp=0 bid=1101
+[155000] [MASTER DRIVER] mst_id=1 s_id=0 awaddr=194abad0 awid=1011 awlen=6 awsize=7 awburst=0 wdata=[eb0ca100e90b6c45 f8d9ef55ccb87598 fc7a0384e5810b6f ce8c77b4b20b043c fec379d5e786a485 cd07aff4c766670a f9716b46fb3d7d59 ] wstrb=[a8 de 1b b2 d2 75 f9 ] bresp=0 bid=1011
 [155000] SCOREBOARD MATCH: decode_err expected = 0, actual =0
 [155000] SCOREBOARD MATCH: slave_id expected = 1, actual =1
-[155000] SCOREBOARD MATCH: awaddr passthrough expected = 1fe63bb8, actual =1fe63bb8
-[155000] SCOREBOARD MATCH: awlen passthrough expected = 1, actual =1
-[155000] SCOREBOARD MATCH: awsize passthrough expected = 3, actual =3
-[155000] SCOREBOARD MATCH: awburst passthrough expected = 1, actual =1
-[155000] SCOREBOARD MATCH: wdata size check expected = 2, actual =2
-[155000] SCOREBOARD MATCH: wdata passthrough beat=0 expected = 0, actual =0
-[155000] SCOREBOARD MATCH: wdata passthrough beat=1 expected = 0, actual =0
-[155000] SCOREBOARD MATCH: wstrb size check expected = 2, actual =2
-[155000] SCOREBOARD MATCH: wstrb passthrough beat=0 expected = 0, actual =0
-[155000] SCOREBOARD MATCH: wstrb passthrough beat=1 expected = 0, actual =0
+[155000] SCOREBOARD MATCH: awaddr passthrough expected = 194abad0, actual =194abad0
+[155000] SCOREBOARD MATCH: awlen passthrough expected = 6, actual =6
+[155000] SCOREBOARD MATCH: awsize passthrough expected = 7, actual =7
+[155000] SCOREBOARD MATCH: awburst passthrough expected = 0, actual =0
+[155000] SCOREBOARD MATCH: wdata size check expected = 7, actual =7
+[155000] SCOREBOARD MATCH: wdata passthrough beat=0 expected = eb0ca100e90b6c45, actual =eb0ca100e90b6c45
+[155000] SCOREBOARD MATCH: wdata passthrough beat=1 expected = f8d9ef55ccb87598, actual =f8d9ef55ccb87598
+[155000] SCOREBOARD MATCH: wdata passthrough beat=2 expected = fc7a0384e5810b6f, actual =fc7a0384e5810b6f
+[155000] SCOREBOARD MATCH: wdata passthrough beat=3 expected = ce8c77b4b20b043c, actual =ce8c77b4b20b043c
+[155000] SCOREBOARD MATCH: wdata passthrough beat=4 expected = fec379d5e786a485, actual =fec379d5e786a485
+[155000] SCOREBOARD MATCH: wdata passthrough beat=5 expected = cd07aff4c766670a, actual =cd07aff4c766670a
+[155000] SCOREBOARD MATCH: wdata passthrough beat=6 expected = f9716b46fb3d7d59, actual =f9716b46fb3d7d59
+[155000] SCOREBOARD MATCH: wstrb size check expected = 7, actual =7
+[155000] SCOREBOARD MATCH: wstrb passthrough beat=0 expected = a8, actual =a8
+[155000] SCOREBOARD MATCH: wstrb passthrough beat=1 expected = de, actual =de
+[155000] SCOREBOARD MATCH: wstrb passthrough beat=2 expected = 1b, actual =1b
+[155000] SCOREBOARD MATCH: wstrb passthrough beat=3 expected = b2, actual =b2
+[155000] SCOREBOARD MATCH: wstrb passthrough beat=4 expected = d2, actual =d2
+[155000] SCOREBOARD MATCH: wstrb passthrough beat=5 expected = 75, actual =75
+[155000] SCOREBOARD MATCH: wstrb passthrough beat=6 expected = f9, actual =f9
 [155000] SCOREBOARD MATCH: bresp passthrough expected = 0, actual =0
 [155000] SCOREBOARD MATCH: response routed to correct master (write) expected = 1, actual =1
-[155000] [SCOREBOARD-M] mst_id=1 s_id=1 awaddr=1fe63bb8 awid=1101 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=1101
-[155000] [SCOREBOARD-S] mst_id=1 s_id=1 awaddr=1fe63bb8 awid=1101 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=11101
-[155000] SCOREBOARD: Transaction 4 received. pass=56 fail=0
-[155000] ALL PASS. Total transactions: 4
-[165000] MASTER_DRIVER1 received transaction, op=AXI_WRITE
-[165000] MASTER 1 W_VALID_RDY Handshake beat=1 wlast=1
-[165000] ARB MONITOR: slave=0 m0_req=0 m1_req=1 winner=1
-[165000] ARB MONITOR: slave=1 m0_req=1 m1_req=0 winner=0
-[165000] AXI S0_ARVALID_RDY HANDSHAKE
-[165000] MEMORY READ MISS beat=0 addr=10997bf0 -> default data id=3
-[165000] AXI S0_AWVALID_RDY HANDSHAKE
-[175000] AXI S0_WVALID_RDY HANDSHAKE
-[175000] S0 MEMORY WRITE beat=0 addr=0e899a40 data=0000000000000000 id=18
-[175000] MEMORY READ MISS beat=1 addr=10997bf8 -> default data id=3
-[175000] AXI S0_WVALID_RDY HANDSHAKE
-[175000] SLAVE 1 R_VALID_RDY Handshake beat=0 rlast=0
-[175000] MASTER 0 AW_VALID_RDY Handshake
-[175000] MASTER 0 B_VALID_RDY Handshake
-[175000] [MASTER MONITOR] mst_id=0 s_id=0 awaddr=6ef3d38 awid=1100 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=1100
-[175000] MASTER 0 RECEIVED BRESP. BRESP=0
-[175000] [MASTER DRIVER] mst_id=0 s_id=0 awaddr=6ef3d38 awid=1100 awlen=1 awsize=3 awburst=1 wdata=[] wstrb=[] bresp=0 bid=1100
-[175000] SCOREBOARD MATCH: decode_err expected = 0, actual =0
-[175000] SCOREBOARD MATCH: slave_id expected = 0, actual =0
-[175000] SCOREBOARD MATCH: awaddr passthrough expected = 6ef3d38, actual =6ef3d38
-[175000] SCOREBOARD MATCH: awlen passthrough expected = 1, actual =1
-[175000] SCOREBOARD MATCH: awsize passthrough expected = 3, actual =3
-[175000] SCOREBOARD MATCH: awburst passthrough expected = 1, actual =1
-[175000] SCOREBOARD MATCH: wdata size check expected = 2, actual =2
-[175000] SCOREBOARD MATCH: wdata passthrough beat=0 expected = 0, actual =0
-[175000] SCOREBOARD MATCH: wdata passthrough beat=1 expected = 0, actual =0
-[175000] SCOREBOARD MATCH: wstrb size check expected = 2, actual =2
-[175000] SCOREBOARD MATCH: wstrb passthrough beat=0 expected = 0, actual =0
-[175000] SCOREBOARD MATCH: wstrb passthrough beat=1 expected = 0, actual =0
-[175000] SCOREBOARD MATCH: bresp passthrough expected = 0, actual =0
-[175000] SCOREBOARD MATCH: response routed to correct master (write) expected = 0, actual =0
-[175000] [SCOREBOARD-M] mst_id=0 s_id=0 awaddr=6ef3d38 awid=1100 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=1100
-[175000] [SCOREBOARD-S] mst_id=0 s_id=0 awaddr=6ef3d38 awid=1100 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=1100
-[175000] SCOREBOARD: Transaction 5 received. pass=70 fail=0
-[175000] ALL PASS. Total transactions: 5
-[185000] MASTER 1 AW_VALID_RDY Handshake
-[185000] ARB MONITOR: slave=1 m0_req=1 m1_req=1 winner=0
-[185000] SLAVE 1 R_VALID_RDY Handshake beat=1 rlast=1
-[185000] [SLAVE MONITOR AR] READ mst_id=0 s_id=1 araddr=10997bf0 arid=3 arlen=1 arsize=3 arburst=1 rid=[33] rresp=[00] rdata=[baadf00d12345678baadf00d12345678]
-[185000] AXI S0_WVALID_RDY HANDSHAKE
+[155000] [SCOREBOARD-M] mst_id=1 s_id=1 awaddr=194abad0 awid=1011 awlen=6 awsize=7 awburst=0 wdata=[eb0ca100e90b6c45 f8d9ef55ccb87598 fc7a0384e5810b6f ce8c77b4b20b043c fec379d5e786a485 cd07aff4c766670a f9716b46fb3d7d59 ] wstrb=[a8 de 1b b2 d2 75 f9 ] bresp=0 bid=1011
+[155000] [SCOREBOARD-S] mst_id=1 s_id=1 awaddr=194abad0 awid=1011 awlen=6 awsize=7 awburst=0 wdata=[eb0ca100e90b6c45 f8d9ef55ccb87598 fc7a0384e5810b6f ce8c77b4b20b043c fec379d5e786a485 cd07aff4c766670a f9716b46fb3d7d59 ] wstrb=[a8 de 1b b2 d2 75 f9 ] bresp=0 bid=11011
+[155000] SCOREBOARD: Transaction 2 received. pass=39 fail=0
+[155000] ALL PASS. Total transactions: 2
+[165000] MASTER 0 W_VALID_RDY Handshake beat=4 wlast=0
+[165000] MASTER 1 W_VALID_RDY Handshake beat=1 wlast=0
+[165000] S1 MEMORY WRITE beat=1 addr=1bfa3bc8 data=dd4ef242e797782f id=04
+[175000] SLAVE1 sent B resp, id=4
+[175000] [SLAVE MONITOR] mst_id=0 s_id=1 awaddr=1bfa3bc8 awid=100 awlen=1 awsize=3 awburst=0 wdata=[9621c42ce80b66c2 dd4ef242e797782f ] wstrb=[1f e5 ] bresp=0 bid=100
+[175000] MASTER 1 W_VALID_RDY Handshake beat=2 wlast=0
+[175000] MASTER 0 W_VALID_RDY Handshake beat=5 wlast=0
+[185000] MASTER 0 W_VALID_RDY Handshake beat=6 wlast=1
+[185000] MASTER 1 W_VALID_RDY Handshake beat=3 wlast=0
+[185000] ARB MONITOR: slave=1 m0_req=0 m1_req=1 winner=1
 [185000] AXI S1_AWVALID_RDY HANDSHAKE
-[185000] AXI S0_WVALID_RDY HANDSHAKE
-[185000] S0 MEMORY WRITE beat=1 addr=0e899a48 data=0000000000000000 id=18
-[185000] SCOREBOARD MATCH: arbitration winner (slave 1) expected = 0, actual =0
-[195000] SLAVE0 sent B resp, id=8
-[195000] AXI S0_BVALID_RDY HANDSHAKE
-[195000] [SLAVE MONITOR] mst_id=1 s_id=0 awaddr=e899a40 awid=1000 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=11000
-[195000] MASTER 0 R_VALID_RDY Handshake beat=0 rlast=0
-[195000] MASTER 0 W_VALID_RDY Handshake beat=0 wlast=0
-[205000] [MASTER DRIVER] READ mst_id=0 s_id=0 araddr=10997bf0 arid=3 arlen=1 arsize=3 arburst=1 rid=[33] rresp=[00] rdata=[baadf00d12345678baadf00d12345678]
-[205000] MASTER 0 W_VALID_RDY Handshake beat=1 wlast=1
-[205000] MASTER 0 R_VALID_RDY Handshake beat=1 rlast=1
-[205000] [MASTER MONITOR] READ mst_id=0 s_id=1 araddr=10997bf0 arid=3 arlen=1 arsize=3 arburst=1 rid=[33] rresp=[00] rdata=[baadf00d12345678baadf00d12345678]
-[205000] MASTER 1 W_VALID_RDY Handshake beat=0 wlast=0
-[205000] AXI S1_WVALID_RDY HANDSHAKE
-[205000] S1 MEMORY WRITE beat=0 addr=14cc1ec8 data=0000000000000000 id=06
-[205000] SCOREBOARD MATCH: decode_err expected = 0, actual =0
-[205000] SCOREBOARD MATCH: slave_id expected = 1, actual =1
-[205000] SCOREBOARD MATCH: araddr passthrough expected = 10997bf0, actual =10997bf0
-[205000] SCOREBOARD MATCH: arlen passthrough expected = 1, actual =1
-[205000] SCOREBOARD MATCH: arsize passthrough expected = 3, actual =3
-[205000] SCOREBOARD MATCH: arburst passthrough expected = 1, actual =1
-[205000] SCOREBOARD MATCH: rdata size check expected = 2, actual =2
-[205000] SCOREBOARD MATCH: rdata passthrough beat=0 expected = baadf00d12345678, actual =baadf00d12345678
-[205000] SCOREBOARD MATCH: rdata passthrough beat=1 expected = baadf00d12345678, actual =baadf00d12345678
-[205000] SCOREBOARD MATCH: rresp size check expected = 2, actual =2
-[205000] SCOREBOARD MATCH: rresp passthrough beat=0 expected = 0, actual =0
-[205000] SCOREBOARD MATCH: rresp passthrough beat=1 expected = 0, actual =0
-[205000] SCOREBOARD MATCH: response routed to correct master (read beat 0) expected = 0, actual =0
-[205000] SCOREBOARD MATCH: response routed to correct master (read beat 1) expected = 0, actual =0
-[205000] [SCOREBOARD-M] READ mst_id=0 s_id=1 araddr=10997bf0 arid=3 arlen=1 arsize=3 arburst=1 rid=[33] rresp=[00] rdata=[baadf00d12345678baadf00d12345678]
-[205000] [SCOREBOARD-S] READ mst_id=0 s_id=1 araddr=10997bf0 arid=3 arlen=1 arsize=3 arburst=1 rid=[33] rresp=[00] rdata=[baadf00d12345678baadf00d12345678]
-[205000] SCOREBOARD: Transaction 6 received. pass=85 fail=0
-[205000] ALL PASS. Total transactions: 6
-[215000] S1 MEMORY WRITE beat=1 addr=14cc1ed0 data=0000000000000000 id=06
-[215000] AXI S1_WVALID_RDY HANDSHAKE
-[215000] MASTER 1 B_VALID_RDY Handshake
-[215000] [MASTER MONITOR] mst_id=1 s_id=0 awaddr=e899a40 awid=1000 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=1000
-[215000] MASTER 1 W_VALID_RDY Handshake beat=1 wlast=1
-[215000] MASTER 1 RECEIVED BRESP. BRESP=0
-[215000] [MASTER DRIVER] mst_id=1 s_id=0 awaddr=e899a40 awid=1000 awlen=1 awsize=3 awburst=1 wdata=[] wstrb=[] bresp=0 bid=1000
-[215000] MASTER_DRIVER1 received transaction, op=AXI_WRITE
-[215000] SCOREBOARD MATCH: decode_err expected = 0, actual =0
-[215000] SCOREBOARD MATCH: slave_id expected = 0, actual =0
-[215000] SCOREBOARD MATCH: awaddr passthrough expected = e899a40, actual =e899a40
-[215000] SCOREBOARD MATCH: awlen passthrough expected = 1, actual =1
-[215000] SCOREBOARD MATCH: awsize passthrough expected = 3, actual =3
-[215000] SCOREBOARD MATCH: awburst passthrough expected = 1, actual =1
-[215000] SCOREBOARD MATCH: wdata size check expected = 2, actual =2
-[215000] SCOREBOARD MATCH: wdata passthrough beat=0 expected = 0, actual =0
-[215000] SCOREBOARD MATCH: wdata passthrough beat=1 expected = 0, actual =0
-[215000] SCOREBOARD MATCH: wstrb size check expected = 2, actual =2
-[215000] SCOREBOARD MATCH: wstrb passthrough beat=0 expected = 0, actual =0
-[215000] SCOREBOARD MATCH: wstrb passthrough beat=1 expected = 0, actual =0
-[215000] SCOREBOARD MATCH: bresp passthrough expected = 0, actual =0
-[215000] SCOREBOARD MATCH: response routed to correct master (write) expected = 1, actual =1
-[215000] [SCOREBOARD-M] mst_id=1 s_id=0 awaddr=e899a40 awid=1000 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=1000
-[215000] [SCOREBOARD-S] mst_id=1 s_id=0 awaddr=e899a40 awid=1000 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=11000
-[215000] SCOREBOARD: Transaction 7 received. pass=99 fail=0
-[215000] ALL PASS. Total transactions: 7
-[225000] AXI S1_BVALID_RDY HANDSHAKE
-[225000] [SLAVE MONITOR] mst_id=0 s_id=1 awaddr=14cc1ec8 awid=110 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=110
-[225000] SLAVE1 sent B resp, id=6
-[235000] AXI S1_AWVALID_RDY HANDSHAKE
-[235000] ARB MONITOR: slave=1 m0_req=0 m1_req=1 winner=1
-[235000] MASTER 1 AW_VALID_RDY Handshake
-[245000] MASTER 0 RECEIVED BRESP. BRESP=0
-[245000] [MASTER DRIVER] mst_id=0 s_id=0 awaddr=14cc1ec8 awid=110 awlen=1 awsize=3 awburst=1 wdata=[] wstrb=[] bresp=0 bid=110
-[245000] MASTER 0 B_VALID_RDY Handshake
-[245000] [MASTER MONITOR] mst_id=0 s_id=1 awaddr=14cc1ec8 awid=110 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=110
-[245000] AXI S1_WVALID_RDY HANDSHAKE
-[245000] S1 MEMORY WRITE beat=0 addr=1b9f2fa8 data=0000000000000000 id=18
-[245000] SCOREBOARD MATCH: decode_err expected = 0, actual =0
-[245000] SCOREBOARD MATCH: slave_id expected = 1, actual =1
-[245000] SCOREBOARD MATCH: awaddr passthrough expected = 14cc1ec8, actual =14cc1ec8
-[245000] SCOREBOARD MATCH: awlen passthrough expected = 1, actual =1
-[245000] SCOREBOARD MATCH: awsize passthrough expected = 3, actual =3
-[245000] SCOREBOARD MATCH: awburst passthrough expected = 1, actual =1
-[245000] SCOREBOARD MATCH: wdata size check expected = 2, actual =2
-[245000] SCOREBOARD MATCH: wdata passthrough beat=0 expected = 0, actual =0
-[245000] SCOREBOARD MATCH: wdata passthrough beat=1 expected = 0, actual =0
-[245000] SCOREBOARD MATCH: wstrb size check expected = 2, actual =2
-[245000] SCOREBOARD MATCH: wstrb passthrough beat=0 expected = 0, actual =0
-[245000] SCOREBOARD MATCH: wstrb passthrough beat=1 expected = 0, actual =0
-[245000] SCOREBOARD MATCH: bresp passthrough expected = 0, actual =0
-[245000] SCOREBOARD MATCH: response routed to correct master (write) expected = 0, actual =0
-[245000] [SCOREBOARD-M] mst_id=0 s_id=1 awaddr=14cc1ec8 awid=110 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=110
-[245000] [SCOREBOARD-S] mst_id=0 s_id=1 awaddr=14cc1ec8 awid=110 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=110
-[245000] SCOREBOARD: Transaction 8 received. pass=113 fail=0
-[245000] ALL PASS. Total transactions: 8
-[255000] S1 MEMORY WRITE beat=1 addr=1b9f2fb0 data=0000000000000000 id=18
-[255000] AXI S1_WVALID_RDY HANDSHAKE
-[255000] MASTER 1 W_VALID_RDY Handshake beat=0 wlast=0
-[265000] MASTER 1 W_VALID_RDY Handshake beat=1 wlast=1
-[265000] AXI S1_BVALID_RDY HANDSHAKE
-[265000] [SLAVE MONITOR] mst_id=1 s_id=1 awaddr=1b9f2fa8 awid=1000 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=11000
-[265000] SLAVE1 sent B resp, id=8
-[275000] AXI S1_AWVALID_RDY HANDSHAKE
-[275000] ARB MONITOR: slave=1 m0_req=0 m1_req=0 winner=1
-[285000] MASTER 1 RECEIVED BRESP. BRESP=0
-[285000] [MASTER DRIVER] mst_id=1 s_id=0 awaddr=1b9f2fa8 awid=1000 awlen=1 awsize=3 awburst=1 wdata=[] wstrb=[] bresp=0 bid=1000
-[285000] MASTER 1 B_VALID_RDY Handshake
-[285000] [MASTER MONITOR] mst_id=1 s_id=1 awaddr=1b9f2fa8 awid=1000 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=1000
-[285000] AXI S1_WVALID_RDY HANDSHAKE
-[285000] S1 MEMORY WRITE beat=0 addr=1adb9e20 data=0000000000000000 id=19
-[285000] SCOREBOARD MATCH: decode_err expected = 0, actual =0
-[285000] SCOREBOARD MATCH: slave_id expected = 1, actual =1
-[285000] SCOREBOARD MATCH: awaddr passthrough expected = 1b9f2fa8, actual =1b9f2fa8
-[285000] SCOREBOARD MATCH: awlen passthrough expected = 1, actual =1
-[285000] SCOREBOARD MATCH: awsize passthrough expected = 3, actual =3
-[285000] SCOREBOARD MATCH: awburst passthrough expected = 1, actual =1
-[285000] SCOREBOARD MATCH: wdata size check expected = 2, actual =2
-[285000] SCOREBOARD MATCH: wdata passthrough beat=0 expected = 0, actual =0
-[285000] SCOREBOARD MATCH: wdata passthrough beat=1 expected = 0, actual =0
-[285000] SCOREBOARD MATCH: wstrb size check expected = 2, actual =2
-[285000] SCOREBOARD MATCH: wstrb passthrough beat=0 expected = 0, actual =0
-[285000] SCOREBOARD MATCH: wstrb passthrough beat=1 expected = 0, actual =0
-[285000] SCOREBOARD MATCH: bresp passthrough expected = 0, actual =0
-[285000] SCOREBOARD MATCH: response routed to correct master (write) expected = 1, actual =1
-[285000] [SCOREBOARD-M] mst_id=1 s_id=1 awaddr=1b9f2fa8 awid=1000 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=1000
-[285000] [SCOREBOARD-S] mst_id=1 s_id=1 awaddr=1b9f2fa8 awid=1000 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=11000
-[285000] SCOREBOARD: Transaction 9 received. pass=127 fail=0
-[285000] ALL PASS. Total transactions: 9
-[295000] S1 MEMORY WRITE beat=1 addr=1adb9e28 data=0000000000000000 id=19
-[295000] AXI S1_WVALID_RDY HANDSHAKE
-[305000] AXI S1_BVALID_RDY HANDSHAKE
-[305000] [SLAVE MONITOR] mst_id=1 s_id=1 awaddr=1adb9e20 awid=1001 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=11001
-[305000] SLAVE1 sent B resp, id=9
-[325000] MASTER 1 RECEIVED BRESP. BRESP=0
-[325000] [MASTER DRIVER] mst_id=1 s_id=0 awaddr=1adb9e20 awid=1001 awlen=1 awsize=3 awburst=1 wdata=[] wstrb=[] bresp=0 bid=1001
-[325000] MASTER 1 B_VALID_RDY Handshake
-[325000] [MASTER MONITOR] mst_id=1 s_id=1 awaddr=1adb9e20 awid=1001 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=1001
-[325000] SCOREBOARD MATCH: decode_err expected = 0, actual =0
-[325000] SCOREBOARD MATCH: slave_id expected = 1, actual =1
-[325000] SCOREBOARD MATCH: awaddr passthrough expected = 1adb9e20, actual =1adb9e20
-[325000] SCOREBOARD MATCH: awlen passthrough expected = 1, actual =1
-[325000] SCOREBOARD MATCH: awsize passthrough expected = 3, actual =3
-[325000] SCOREBOARD MATCH: awburst passthrough expected = 1, actual =1
-[325000] SCOREBOARD MATCH: wdata size check expected = 2, actual =2
-[325000] SCOREBOARD MATCH: wdata passthrough beat=0 expected = 0, actual =0
-[325000] SCOREBOARD MATCH: wdata passthrough beat=1 expected = 0, actual =0
-[325000] SCOREBOARD MATCH: wstrb size check expected = 2, actual =2
-[325000] SCOREBOARD MATCH: wstrb passthrough beat=0 expected = 0, actual =0
-[325000] SCOREBOARD MATCH: wstrb passthrough beat=1 expected = 0, actual =0
-[325000] SCOREBOARD MATCH: bresp passthrough expected = 0, actual =0
-[325000] SCOREBOARD MATCH: response routed to correct master (write) expected = 1, actual =1
-[325000] [SCOREBOARD-M] mst_id=1 s_id=1 awaddr=1adb9e20 awid=1001 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=1001
-[325000] [SCOREBOARD-S] mst_id=1 s_id=1 awaddr=1adb9e20 awid=1001 awlen=1 awsize=3 awburst=1 wdata=[0 0 ] wstrb=[0 0 ] bresp=0 bid=11001
-[325000] SCOREBOARD: Transaction 10 received. pass=141 fail=0
-[325000] SCOREBOARD: Expected 10 transactions completed, PASS=141 FAIL=0
-[325000] ALL PASS. Total transactions: 10
-[325000] ALL TRANSACTIONS MONITORED
-$finish called at time : 345 ns : File "/home/nashita/Desktop/practice/axi_xbar/tb/top/axi_tb_top.sv" Line 206
+[195000] S1 MEMORY WRITE beat=0 addr=138d50b0 data=fc12858d0e6c1747 id=1d
+[195000] MASTER 1 W_VALID_RDY Handshake beat=4 wlast=0
+[195000] MASTER 0 B_VALID_RDY Handshake
+[195000] [MASTER MONITOR] mst_id=0 s_id=1 awaddr=1bfa3bc8 awid=100 awlen=1 awsize=3 awburst=0 wdata=[9621c42ce80b66c2 dd4ef242e797782f ] wstrb=[1f e5 ] bresp=0 bid=100
+[195000] MASTER 0 RECEIVED BRESP. BRESP=0
+[195000] [MASTER DRIVER] mst_id=0 s_id=0 awaddr=1bfa3bc8 awid=100 awlen=1 awsize=3 awburst=0 wdata=[9621c42ce80b66c2 dd4ef242e797782f ] wstrb=[1f e5 ] bresp=0 bid=100
+[195000] SCOREBOARD MATCH: decode_err expected = 0, actual =0
+[195000] SCOREBOARD MATCH: slave_id expected = 1, actual =1
+[195000] SCOREBOARD MATCH: awaddr passthrough expected = 1bfa3bc8, actual =1bfa3bc8
+[195000] SCOREBOARD MATCH: awlen passthrough expected = 1, actual =1
+[195000] SCOREBOARD MATCH: awsize passthrough expected = 3, actual =3
+[195000] SCOREBOARD MATCH: awburst passthrough expected = 0, actual =0
+[195000] SCOREBOARD MATCH: wdata size check expected = 2, actual =2
+[195000] SCOREBOARD MATCH: wdata passthrough beat=0 expected = 9621c42ce80b66c2, actual =9621c42ce80b66c2
+[195000] SCOREBOARD MATCH: wdata passthrough beat=1 expected = dd4ef242e797782f, actual =dd4ef242e797782f
+[195000] SCOREBOARD MATCH: wstrb size check expected = 2, actual =2
+[195000] SCOREBOARD MATCH: wstrb passthrough beat=0 expected = 1f, actual =1f
+[195000] SCOREBOARD MATCH: wstrb passthrough beat=1 expected = e5, actual =e5
+[195000] SCOREBOARD MATCH: bresp passthrough expected = 0, actual =0
+[195000] SCOREBOARD MATCH: response routed to correct master (write) expected = 0, actual =0
+[195000] [SCOREBOARD-M] mst_id=0 s_id=1 awaddr=1bfa3bc8 awid=100 awlen=1 awsize=3 awburst=0 wdata=[9621c42ce80b66c2 dd4ef242e797782f ] wstrb=[1f e5 ] bresp=0 bid=100
+[195000] [SCOREBOARD-S] mst_id=0 s_id=1 awaddr=1bfa3bc8 awid=100 awlen=1 awsize=3 awburst=0 wdata=[9621c42ce80b66c2 dd4ef242e797782f ] wstrb=[1f e5 ] bresp=0 bid=100
+[195000] SCOREBOARD: Transaction 3 received. pass=53 fail=0
+[195000] ALL PASS. Total transactions: 3
+[205000] MASTER 1 W_VALID_RDY Handshake beat=5 wlast=0
+[205000] S1 MEMORY WRITE beat=1 addr=138d50b0 data=f6310534b0f6adf7 id=1d
+[215000] S1 MEMORY WRITE beat=2 addr=138d50b0 data=c436f48b9b566e9d id=1d
+[215000] MASTER 1 W_VALID_RDY Handshake beat=6 wlast=0
+[225000] MASTER 1 W_VALID_RDY Handshake beat=7 wlast=1
+[225000] S1 MEMORY WRITE beat=3 addr=138d50b0 data=a9c285e4c0f21819 id=1d
+[235000] S1 MEMORY WRITE beat=4 addr=138d50b0 data=f1e8c610c0497a19 id=1d
+[245000] S1 MEMORY WRITE beat=5 addr=138d50b0 data=db9fe8b69ff38b18 id=1d
+[255000] S1 MEMORY WRITE beat=6 addr=138d50b0 data=e0e5a331361fba9c id=1d
+[265000] S1 MEMORY WRITE beat=7 addr=138d50b0 data=f66934b505626e9b id=1d
+[275000] SLAVE1 sent B resp, id=13
+[275000] [SLAVE MONITOR] mst_id=1 s_id=1 awaddr=138d50b0 awid=1101 awlen=7 awsize=6 awburst=0 wdata=[fc12858d0e6c1747 f6310534b0f6adf7 c436f48b9b566e9d a9c285e4c0f21819 f1e8c610c0497a19 db9fe8b69ff38b18 e0e5a331361fba9c f66934b505626e9b ] wstrb=[42 b3 6b de e5 6 93 27 ] bresp=0 bid=11101
+[285000] ARB MONITOR: slave=1 m0_req=0 m1_req=0 winner=0
+[285000] AXI S1_AWVALID_RDY HANDSHAKE
+[295000] S1 MEMORY WRITE beat=0 addr=1ac0dc58 data=30db3053a9b2872c id=0c
+[295000] MASTER 1 B_VALID_RDY Handshake
+[295000] [MASTER MONITOR] mst_id=1 s_id=1 awaddr=138d50b0 awid=1101 awlen=7 awsize=6 awburst=0 wdata=[fc12858d0e6c1747 f6310534b0f6adf7 c436f48b9b566e9d a9c285e4c0f21819 f1e8c610c0497a19 db9fe8b69ff38b18 e0e5a331361fba9c f66934b505626e9b ] wstrb=[42 b3 6b de e5 6 93 27 ] bresp=0 bid=1101
+[295000] MASTER 1 RECEIVED BRESP. BRESP=0
+[295000] [MASTER DRIVER] mst_id=1 s_id=0 awaddr=138d50b0 awid=1101 awlen=7 awsize=6 awburst=0 wdata=[fc12858d0e6c1747 f6310534b0f6adf7 c436f48b9b566e9d a9c285e4c0f21819 f1e8c610c0497a19 db9fe8b69ff38b18 e0e5a331361fba9c f66934b505626e9b ] wstrb=[42 b3 6b de e5 6 93 27 ] bresp=0 bid=1101
+[295000] SCOREBOARD MATCH: decode_err expected = 0, actual =0
+[295000] SCOREBOARD MATCH: slave_id expected = 1, actual =1
+[295000] SCOREBOARD MATCH: awaddr passthrough expected = 138d50b0, actual =138d50b0
+[295000] SCOREBOARD MATCH: awlen passthrough expected = 7, actual =7
+[295000] SCOREBOARD MATCH: awsize passthrough expected = 6, actual =6
+[295000] SCOREBOARD MATCH: awburst passthrough expected = 0, actual =0
+[295000] SCOREBOARD MATCH: wdata size check expected = 8, actual =8
+[295000] SCOREBOARD MATCH: wdata passthrough beat=0 expected = fc12858d0e6c1747, actual =fc12858d0e6c1747
+[295000] SCOREBOARD MATCH: wdata passthrough beat=1 expected = f6310534b0f6adf7, actual =f6310534b0f6adf7
+[295000] SCOREBOARD MATCH: wdata passthrough beat=2 expected = c436f48b9b566e9d, actual =c436f48b9b566e9d
+[295000] SCOREBOARD MATCH: wdata passthrough beat=3 expected = a9c285e4c0f21819, actual =a9c285e4c0f21819
+[295000] SCOREBOARD MATCH: wdata passthrough beat=4 expected = f1e8c610c0497a19, actual =f1e8c610c0497a19
+[295000] SCOREBOARD MATCH: wdata passthrough beat=5 expected = db9fe8b69ff38b18, actual =db9fe8b69ff38b18
+[295000] SCOREBOARD MATCH: wdata passthrough beat=6 expected = e0e5a331361fba9c, actual =e0e5a331361fba9c
+[295000] SCOREBOARD MATCH: wdata passthrough beat=7 expected = f66934b505626e9b, actual =f66934b505626e9b
+[295000] SCOREBOARD MATCH: wstrb size check expected = 8, actual =8
+[295000] SCOREBOARD MATCH: wstrb passthrough beat=0 expected = 42, actual =42
+[295000] SCOREBOARD MATCH: wstrb passthrough beat=1 expected = b3, actual =b3
+[295000] SCOREBOARD MATCH: wstrb passthrough beat=2 expected = 6b, actual =6b
+[295000] SCOREBOARD MATCH: wstrb passthrough beat=3 expected = de, actual =de
+[295000] SCOREBOARD MATCH: wstrb passthrough beat=4 expected = e5, actual =e5
+[295000] SCOREBOARD MATCH: wstrb passthrough beat=5 expected = 6, actual =6
+[295000] SCOREBOARD MATCH: wstrb passthrough beat=6 expected = 93, actual =93
+[295000] SCOREBOARD MATCH: wstrb passthrough beat=7 expected = 27, actual =27
+[295000] SCOREBOARD MATCH: bresp passthrough expected = 0, actual =0
+[295000] SCOREBOARD MATCH: response routed to correct master (write) expected = 1, actual =1
+[295000] [SCOREBOARD-M] mst_id=1 s_id=1 awaddr=138d50b0 awid=1101 awlen=7 awsize=6 awburst=0 wdata=[fc12858d0e6c1747 f6310534b0f6adf7 c436f48b9b566e9d a9c285e4c0f21819 f1e8c610c0497a19 db9fe8b69ff38b18 e0e5a331361fba9c f66934b505626e9b ] wstrb=[42 b3 6b de e5 6 93 27 ] bresp=0 bid=1101
+[295000] [SCOREBOARD-S] mst_id=1 s_id=1 awaddr=138d50b0 awid=1101 awlen=7 awsize=6 awburst=0 wdata=[fc12858d0e6c1747 f6310534b0f6adf7 c436f48b9b566e9d a9c285e4c0f21819 f1e8c610c0497a19 db9fe8b69ff38b18 e0e5a331361fba9c f66934b505626e9b ] wstrb=[42 b3 6b de e5 6 93 27 ] bresp=0 bid=11101
+[295000] SCOREBOARD: Transaction 4 received. pass=79 fail=0
+[295000] ALL PASS. Total transactions: 4
+[305000] S1 MEMORY WRITE beat=1 addr=1ac0dc58 data=b376b542ddb1f620 id=0c
+[315000] S1 MEMORY WRITE beat=2 addr=1ac0dc58 data=37eb3b321c21a4f5 id=0c
+[325000] S1 MEMORY WRITE beat=3 addr=1ac0dc58 data=c5d42c2134423201 id=0c
+[335000] S1 MEMORY WRITE beat=4 addr=1ac0dc58 data=91f42821e8c66b85 id=0c
+[345000] S1 MEMORY WRITE beat=5 addr=1ac0dc58 data=04e8107af94ae164 id=0c
+[355000] S1 MEMORY WRITE beat=6 addr=1ac0dc58 data=2d8d1365c9df6353 id=0c
+[365000] SLAVE1 sent B resp, id=12
+[375000] [SLAVE MONITOR] mst_id=0 s_id=1 awaddr=1ac0dc58 awid=1100 awlen=6 awsize=3 awburst=0 wdata=[30db3053a9b2872c b376b542ddb1f620 37eb3b321c21a4f5 c5d42c2134423201 91f42821e8c66b85 4e8107af94ae164 2d8d1365c9df6353 ] wstrb=[9b d8 86 ff 52 da 64 ] bresp=0 bid=1100
+[385000] MASTER 0 RECEIVED BRESP. BRESP=0
+[385000] [MASTER DRIVER] mst_id=0 s_id=0 awaddr=1ac0dc58 awid=1100 awlen=6 awsize=3 awburst=0 wdata=[30db3053a9b2872c b376b542ddb1f620 37eb3b321c21a4f5 c5d42c2134423201 91f42821e8c66b85 4e8107af94ae164 2d8d1365c9df6353 ] wstrb=[9b d8 86 ff 52 da 64 ] bresp=0 bid=1100
+[385000] MASTER 0 B_VALID_RDY Handshake
+[385000] [MASTER MONITOR] mst_id=0 s_id=1 awaddr=1ac0dc58 awid=1100 awlen=6 awsize=3 awburst=0 wdata=[30db3053a9b2872c b376b542ddb1f620 37eb3b321c21a4f5 c5d42c2134423201 91f42821e8c66b85 4e8107af94ae164 2d8d1365c9df6353 ] wstrb=[9b d8 86 ff 52 da 64 ] bresp=0 bid=1100
+[385000] SCOREBOARD MATCH: decode_err expected = 0, actual =0
+[385000] SCOREBOARD MATCH: slave_id expected = 1, actual =1
+[385000] SCOREBOARD MATCH: awaddr passthrough expected = 1ac0dc58, actual =1ac0dc58
+[385000] SCOREBOARD MATCH: awlen passthrough expected = 6, actual =6
+[385000] SCOREBOARD MATCH: awsize passthrough expected = 3, actual =3
+[385000] SCOREBOARD MATCH: awburst passthrough expected = 0, actual =0
+[385000] SCOREBOARD MATCH: wdata size check expected = 7, actual =7
+[385000] SCOREBOARD MATCH: wdata passthrough beat=0 expected = 30db3053a9b2872c, actual =30db3053a9b2872c
+[385000] SCOREBOARD MATCH: wdata passthrough beat=1 expected = b376b542ddb1f620, actual =b376b542ddb1f620
+[385000] SCOREBOARD MATCH: wdata passthrough beat=2 expected = 37eb3b321c21a4f5, actual =37eb3b321c21a4f5
+[385000] SCOREBOARD MATCH: wdata passthrough beat=3 expected = c5d42c2134423201, actual =c5d42c2134423201
+[385000] SCOREBOARD MATCH: wdata passthrough beat=4 expected = 91f42821e8c66b85, actual =91f42821e8c66b85
+[385000] SCOREBOARD MATCH: wdata passthrough beat=5 expected = 4e8107af94ae164, actual =4e8107af94ae164
+[385000] SCOREBOARD MATCH: wdata passthrough beat=6 expected = 2d8d1365c9df6353, actual =2d8d1365c9df6353
+[385000] SCOREBOARD MATCH: wstrb size check expected = 7, actual =7
+[385000] SCOREBOARD MATCH: wstrb passthrough beat=0 expected = 9b, actual =9b
+[385000] SCOREBOARD MATCH: wstrb passthrough beat=1 expected = d8, actual =d8
+[385000] SCOREBOARD MATCH: wstrb passthrough beat=2 expected = 86, actual =86
+[385000] SCOREBOARD MATCH: wstrb passthrough beat=3 expected = ff, actual =ff
+[385000] SCOREBOARD MATCH: wstrb passthrough beat=4 expected = 52, actual =52
+[385000] SCOREBOARD MATCH: wstrb passthrough beat=5 expected = da, actual =da
+[385000] SCOREBOARD MATCH: wstrb passthrough beat=6 expected = 64, actual =64
+[385000] SCOREBOARD MATCH: bresp passthrough expected = 0, actual =0
+[385000] SCOREBOARD MATCH: response routed to correct master (write) expected = 0, actual =0
+[385000] [SCOREBOARD-M] mst_id=0 s_id=1 awaddr=1ac0dc58 awid=1100 awlen=6 awsize=3 awburst=0 wdata=[30db3053a9b2872c b376b542ddb1f620 37eb3b321c21a4f5 c5d42c2134423201 91f42821e8c66b85 4e8107af94ae164 2d8d1365c9df6353 ] wstrb=[9b d8 86 ff 52 da 64 ] bresp=0 bid=1100
+[385000] [SCOREBOARD-S] mst_id=0 s_id=1 awaddr=1ac0dc58 awid=1100 awlen=6 awsize=3 awburst=0 wdata=[30db3053a9b2872c b376b542ddb1f620 37eb3b321c21a4f5 c5d42c2134423201 91f42821e8c66b85 4e8107af94ae164 2d8d1365c9df6353 ] wstrb=[9b d8 86 ff 52 da 64 ] bresp=0 bid=1100
+[385000] SCOREBOARD: Transaction 5 received. pass=103 fail=0
+[385000] SCOREBOARD: Expected 5 transactions completed, PASS=103 FAIL=0
+[385000] ALL PASS. Total transactions: 5
+[385000] ALL TRANSACTIONS MONITORED
+$finish called at time : 405 ns : File "/home/nashita/Desktop/practice/axi_xbar/tb/top/axi_tb_top.sv" Line 220
 exit
-INFO: xsimkernel Simulation Memory Usage: 289420 KB (Peak: 337824 KB), Simulation CPU Usage: 1200 ms
-INFO: [Common 17-206] Exiting xsim at Tue Sep  8 16:08:04 2026...
+INFO: xsimkernel Simulation Memory Usage: 289464 KB (Peak: 337864 KB), Simulation CPU Usage: 1180 ms
+INFO: [Common 17-206] Exiting xsim at Fri Sep 11 12:07:19 2026...

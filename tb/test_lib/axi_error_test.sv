@@ -75,8 +75,7 @@ class error_test extends base_test;
             .m_awburst  (2'b01),             // INCR
 
             .m_wdata    ({
-                64'h1122_3344_AABB_CCDD
-            }),
+	    64'hDEAD_BEEF_1234_5678}),
 
             .m_wstrb    ({
                 8'hFF

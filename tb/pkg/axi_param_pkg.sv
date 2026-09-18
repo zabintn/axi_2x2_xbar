@@ -23,37 +23,4 @@ package axi_param_pkg;
 	    bit m1_requesting;
 	    bit observed_winner;
 	    } arb_event_s;
- 
-    function automatic bit [31:0] calc_beat_addr(
-      bit [31:0] prev_addr,
-      bit [1:0]  burst,
-      bit [2:0]  size,
-      bit [7:0]  len
-  );
-      int number_bytes;
-      int wrap_size;
-      bit [31:0] wrap_lo, wrap_hi, next_addr;
-
-      number_bytes = 1 << size;
-
-      case (burst)
-          2'b00: calc_beat_addr = prev_addr;
-          2'b01: calc_beat_addr = prev_addr + number_bytes;
-          2'b10: begin
-              wrap_size = number_bytes * (len + 1);
-              wrap_lo   = (prev_addr / wrap_size) * wrap_size;
-              wrap_hi   = wrap_lo + wrap_size;
-              next_addr = prev_addr + number_bytes;
-              calc_beat_addr = (next_addr >= wrap_hi) ? wrap_lo : next_addr;
-          end
-          default: calc_beat_addr = prev_addr;
-      endcase
-  endfunction
-  function automatic bit [31:0] calc_last_incr_addr(
-    bit [31:0] awaddr,
-    bit [2:0]  awsize,
-    bit [7:0]  awlen
-);
-    calc_last_incr_addr = awaddr + (awlen * (1 << awsize));
-endfunction
 endpackage

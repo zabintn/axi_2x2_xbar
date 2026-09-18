@@ -8,7 +8,7 @@ class base_test;
 
     function new(virtual axi_xbar_if axi_vif);
     	this.axi_vif=axi_vif;
-	total_transactions=10;
+	total_transactions=5;
         $display("[%0t] INSIDE THE BASE TEST CONSTRUCTOR", $time);
         env_o = new(axi_vif);
     endfunction

@@ -1,0 +1,950 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Fri Sep 11 11:52:18 2026
+# Process ID         : 726904
+# Current directory  : /home/nashita/Desktop/practice/axi_xbar/sim
+# Command line       : xsim -log regress_results/BT_run183.log -mode tcl -source {xsim.dir/tb_top_snap/xsim_script.tcl}
+# Log file           : /home/nashita/Desktop/practice/axi_xbar/sim/regress_results/BT_run183.log
+# Journal file       : /home/nashita/Desktop/practice/axi_xbar/sim/xsim.jou
+# Running On         : vlsi-vivado
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+# CPU Frequency      : 3999.987 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 41875 MB
+# Swap memory        : 27648 MB
+# Total Virtual      : 69524 MB
+# Available Virtual  : 62784 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_top_snap/xsim_script.tcl
+# xsim {tb_top_snap} -testplusarg BT -autoloadwcfg -runall -sv_seed 184
+Time resolution is 1 ps
+run -all
+[0] RUNNING BASE TEST
+[0] INSIDE THE BASE TEST CONSTRUCTOR
+[0] ENV: before agent
+[0] SLAVE CONSTRUCTED
+[0] MASTER MONITOR CONSTRUCTED
+[0] MASTER MONITOR CONSTRUCTED
+[0] SLAVE MONITOR CONSTRUCTED
+[0] SLAVE MONITOR CONSTRUCTED
+[0] ARB MONITOR CONSTRUCTED
+GENERATOR CONSTRUCTED
+[0] ENV: after agent
+[0] ENV: before scoreboard
+[0] ENV: after scoreboard
+[15000] [SEQUENCER] mst_id=0 s_id=0 awaddr=11318030 awid=111 awlen=11 awsize=4 awburst=2 wdata=[a6c7ddf01cf6990a c2b030ea19c1b68d d06bc4b13dc11893 dab7b19de95ac01d 831c76aaf733a2a2 34f4bb351d67e287 86c2a2a4d3883b5c cabbddfe0fac6cd2 2d144f5909df194f dd6754abffb09933 f5d0605b3d6f1fd bdb60b4c282332a9 ] wstrb=[5e dc f7 5b e1 a0 a8 3f 7c 9f 9a 5d ] bresp=0 bid=0
+[15000] [SEQUENCER] mst_id=0 s_id=0 awaddr=4f2b120 awid=1011 awlen=2 awsize=7 awburst=0 wdata=[ceaea360a3cb17c4 f3cee1aaba60857a b3ee2ea03ad5814d ] wstrb=[7f 11 0 ] bresp=0 bid=0
+[15000] [SEQUENCER] mst_id=0 s_id=0 awaddr=1edf2f60 awid=1100 awlen=4 awsize=0 awburst=0 wdata=[b56d02e0dba884f8 f7846ae520af141a c7fe508e4f2600f c09ae507bc767ce1 dd2590fbc1ece7e8 ] wstrb=[ec f7 3 ce ff ] bresp=0 bid=0
+[15000] [SEQUENCER] READ mst_id=1 s_id=0 araddr=9120f58 arid=0 arlen=1 arsize=3 arburst=1 rid=[] rresp=[] rdata=[]
+[15000] [SEQUENCER] mst_id=1 s_id=0 awaddr=656a610 awid=101 awlen=137 awsize=6 awburst=1 wdata=[83fbd398efdd17ed a71b1592d24cf4ab 18e307ba2b8f8022 9b6c980faf9ccbf0 81e9c09b9cdedb52 c86e5b74c287ada2 f22479929accc855 37aba3a8e3daf384 2662a126f40e3a2e 8edb02838019ff1c e3f4f2a098871ab8 8c9554e6c686a62b c6a0a5488a5793c6 22deae7f1b70576a e1f6fd95aa9597e8 34ed2bafaf740365 cae45acfa897a2dd d32d3ac6d7cbda2e 873fdd932cdb5865 d572fb42081a6675 dfe640a3d2243863 feff90c8a8a03608 b0ba9c7de7261e36 b94a5699d4728c0a fd12c21390a0dd20 f7c6fb57b849e761 cbc736cadcd5e90 3e6e3bb1b11151f0 e95b395209cf357f b79c940f36353708 e74688f8f617acbe ffe6e23df60acfc0 ac4006c8d0a1c24a c6b96f08b783764c 2d8e460d13868fc1 e428520bc6a05145 fe23c792d9ce4cd5 ed54dc962ae1c114 f18212592bb20d9f 85805a74d17d2ea2 fc5eefb6efa5d9eb 9b57e78af2d5370b c45265adede1020f dd86dbfb20d841ff 13ad790ac0b15563 ae925772f8dec385 99b70584d7ffdeb7 18b1341a8c19336d 4f7f6f3ad647e8e 85645d45c7438b8c d35cbefa9eaefc77 cc137b069e15915f e5591cecd854b5ed f703b264d177d84b ef8d69ab38b5dbe6 110a91d3c3172d6a 148f05b6d4e68697 d9c627d880e4437 cb2571a2041c6f61 d902f5f81ea6f450 a6b53887dfb47758 e3d0e6b9e69f5875 5464cc5f1daaa29 d18f21813cd3dcb1 23733526abfb854c 1dd62f76b560083a f233e4eb28b981eb d4b50737ef6550f7 24c5593295a71a11 be609bfcf28b36ad e1f087a596f93e1d 2ca0582f1315a334 85a0d9e106b5e0d7 9daf1ef4eb00f42b fe16975fe7916186 ee47425dca4f7723 35506b4f03b77141 eb48d2c70bf66152 d645d875b36702ae b71e73efd9901525 e58676778b9643c4 3efd4673226746b7 fbf75bdcbbcc4eec c76292b1f61bba62 98830119e17dd253 9d4a213f065fd924 fc7b9386947a5cf5 f5f82f48e4acb3f0 eb0c8d1414fe94a0 a978f19513425088 f7ef0478e788209b fc86b53b1f7120de 32b37166e2fb918d ca83b228a5ffa6d0 c570c7aeaaa275de 8d9e076bc70a6763 ed0a0e33f8243914 22c6aef3d821b993 9f2c20f6327ad5e2 aa9f0ef6b064b65e 8866ff20c362f2a 3eb1050ccd65bde9 fdca7448a7b290e8 b3e8c012e9501402 36b5d1ec0650e43a ae037522f299c51e dbe9d92134804634 3ad12a6ee1ec3535 d485fa53129fab0d c71ff141e8d49f90 cac0d4c5b06fd374 c30f7e8101f11baf eac5bb3f1f46cf19 cfb6a28d8a2f6fc2 8c208b7135869005 d4cd5f1e12c6210f 9cf590d1f6e646b1 2c6cd6b6a48401ab b74a22ba29161c43 1ffc62f4013a35d4 a5be377fd43fb38c fd55cfcfcc6939aa cda36f7edd085a3a 31480dc61d5232c3 e9bb6c6df361a6fd d06a01372e9ddd95 cbf01058375edbeb aac082e881b20efd b04fec9235ab7cc5 ed0a58b0fb2a8420 fcdc931dfc3ffcea b1eb79af97cadb98 92f55fb82d2c7fb0 a96c7c9a9ef5d25f 36c0adf80fd1f2d6 3cfe7286db57f64a fa4dc8a9c9b60db0 d9880086e66aef20 ] wstrb=[a1 6a c 52 14 2d d8 b5 97 e5 7 ab 12 e0 61 a9 c5 68 55 d7 48 b6 80 d 1e d5 e4 67 8b 65 74 aa 3a 59 11 c6 be 85 70 f8 de 81 be 9c 6 2e 95 e5 af 53 81 b6 82 16 9b 31 6a 1c e7 ec 33 82 1d 9d 9f 5 89 d2 87 a6 6f 26 ab f8 f8 33 9e 67 59 4a 5f 52 7d fe b9 d6 48 19 28 c5 17 e2 9b 5f fb c4 24 12 a6 bf 71 a1 83 95 b3 29 54 24 ca d8 b9 7d 1 d a1 cc e5 5a 49 e7 68 eb b3 4d 45 fc 34 ad e7 e7 fb 2d e4 2f da cb 17 d5 ] bresp=0 bid=0
+[15000] MASTER_DRIVER0 received transaction, op=AXI_WRITE
+[15000] MASTER_DRIVER1 received transaction, op=AXI_READ
+[35000] MASTER 0 AW_VALID_RDY Handshake
+[35000] MASTER_DRIVER1 received transaction, op=AXI_WRITE
+[45000] ARB MONITOR: slave=0 m0_req=0 m1_req=1 winner=1
+[45000] ARB MONITOR: slave=1 m0_req=1 m1_req=0 winner=0
+[45000] AXI S0_ARVALID_RDY HANDSHAKE
+[45000] MEMORY READ MISS beat=0 addr=9120f58 -> default data id=16
+[45000] AXI S1_AWVALID_RDY HANDSHAKE
+[55000] MEMORY READ MISS beat=1 addr=9120f60 -> default data id=16
+[55000] SLAVE 0 R_VALID_RDY Handshake beat=0 rlast=0
+[55000] MASTER 1 AW_VALID_RDY Handshake
+[55000] MASTER 0 W_VALID_RDY Handshake beat=0 wlast=0
+[65000] MASTER 0 W_VALID_RDY Handshake beat=1 wlast=0
+[65000] ARB MONITOR: slave=0 m0_req=0 m1_req=1 winner=1
+[65000] SLAVE 0 R_VALID_RDY Handshake beat=1 rlast=1
+[65000] [SLAVE MONITOR] READ mst_id=1 s_id=0 araddr=9120f58 arid=0 arlen=1 arsize=3 arburst=1 rid=[1010] rresp=[00] rdata=[baadf00d12345678baadf00d12345678]
+[65000] S1 MEMORY WRITE beat=0 addr=11318030 data=a6c7ddf01cf6990a id=07
+[65000] AXI S0_AWVALID_RDY HANDSHAKE
+[75000] S1 MEMORY WRITE beat=1 addr=11317f80 data=c2b030ea19c1b68d id=07
+[75000] MASTER 1 R_VALID_RDY Handshake beat=0 rlast=0
+[75000] MASTER 1 W_VALID_RDY Handshake beat=0 wlast=0
+[75000] MASTER 0 W_VALID_RDY Handshake beat=2 wlast=0
+[85000] [MASTER DRIVER] READ mst_id=1 s_id=0 araddr=9120f58 arid=0 arlen=1 arsize=3 arburst=1 rid=[00] rresp=[00] rdata=[baadf00d12345678baadf00d12345678]
+[85000] MASTER 0 W_VALID_RDY Handshake beat=3 wlast=0
+[85000] MASTER 1 W_VALID_RDY Handshake beat=1 wlast=0
+[85000] MASTER 1 R_VALID_RDY Handshake beat=1 rlast=1
+[85000] [MASTER MONITOR] READ mst_id=1 s_id=0 araddr=9120f58 arid=0 arlen=1 arsize=3 arburst=1 rid=[00] rresp=[00] rdata=[baadf00d12345678baadf00d12345678]
+[85000] S1 MEMORY WRITE beat=2 addr=11317f90 data=d06bc4b13dc11893 id=07
+[85000] AXI S0_WVALID_RDY HANDSHAKE
+[85000] S0 MEMORY WRITE beat=0 addr=0656a610 data=83fbd398efdd17ed id=15
+[85000] SCOREBOARD MATCH: decode_err expected = 0, actual =0
+[85000] SCOREBOARD MATCH: slave_id expected = 0, actual =0
+[85000] SCOREBOARD MATCH: araddr passthrough expected = 9120f58, actual =9120f58
+[85000] SCOREBOARD MATCH: arlen passthrough expected = 1, actual =1
+[85000] SCOREBOARD MATCH: arsize passthrough expected = 3, actual =3
+[85000] SCOREBOARD MATCH: arburst passthrough expected = 1, actual =1
+[85000] SCOREBOARD MATCH: rdata size check expected = 2, actual =2
+[85000] SCOREBOARD MATCH: rdata passthrough beat=0 expected = baadf00d12345678, actual =baadf00d12345678
+[85000] SCOREBOARD MATCH: rdata passthrough beat=1 expected = baadf00d12345678, actual =baadf00d12345678
+[85000] SCOREBOARD MATCH: rresp size check expected = 2, actual =2
+[85000] SCOREBOARD MATCH: rresp passthrough beat=0 expected = 0, actual =0
+[85000] SCOREBOARD MATCH: rresp passthrough beat=1 expected = 0, actual =0
+[85000] SCOREBOARD MATCH: response routed to correct master (read beat 0) expected = 1, actual =1
+[85000] SCOREBOARD MATCH: response routed to correct master (read beat 1) expected = 1, actual =1
+[85000] [SCOREBOARD-M] READ mst_id=1 s_id=0 araddr=9120f58 arid=0 arlen=1 arsize=3 arburst=1 rid=[00] rresp=[00] rdata=[baadf00d12345678baadf00d12345678]
+[85000] [SCOREBOARD-S] READ mst_id=1 s_id=0 araddr=9120f58 arid=0 arlen=1 arsize=3 arburst=1 rid=[1010] rresp=[00] rdata=[baadf00d12345678baadf00d12345678]
+[85000] SCOREBOARD: Transaction 1 received. pass=14 fail=0
+[85000] ALL PASS. Total transactions: 1
+[95000] AXI S0_WVALID_RDY HANDSHAKE
+[95000] S0 MEMORY WRITE beat=1 addr=0656a650 data=a71b1592d24cf4ab id=15
+[95000] S1 MEMORY WRITE beat=3 addr=11317fa0 data=dab7b19de95ac01d id=07
+[95000] MASTER 1 W_VALID_RDY Handshake beat=2 wlast=0
+[95000] MASTER 0 W_VALID_RDY Handshake beat=4 wlast=0
+[105000] MASTER 0 W_VALID_RDY Handshake beat=5 wlast=0
+[105000] MASTER 1 W_VALID_RDY Handshake beat=3 wlast=0
+[105000] S1 MEMORY WRITE beat=4 addr=11317fb0 data=831c76aaf733a2a2 id=07
+[105000] AXI S0_WVALID_RDY HANDSHAKE
+[105000] S0 MEMORY WRITE beat=2 addr=0656a690 data=18e307ba2b8f8022 id=15
+[115000] AXI S0_WVALID_RDY HANDSHAKE
+[115000] S0 MEMORY WRITE beat=3 addr=0656a6d0 data=9b6c980faf9ccbf0 id=15
+[115000] S1 MEMORY WRITE beat=5 addr=11317fc0 data=34f4bb351d67e287 id=07
+[115000] MASTER 1 W_VALID_RDY Handshake beat=4 wlast=0
+[115000] MASTER 0 W_VALID_RDY Handshake beat=6 wlast=0
+[125000] MASTER 0 W_VALID_RDY Handshake beat=7 wlast=0
+[125000] MASTER 1 W_VALID_RDY Handshake beat=5 wlast=0
+[125000] S1 MEMORY WRITE beat=6 addr=11317fd0 data=86c2a2a4d3883b5c id=07
+[125000] AXI S0_WVALID_RDY HANDSHAKE
+[125000] S0 MEMORY WRITE beat=4 addr=0656a710 data=81e9c09b9cdedb52 id=15
+[135000] AXI S0_WVALID_RDY HANDSHAKE
+[135000] S0 MEMORY WRITE beat=5 addr=0656a750 data=c86e5b74c287ada2 id=15
+[135000] S1 MEMORY WRITE beat=7 addr=11317fe0 data=cabbddfe0fac6cd2 id=07
+[135000] MASTER 1 W_VALID_RDY Handshake beat=6 wlast=0
+[135000] MASTER 0 W_VALID_RDY Handshake beat=8 wlast=0
+[145000] MASTER 0 W_VALID_RDY Handshake beat=9 wlast=0
+[145000] MASTER 1 W_VALID_RDY Handshake beat=7 wlast=0
+[145000] S1 MEMORY WRITE beat=8 addr=11317ff0 data=2d144f5909df194f id=07
+[145000] AXI S0_WVALID_RDY HANDSHAKE
+[145000] S0 MEMORY WRITE beat=6 addr=0656a790 data=f22479929accc855 id=15
+[155000] AXI S0_WVALID_RDY HANDSHAKE
+[155000] S0 MEMORY WRITE beat=7 addr=0656a7d0 data=37aba3a8e3daf384 id=15
+[155000] S1 MEMORY WRITE beat=9 addr=11318000 data=dd6754abffb09933 id=07
+[155000] MASTER 1 W_VALID_RDY Handshake beat=8 wlast=0
+[155000] MASTER 0 W_VALID_RDY Handshake beat=10 wlast=0
+[165000] MASTER_DRIVER0 received transaction, op=AXI_WRITE
+[165000] MASTER 0 W_VALID_RDY Handshake beat=11 wlast=1
+[165000] MASTER 1 W_VALID_RDY Handshake beat=9 wlast=0
+[165000] S1 MEMORY WRITE beat=10 addr=11318010 data=0f5d0605b3d6f1fd id=07
+[165000] AXI S0_WVALID_RDY HANDSHAKE
+[165000] S0 MEMORY WRITE beat=8 addr=0656a810 data=2662a126f40e3a2e id=15
+[175000] AXI S0_WVALID_RDY HANDSHAKE
+[175000] S0 MEMORY WRITE beat=9 addr=0656a850 data=8edb02838019ff1c id=15
+[175000] S1 MEMORY WRITE beat=11 addr=11318020 data=bdb60b4c282332a9 id=07
+[175000] MASTER 1 W_VALID_RDY Handshake beat=10 wlast=0
+[185000] MASTER 0 AW_VALID_RDY Handshake
+[185000] MASTER 1 W_VALID_RDY Handshake beat=11 wlast=0
+[185000] SLAVE1 sent B resp, id=7
+[185000] AXI S0_WVALID_RDY HANDSHAKE
+[185000] S0 MEMORY WRITE beat=10 addr=0656a890 data=e3f4f2a098871ab8 id=15
+[195000] AXI S0_WVALID_RDY HANDSHAKE
+[195000] S0 MEMORY WRITE beat=11 addr=0656a8d0 data=8c9554e6c686a62b id=15
+[195000] [SLAVE MONITOR] mst_id=0 s_id=1 awaddr=11318030 awid=111 awlen=11 awsize=4 awburst=2 wdata=[a6c7ddf01cf6990a c2b030ea19c1b68d d06bc4b13dc11893 dab7b19de95ac01d 831c76aaf733a2a2 34f4bb351d67e287 86c2a2a4d3883b5c cabbddfe0fac6cd2 2d144f5909df194f dd6754abffb09933 f5d0605b3d6f1fd bdb60b4c282332a9 ] wstrb=[5e dc f7 5b e1 a0 a8 3f 7c 9f 9a 5d ] bresp=0 bid=111
+[195000] MASTER 1 W_VALID_RDY Handshake beat=12 wlast=0
+[205000] MASTER 0 RECEIVED BRESP. BRESP=0
+[205000] [MASTER DRIVER] mst_id=0 s_id=0 awaddr=11318030 awid=111 awlen=11 awsize=4 awburst=2 wdata=[a6c7ddf01cf6990a c2b030ea19c1b68d d06bc4b13dc11893 dab7b19de95ac01d 831c76aaf733a2a2 34f4bb351d67e287 86c2a2a4d3883b5c cabbddfe0fac6cd2 2d144f5909df194f dd6754abffb09933 f5d0605b3d6f1fd bdb60b4c282332a9 ] wstrb=[5e dc f7 5b e1 a0 a8 3f 7c 9f 9a 5d ] bresp=0 bid=111
+[205000] MASTER 0 W_VALID_RDY Handshake beat=0 wlast=0
+[205000] MASTER 0 B_VALID_RDY Handshake
+[205000] [MASTER MONITOR] mst_id=0 s_id=1 awaddr=11318030 awid=111 awlen=11 awsize=4 awburst=2 wdata=[a6c7ddf01cf6990a c2b030ea19c1b68d d06bc4b13dc11893 dab7b19de95ac01d 831c76aaf733a2a2 34f4bb351d67e287 86c2a2a4d3883b5c cabbddfe0fac6cd2 2d144f5909df194f dd6754abffb09933 f5d0605b3d6f1fd bdb60b4c282332a9 ] wstrb=[5e dc f7 5b e1 a0 a8 3f 7c 9f 9a 5d ] bresp=0 bid=111
+[205000] MASTER 1 W_VALID_RDY Handshake beat=13 wlast=0
+[205000] AXI S0_WVALID_RDY HANDSHAKE
+[205000] S0 MEMORY WRITE beat=12 addr=0656a910 data=c6a0a5488a5793c6 id=15
+[205000] SCOREBOARD MATCH: decode_err expected = 0, actual =0
+[205000] SCOREBOARD MATCH: slave_id expected = 1, actual =1
+[205000] SCOREBOARD MATCH: awaddr passthrough expected = 11318030, actual =11318030
+[205000] SCOREBOARD MATCH: awlen passthrough expected = 11, actual =11
+[205000] SCOREBOARD MATCH: awsize passthrough expected = 4, actual =4
+[205000] SCOREBOARD MATCH: awburst passthrough expected = 2, actual =2
+[205000] SCOREBOARD MATCH: wdata size check expected = c, actual =c
+[205000] SCOREBOARD MATCH: wdata passthrough beat=0 expected = a6c7ddf01cf6990a, actual =a6c7ddf01cf6990a
+[205000] SCOREBOARD MATCH: wdata passthrough beat=1 expected = c2b030ea19c1b68d, actual =c2b030ea19c1b68d
+[205000] SCOREBOARD MATCH: wdata passthrough beat=2 expected = d06bc4b13dc11893, actual =d06bc4b13dc11893
+[205000] SCOREBOARD MATCH: wdata passthrough beat=3 expected = dab7b19de95ac01d, actual =dab7b19de95ac01d
+[205000] SCOREBOARD MATCH: wdata passthrough beat=4 expected = 831c76aaf733a2a2, actual =831c76aaf733a2a2
+[205000] SCOREBOARD MATCH: wdata passthrough beat=5 expected = 34f4bb351d67e287, actual =34f4bb351d67e287
+[205000] SCOREBOARD MATCH: wdata passthrough beat=6 expected = 86c2a2a4d3883b5c, actual =86c2a2a4d3883b5c
+[205000] SCOREBOARD MATCH: wdata passthrough beat=7 expected = cabbddfe0fac6cd2, actual =cabbddfe0fac6cd2
+[205000] SCOREBOARD MATCH: wdata passthrough beat=8 expected = 2d144f5909df194f, actual =2d144f5909df194f
+[205000] SCOREBOARD MATCH: wdata passthrough beat=9 expected = dd6754abffb09933, actual =dd6754abffb09933
+[205000] SCOREBOARD MATCH: wdata passthrough beat=10 expected = f5d0605b3d6f1fd, actual =f5d0605b3d6f1fd
+[205000] SCOREBOARD MATCH: wdata passthrough beat=11 expected = bdb60b4c282332a9, actual =bdb60b4c282332a9
+[205000] SCOREBOARD MATCH: wstrb size check expected = c, actual =c
+[205000] SCOREBOARD MATCH: wstrb passthrough beat=0 expected = 5e, actual =5e
+[205000] SCOREBOARD MATCH: wstrb passthrough beat=1 expected = dc, actual =dc
+[205000] SCOREBOARD MATCH: wstrb passthrough beat=2 expected = f7, actual =f7
+[205000] SCOREBOARD MATCH: wstrb passthrough beat=3 expected = 5b, actual =5b
+[205000] SCOREBOARD MATCH: wstrb passthrough beat=4 expected = e1, actual =e1
+[205000] SCOREBOARD MATCH: wstrb passthrough beat=5 expected = a0, actual =a0
+[205000] SCOREBOARD MATCH: wstrb passthrough beat=6 expected = a8, actual =a8
+[205000] SCOREBOARD MATCH: wstrb passthrough beat=7 expected = 3f, actual =3f
+[205000] SCOREBOARD MATCH: wstrb passthrough beat=8 expected = 7c, actual =7c
+[205000] SCOREBOARD MATCH: wstrb passthrough beat=9 expected = 9f, actual =9f
+[205000] SCOREBOARD MATCH: wstrb passthrough beat=10 expected = 9a, actual =9a
+[205000] SCOREBOARD MATCH: wstrb passthrough beat=11 expected = 5d, actual =5d
+[205000] SCOREBOARD MATCH: bresp passthrough expected = 0, actual =0
+[205000] SCOREBOARD MATCH: response routed to correct master (write) expected = 0, actual =0
+[205000] [SCOREBOARD-M] mst_id=0 s_id=1 awaddr=11318030 awid=111 awlen=11 awsize=4 awburst=2 wdata=[a6c7ddf01cf6990a c2b030ea19c1b68d d06bc4b13dc11893 dab7b19de95ac01d 831c76aaf733a2a2 34f4bb351d67e287 86c2a2a4d3883b5c cabbddfe0fac6cd2 2d144f5909df194f dd6754abffb09933 f5d0605b3d6f1fd bdb60b4c282332a9 ] wstrb=[5e dc f7 5b e1 a0 a8 3f 7c 9f 9a 5d ] bresp=0 bid=111
+[205000] [SCOREBOARD-S] mst_id=0 s_id=1 awaddr=11318030 awid=111 awlen=11 awsize=4 awburst=2 wdata=[a6c7ddf01cf6990a c2b030ea19c1b68d d06bc4b13dc11893 dab7b19de95ac01d 831c76aaf733a2a2 34f4bb351d67e287 86c2a2a4d3883b5c cabbddfe0fac6cd2 2d144f5909df194f dd6754abffb09933 f5d0605b3d6f1fd bdb60b4c282332a9 ] wstrb=[5e dc f7 5b e1 a0 a8 3f 7c 9f 9a 5d ] bresp=0 bid=111
+[205000] SCOREBOARD: Transaction 2 received. pass=48 fail=0
+[205000] ALL PASS. Total transactions: 2
+[215000] AXI S0_WVALID_RDY HANDSHAKE
+[215000] S0 MEMORY WRITE beat=13 addr=0656a950 data=22deae7f1b70576a id=15
+[215000] MASTER 1 W_VALID_RDY Handshake beat=14 wlast=0
+[215000] MASTER 0 W_VALID_RDY Handshake beat=1 wlast=0
+[225000] MASTER_DRIVER0 received transaction, op=AXI_WRITE
+[225000] MASTER 0 W_VALID_RDY Handshake beat=2 wlast=1
+[225000] MASTER 1 W_VALID_RDY Handshake beat=15 wlast=0
+[225000] AXI S0_WVALID_RDY HANDSHAKE
+[225000] S0 MEMORY WRITE beat=14 addr=0656a990 data=e1f6fd95aa9597e8 id=15
+[235000] AXI S0_WVALID_RDY HANDSHAKE
+[235000] S0 MEMORY WRITE beat=15 addr=0656a9d0 data=34ed2bafaf740365 id=15
+[235000] MASTER 1 W_VALID_RDY Handshake beat=16 wlast=0
+[245000] MASTER 0 AW_VALID_RDY Handshake
+[245000] MASTER 1 W_VALID_RDY Handshake beat=17 wlast=0
+[245000] AXI S0_WVALID_RDY HANDSHAKE
+[245000] S0 MEMORY WRITE beat=16 addr=0656aa10 data=cae45acfa897a2dd id=15
+[255000] AXI S0_WVALID_RDY HANDSHAKE
+[255000] S0 MEMORY WRITE beat=17 addr=0656aa50 data=d32d3ac6d7cbda2e id=15
+[255000] MASTER 1 W_VALID_RDY Handshake beat=18 wlast=0
+[265000] MASTER 0 W_VALID_RDY Handshake beat=0 wlast=0
+[265000] MASTER 1 W_VALID_RDY Handshake beat=19 wlast=0
+[265000] AXI S0_WVALID_RDY HANDSHAKE
+[265000] S0 MEMORY WRITE beat=18 addr=0656aa90 data=873fdd932cdb5865 id=15
+[275000] AXI S0_WVALID_RDY HANDSHAKE
+[275000] S0 MEMORY WRITE beat=19 addr=0656aad0 data=d572fb42081a6675 id=15
+[275000] MASTER 1 W_VALID_RDY Handshake beat=20 wlast=0
+[275000] MASTER 0 W_VALID_RDY Handshake beat=1 wlast=0
+[285000] MASTER 0 W_VALID_RDY Handshake beat=2 wlast=0
+[285000] MASTER 1 W_VALID_RDY Handshake beat=21 wlast=0
+[285000] AXI S0_WVALID_RDY HANDSHAKE
+[285000] S0 MEMORY WRITE beat=20 addr=0656ab10 data=dfe640a3d2243863 id=15
+[295000] AXI S0_WVALID_RDY HANDSHAKE
+[295000] S0 MEMORY WRITE beat=21 addr=0656ab50 data=feff90c8a8a03608 id=15
+[295000] MASTER 1 W_VALID_RDY Handshake beat=22 wlast=0
+[295000] MASTER 0 W_VALID_RDY Handshake beat=3 wlast=0
+[305000] MASTER 0 W_VALID_RDY Handshake beat=4 wlast=1
+[305000] MASTER 1 W_VALID_RDY Handshake beat=23 wlast=0
+[305000] AXI S0_WVALID_RDY HANDSHAKE
+[305000] S0 MEMORY WRITE beat=22 addr=0656ab90 data=b0ba9c7de7261e36 id=15
+[315000] AXI S0_WVALID_RDY HANDSHAKE
+[315000] S0 MEMORY WRITE beat=23 addr=0656abd0 data=b94a5699d4728c0a id=15
+[315000] MASTER 1 W_VALID_RDY Handshake beat=24 wlast=0
+[325000] MASTER 1 W_VALID_RDY Handshake beat=25 wlast=0
+[325000] AXI S0_WVALID_RDY HANDSHAKE
+[325000] S0 MEMORY WRITE beat=24 addr=0656ac10 data=fd12c21390a0dd20 id=15
+[335000] AXI S0_WVALID_RDY HANDSHAKE
+[335000] S0 MEMORY WRITE beat=25 addr=0656ac50 data=f7c6fb57b849e761 id=15
+[335000] MASTER 1 W_VALID_RDY Handshake beat=26 wlast=0
+[345000] MASTER 1 W_VALID_RDY Handshake beat=27 wlast=0
+[345000] AXI S0_WVALID_RDY HANDSHAKE
+[345000] S0 MEMORY WRITE beat=26 addr=0656ac90 data=0cbc736cadcd5e90 id=15
+[355000] AXI S0_WVALID_RDY HANDSHAKE
+[355000] S0 MEMORY WRITE beat=27 addr=0656acd0 data=3e6e3bb1b11151f0 id=15
+[355000] MASTER 1 W_VALID_RDY Handshake beat=28 wlast=0
+[365000] MASTER 1 W_VALID_RDY Handshake beat=29 wlast=0
+[365000] AXI S0_WVALID_RDY HANDSHAKE
+[365000] S0 MEMORY WRITE beat=28 addr=0656ad10 data=e95b395209cf357f id=15
+[375000] AXI S0_WVALID_RDY HANDSHAKE
+[375000] S0 MEMORY WRITE beat=29 addr=0656ad50 data=b79c940f36353708 id=15
+[375000] MASTER 1 W_VALID_RDY Handshake beat=30 wlast=0
+[385000] MASTER 1 W_VALID_RDY Handshake beat=31 wlast=0
+[385000] AXI S0_WVALID_RDY HANDSHAKE
+[385000] S0 MEMORY WRITE beat=30 addr=0656ad90 data=e74688f8f617acbe id=15
+[395000] AXI S0_WVALID_RDY HANDSHAKE
+[395000] S0 MEMORY WRITE beat=31 addr=0656add0 data=ffe6e23df60acfc0 id=15
+[395000] MASTER 1 W_VALID_RDY Handshake beat=32 wlast=0
+[405000] MASTER 1 W_VALID_RDY Handshake beat=33 wlast=0
+[405000] AXI S0_WVALID_RDY HANDSHAKE
+[405000] S0 MEMORY WRITE beat=32 addr=0656ae10 data=ac4006c8d0a1c24a id=15
+[415000] AXI S0_WVALID_RDY HANDSHAKE
+[415000] S0 MEMORY WRITE beat=33 addr=0656ae50 data=c6b96f08b783764c id=15
+[415000] MASTER 1 W_VALID_RDY Handshake beat=34 wlast=0
+[425000] MASTER 1 W_VALID_RDY Handshake beat=35 wlast=0
+[425000] AXI S0_WVALID_RDY HANDSHAKE
+[425000] S0 MEMORY WRITE beat=34 addr=0656ae90 data=2d8e460d13868fc1 id=15
+[435000] AXI S0_WVALID_RDY HANDSHAKE
+[435000] S0 MEMORY WRITE beat=35 addr=0656aed0 data=e428520bc6a05145 id=15
+[435000] MASTER 1 W_VALID_RDY Handshake beat=36 wlast=0
+[445000] MASTER 1 W_VALID_RDY Handshake beat=37 wlast=0
+[445000] AXI S0_WVALID_RDY HANDSHAKE
+[445000] S0 MEMORY WRITE beat=36 addr=0656af10 data=fe23c792d9ce4cd5 id=15
+[455000] AXI S0_WVALID_RDY HANDSHAKE
+[455000] S0 MEMORY WRITE beat=37 addr=0656af50 data=ed54dc962ae1c114 id=15
+[455000] MASTER 1 W_VALID_RDY Handshake beat=38 wlast=0
+[465000] MASTER 1 W_VALID_RDY Handshake beat=39 wlast=0
+[465000] AXI S0_WVALID_RDY HANDSHAKE
+[465000] S0 MEMORY WRITE beat=38 addr=0656af90 data=f18212592bb20d9f id=15
+[475000] AXI S0_WVALID_RDY HANDSHAKE
+[475000] S0 MEMORY WRITE beat=39 addr=0656afd0 data=85805a74d17d2ea2 id=15
+[475000] MASTER 1 W_VALID_RDY Handshake beat=40 wlast=0
+[485000] MASTER 1 W_VALID_RDY Handshake beat=41 wlast=0
+[485000] AXI S0_WVALID_RDY HANDSHAKE
+[485000] S0 MEMORY WRITE beat=40 addr=0656b010 data=fc5eefb6efa5d9eb id=15
+[495000] AXI S0_WVALID_RDY HANDSHAKE
+[495000] S0 MEMORY WRITE beat=41 addr=0656b050 data=9b57e78af2d5370b id=15
+[495000] MASTER 1 W_VALID_RDY Handshake beat=42 wlast=0
+[505000] MASTER 1 W_VALID_RDY Handshake beat=43 wlast=0
+[505000] AXI S0_WVALID_RDY HANDSHAKE
+[505000] S0 MEMORY WRITE beat=42 addr=0656b090 data=c45265adede1020f id=15
+[515000] AXI S0_WVALID_RDY HANDSHAKE
+[515000] S0 MEMORY WRITE beat=43 addr=0656b0d0 data=dd86dbfb20d841ff id=15
+[515000] MASTER 1 W_VALID_RDY Handshake beat=44 wlast=0
+[525000] MASTER 1 W_VALID_RDY Handshake beat=45 wlast=0
+[525000] AXI S0_WVALID_RDY HANDSHAKE
+[525000] S0 MEMORY WRITE beat=44 addr=0656b110 data=13ad790ac0b15563 id=15
+[535000] AXI S0_WVALID_RDY HANDSHAKE
+[535000] S0 MEMORY WRITE beat=45 addr=0656b150 data=ae925772f8dec385 id=15
+[535000] MASTER 1 W_VALID_RDY Handshake beat=46 wlast=0
+[545000] MASTER 1 W_VALID_RDY Handshake beat=47 wlast=0
+[545000] AXI S0_WVALID_RDY HANDSHAKE
+[545000] S0 MEMORY WRITE beat=46 addr=0656b190 data=99b70584d7ffdeb7 id=15
+[555000] AXI S0_WVALID_RDY HANDSHAKE
+[555000] S0 MEMORY WRITE beat=47 addr=0656b1d0 data=18b1341a8c19336d id=15
+[555000] MASTER 1 W_VALID_RDY Handshake beat=48 wlast=0
+[565000] MASTER 1 W_VALID_RDY Handshake beat=49 wlast=0
+[565000] AXI S0_WVALID_RDY HANDSHAKE
+[565000] S0 MEMORY WRITE beat=48 addr=0656b210 data=04f7f6f3ad647e8e id=15
+[575000] AXI S0_WVALID_RDY HANDSHAKE
+[575000] S0 MEMORY WRITE beat=49 addr=0656b250 data=85645d45c7438b8c id=15
+[575000] MASTER 1 W_VALID_RDY Handshake beat=50 wlast=0
+[585000] MASTER 1 W_VALID_RDY Handshake beat=51 wlast=0
+[585000] AXI S0_WVALID_RDY HANDSHAKE
+[585000] S0 MEMORY WRITE beat=50 addr=0656b290 data=d35cbefa9eaefc77 id=15
+[595000] AXI S0_WVALID_RDY HANDSHAKE
+[595000] S0 MEMORY WRITE beat=51 addr=0656b2d0 data=cc137b069e15915f id=15
+[595000] MASTER 1 W_VALID_RDY Handshake beat=52 wlast=0
+[605000] MASTER 1 W_VALID_RDY Handshake beat=53 wlast=0
+[605000] AXI S0_WVALID_RDY HANDSHAKE
+[605000] S0 MEMORY WRITE beat=52 addr=0656b310 data=e5591cecd854b5ed id=15
+[615000] AXI S0_WVALID_RDY HANDSHAKE
+[615000] S0 MEMORY WRITE beat=53 addr=0656b350 data=f703b264d177d84b id=15
+[615000] MASTER 1 W_VALID_RDY Handshake beat=54 wlast=0
+[625000] MASTER 1 W_VALID_RDY Handshake beat=55 wlast=0
+[625000] AXI S0_WVALID_RDY HANDSHAKE
+[625000] S0 MEMORY WRITE beat=54 addr=0656b390 data=ef8d69ab38b5dbe6 id=15
+[635000] AXI S0_WVALID_RDY HANDSHAKE
+[635000] S0 MEMORY WRITE beat=55 addr=0656b3d0 data=110a91d3c3172d6a id=15
+[635000] MASTER 1 W_VALID_RDY Handshake beat=56 wlast=0
+[645000] MASTER 1 W_VALID_RDY Handshake beat=57 wlast=0
+[645000] AXI S0_WVALID_RDY HANDSHAKE
+[645000] S0 MEMORY WRITE beat=56 addr=0656b410 data=148f05b6d4e68697 id=15
+[655000] AXI S0_WVALID_RDY HANDSHAKE
+[655000] S0 MEMORY WRITE beat=57 addr=0656b450 data=0d9c627d880e4437 id=15
+[655000] MASTER 1 W_VALID_RDY Handshake beat=58 wlast=0
+[665000] MASTER 1 W_VALID_RDY Handshake beat=59 wlast=0
+[665000] AXI S0_WVALID_RDY HANDSHAKE
+[665000] S0 MEMORY WRITE beat=58 addr=0656b490 data=cb2571a2041c6f61 id=15
+[675000] AXI S0_WVALID_RDY HANDSHAKE
+[675000] S0 MEMORY WRITE beat=59 addr=0656b4d0 data=d902f5f81ea6f450 id=15
+[675000] MASTER 1 W_VALID_RDY Handshake beat=60 wlast=0
+[685000] MASTER 1 W_VALID_RDY Handshake beat=61 wlast=0
+[685000] AXI S0_WVALID_RDY HANDSHAKE
+[685000] S0 MEMORY WRITE beat=60 addr=0656b510 data=a6b53887dfb47758 id=15
+[695000] AXI S0_WVALID_RDY HANDSHAKE
+[695000] S0 MEMORY WRITE beat=61 addr=0656b550 data=e3d0e6b9e69f5875 id=15
+[695000] MASTER 1 W_VALID_RDY Handshake beat=62 wlast=0
+[705000] MASTER 1 W_VALID_RDY Handshake beat=63 wlast=0
+[705000] AXI S0_WVALID_RDY HANDSHAKE
+[705000] S0 MEMORY WRITE beat=62 addr=0656b590 data=05464cc5f1daaa29 id=15
+[715000] AXI S0_WVALID_RDY HANDSHAKE
+[715000] S0 MEMORY WRITE beat=63 addr=0656b5d0 data=d18f21813cd3dcb1 id=15
+[715000] MASTER 1 W_VALID_RDY Handshake beat=64 wlast=0
+[725000] MASTER 1 W_VALID_RDY Handshake beat=65 wlast=0
+[725000] AXI S0_WVALID_RDY HANDSHAKE
+[725000] S0 MEMORY WRITE beat=64 addr=0656b610 data=23733526abfb854c id=15
+[735000] AXI S0_WVALID_RDY HANDSHAKE
+[735000] S0 MEMORY WRITE beat=65 addr=0656b650 data=1dd62f76b560083a id=15
+[735000] MASTER 1 W_VALID_RDY Handshake beat=66 wlast=0
+[745000] MASTER 1 W_VALID_RDY Handshake beat=67 wlast=0
+[745000] AXI S0_WVALID_RDY HANDSHAKE
+[745000] S0 MEMORY WRITE beat=66 addr=0656b690 data=f233e4eb28b981eb id=15
+[755000] AXI S0_WVALID_RDY HANDSHAKE
+[755000] S0 MEMORY WRITE beat=67 addr=0656b6d0 data=d4b50737ef6550f7 id=15
+[755000] MASTER 1 W_VALID_RDY Handshake beat=68 wlast=0
+[765000] MASTER 1 W_VALID_RDY Handshake beat=69 wlast=0
+[765000] AXI S0_WVALID_RDY HANDSHAKE
+[765000] S0 MEMORY WRITE beat=68 addr=0656b710 data=24c5593295a71a11 id=15
+[775000] AXI S0_WVALID_RDY HANDSHAKE
+[775000] S0 MEMORY WRITE beat=69 addr=0656b750 data=be609bfcf28b36ad id=15
+[775000] MASTER 1 W_VALID_RDY Handshake beat=70 wlast=0
+[785000] MASTER 1 W_VALID_RDY Handshake beat=71 wlast=0
+[785000] AXI S0_WVALID_RDY HANDSHAKE
+[785000] S0 MEMORY WRITE beat=70 addr=0656b790 data=e1f087a596f93e1d id=15
+[795000] AXI S0_WVALID_RDY HANDSHAKE
+[795000] S0 MEMORY WRITE beat=71 addr=0656b7d0 data=2ca0582f1315a334 id=15
+[795000] MASTER 1 W_VALID_RDY Handshake beat=72 wlast=0
+[805000] MASTER 1 W_VALID_RDY Handshake beat=73 wlast=0
+[805000] AXI S0_WVALID_RDY HANDSHAKE
+[805000] S0 MEMORY WRITE beat=72 addr=0656b810 data=85a0d9e106b5e0d7 id=15
+[815000] AXI S0_WVALID_RDY HANDSHAKE
+[815000] S0 MEMORY WRITE beat=73 addr=0656b850 data=9daf1ef4eb00f42b id=15
+[815000] MASTER 1 W_VALID_RDY Handshake beat=74 wlast=0
+[825000] MASTER 1 W_VALID_RDY Handshake beat=75 wlast=0
+[825000] AXI S0_WVALID_RDY HANDSHAKE
+[825000] S0 MEMORY WRITE beat=74 addr=0656b890 data=fe16975fe7916186 id=15
+[835000] AXI S0_WVALID_RDY HANDSHAKE
+[835000] S0 MEMORY WRITE beat=75 addr=0656b8d0 data=ee47425dca4f7723 id=15
+[835000] MASTER 1 W_VALID_RDY Handshake beat=76 wlast=0
+[845000] MASTER 1 W_VALID_RDY Handshake beat=77 wlast=0
+[845000] AXI S0_WVALID_RDY HANDSHAKE
+[845000] S0 MEMORY WRITE beat=76 addr=0656b910 data=35506b4f03b77141 id=15
+[855000] AXI S0_WVALID_RDY HANDSHAKE
+[855000] S0 MEMORY WRITE beat=77 addr=0656b950 data=eb48d2c70bf66152 id=15
+[855000] MASTER 1 W_VALID_RDY Handshake beat=78 wlast=0
+[865000] MASTER 1 W_VALID_RDY Handshake beat=79 wlast=0
+[865000] AXI S0_WVALID_RDY HANDSHAKE
+[865000] S0 MEMORY WRITE beat=78 addr=0656b990 data=d645d875b36702ae id=15
+[875000] AXI S0_WVALID_RDY HANDSHAKE
+[875000] S0 MEMORY WRITE beat=79 addr=0656b9d0 data=b71e73efd9901525 id=15
+[875000] MASTER 1 W_VALID_RDY Handshake beat=80 wlast=0
+[885000] MASTER 1 W_VALID_RDY Handshake beat=81 wlast=0
+[885000] AXI S0_WVALID_RDY HANDSHAKE
+[885000] S0 MEMORY WRITE beat=80 addr=0656ba10 data=e58676778b9643c4 id=15
+[895000] AXI S0_WVALID_RDY HANDSHAKE
+[895000] S0 MEMORY WRITE beat=81 addr=0656ba50 data=3efd4673226746b7 id=15
+[895000] MASTER 1 W_VALID_RDY Handshake beat=82 wlast=0
+[905000] MASTER 1 W_VALID_RDY Handshake beat=83 wlast=0
+[905000] AXI S0_WVALID_RDY HANDSHAKE
+[905000] S0 MEMORY WRITE beat=82 addr=0656ba90 data=fbf75bdcbbcc4eec id=15
+[915000] AXI S0_WVALID_RDY HANDSHAKE
+[915000] S0 MEMORY WRITE beat=83 addr=0656bad0 data=c76292b1f61bba62 id=15
+[915000] MASTER 1 W_VALID_RDY Handshake beat=84 wlast=0
+[925000] MASTER 1 W_VALID_RDY Handshake beat=85 wlast=0
+[925000] AXI S0_WVALID_RDY HANDSHAKE
+[925000] S0 MEMORY WRITE beat=84 addr=0656bb10 data=98830119e17dd253 id=15
+[935000] AXI S0_WVALID_RDY HANDSHAKE
+[935000] S0 MEMORY WRITE beat=85 addr=0656bb50 data=9d4a213f065fd924 id=15
+[935000] MASTER 1 W_VALID_RDY Handshake beat=86 wlast=0
+[945000] MASTER 1 W_VALID_RDY Handshake beat=87 wlast=0
+[945000] AXI S0_WVALID_RDY HANDSHAKE
+[945000] S0 MEMORY WRITE beat=86 addr=0656bb90 data=fc7b9386947a5cf5 id=15
+[955000] AXI S0_WVALID_RDY HANDSHAKE
+[955000] S0 MEMORY WRITE beat=87 addr=0656bbd0 data=f5f82f48e4acb3f0 id=15
+[955000] MASTER 1 W_VALID_RDY Handshake beat=88 wlast=0
+[965000] MASTER 1 W_VALID_RDY Handshake beat=89 wlast=0
+[965000] AXI S0_WVALID_RDY HANDSHAKE
+[965000] S0 MEMORY WRITE beat=88 addr=0656bc10 data=eb0c8d1414fe94a0 id=15
+[975000] AXI S0_WVALID_RDY HANDSHAKE
+[975000] S0 MEMORY WRITE beat=89 addr=0656bc50 data=a978f19513425088 id=15
+[975000] MASTER 1 W_VALID_RDY Handshake beat=90 wlast=0
+[985000] MASTER 1 W_VALID_RDY Handshake beat=91 wlast=0
+[985000] AXI S0_WVALID_RDY HANDSHAKE
+[985000] S0 MEMORY WRITE beat=90 addr=0656bc90 data=f7ef0478e788209b id=15
+[995000] AXI S0_WVALID_RDY HANDSHAKE
+[995000] S0 MEMORY WRITE beat=91 addr=0656bcd0 data=fc86b53b1f7120de id=15
+[995000] MASTER 1 W_VALID_RDY Handshake beat=92 wlast=0
+[1005000] MASTER 1 W_VALID_RDY Handshake beat=93 wlast=0
+[1005000] AXI S0_WVALID_RDY HANDSHAKE
+[1005000] S0 MEMORY WRITE beat=92 addr=0656bd10 data=32b37166e2fb918d id=15
+[1015000] AXI S0_WVALID_RDY HANDSHAKE
+[1015000] S0 MEMORY WRITE beat=93 addr=0656bd50 data=ca83b228a5ffa6d0 id=15
+[1015000] MASTER 1 W_VALID_RDY Handshake beat=94 wlast=0
+[1025000] MASTER 1 W_VALID_RDY Handshake beat=95 wlast=0
+[1025000] AXI S0_WVALID_RDY HANDSHAKE
+[1025000] S0 MEMORY WRITE beat=94 addr=0656bd90 data=c570c7aeaaa275de id=15
+[1035000] AXI S0_WVALID_RDY HANDSHAKE
+[1035000] S0 MEMORY WRITE beat=95 addr=0656bdd0 data=8d9e076bc70a6763 id=15
+[1035000] MASTER 1 W_VALID_RDY Handshake beat=96 wlast=0
+[1045000] MASTER 1 W_VALID_RDY Handshake beat=97 wlast=0
+[1045000] AXI S0_WVALID_RDY HANDSHAKE
+[1045000] S0 MEMORY WRITE beat=96 addr=0656be10 data=ed0a0e33f8243914 id=15
+[1055000] AXI S0_WVALID_RDY HANDSHAKE
+[1055000] S0 MEMORY WRITE beat=97 addr=0656be50 data=22c6aef3d821b993 id=15
+[1055000] MASTER 1 W_VALID_RDY Handshake beat=98 wlast=0
+[1065000] MASTER 1 W_VALID_RDY Handshake beat=99 wlast=0
+[1065000] AXI S0_WVALID_RDY HANDSHAKE
+[1065000] S0 MEMORY WRITE beat=98 addr=0656be90 data=9f2c20f6327ad5e2 id=15
+[1075000] AXI S0_WVALID_RDY HANDSHAKE
+[1075000] S0 MEMORY WRITE beat=99 addr=0656bed0 data=aa9f0ef6b064b65e id=15
+[1075000] MASTER 1 W_VALID_RDY Handshake beat=100 wlast=0
+[1085000] MASTER 1 W_VALID_RDY Handshake beat=101 wlast=0
+[1085000] AXI S0_WVALID_RDY HANDSHAKE
+[1085000] S0 MEMORY WRITE beat=100 addr=0656bf10 data=08866ff20c362f2a id=15
+[1095000] AXI S0_WVALID_RDY HANDSHAKE
+[1095000] S0 MEMORY WRITE beat=101 addr=0656bf50 data=3eb1050ccd65bde9 id=15
+[1095000] MASTER 1 W_VALID_RDY Handshake beat=102 wlast=0
+[1105000] MASTER 1 W_VALID_RDY Handshake beat=103 wlast=0
+[1105000] AXI S0_WVALID_RDY HANDSHAKE
+[1105000] S0 MEMORY WRITE beat=102 addr=0656bf90 data=fdca7448a7b290e8 id=15
+[1115000] AXI S0_WVALID_RDY HANDSHAKE
+[1115000] S0 MEMORY WRITE beat=103 addr=0656bfd0 data=b3e8c012e9501402 id=15
+[1115000] MASTER 1 W_VALID_RDY Handshake beat=104 wlast=0
+[1125000] MASTER 1 W_VALID_RDY Handshake beat=105 wlast=0
+[1125000] AXI S0_WVALID_RDY HANDSHAKE
+[1125000] S0 MEMORY WRITE beat=104 addr=0656c010 data=36b5d1ec0650e43a id=15
+[1135000] AXI S0_WVALID_RDY HANDSHAKE
+[1135000] S0 MEMORY WRITE beat=105 addr=0656c050 data=ae037522f299c51e id=15
+[1135000] MASTER 1 W_VALID_RDY Handshake beat=106 wlast=0
+[1145000] MASTER 1 W_VALID_RDY Handshake beat=107 wlast=0
+[1145000] AXI S0_WVALID_RDY HANDSHAKE
+[1145000] S0 MEMORY WRITE beat=106 addr=0656c090 data=dbe9d92134804634 id=15
+[1155000] AXI S0_WVALID_RDY HANDSHAKE
+[1155000] S0 MEMORY WRITE beat=107 addr=0656c0d0 data=3ad12a6ee1ec3535 id=15
+[1155000] MASTER 1 W_VALID_RDY Handshake beat=108 wlast=0
+[1165000] MASTER 1 W_VALID_RDY Handshake beat=109 wlast=0
+[1165000] AXI S0_WVALID_RDY HANDSHAKE
+[1165000] S0 MEMORY WRITE beat=108 addr=0656c110 data=d485fa53129fab0d id=15
+[1175000] AXI S0_WVALID_RDY HANDSHAKE
+[1175000] S0 MEMORY WRITE beat=109 addr=0656c150 data=c71ff141e8d49f90 id=15
+[1175000] MASTER 1 W_VALID_RDY Handshake beat=110 wlast=0
+[1185000] MASTER 1 W_VALID_RDY Handshake beat=111 wlast=0
+[1185000] AXI S0_WVALID_RDY HANDSHAKE
+[1185000] S0 MEMORY WRITE beat=110 addr=0656c190 data=cac0d4c5b06fd374 id=15
+[1195000] AXI S0_WVALID_RDY HANDSHAKE
+[1195000] S0 MEMORY WRITE beat=111 addr=0656c1d0 data=c30f7e8101f11baf id=15
+[1195000] MASTER 1 W_VALID_RDY Handshake beat=112 wlast=0
+[1205000] MASTER 1 W_VALID_RDY Handshake beat=113 wlast=0
+[1205000] AXI S0_WVALID_RDY HANDSHAKE
+[1205000] S0 MEMORY WRITE beat=112 addr=0656c210 data=eac5bb3f1f46cf19 id=15
+[1215000] AXI S0_WVALID_RDY HANDSHAKE
+[1215000] S0 MEMORY WRITE beat=113 addr=0656c250 data=cfb6a28d8a2f6fc2 id=15
+[1215000] MASTER 1 W_VALID_RDY Handshake beat=114 wlast=0
+[1225000] MASTER 1 W_VALID_RDY Handshake beat=115 wlast=0
+[1225000] AXI S0_WVALID_RDY HANDSHAKE
+[1225000] S0 MEMORY WRITE beat=114 addr=0656c290 data=8c208b7135869005 id=15
+[1235000] AXI S0_WVALID_RDY HANDSHAKE
+[1235000] S0 MEMORY WRITE beat=115 addr=0656c2d0 data=d4cd5f1e12c6210f id=15
+[1235000] MASTER 1 W_VALID_RDY Handshake beat=116 wlast=0
+[1245000] MASTER 1 W_VALID_RDY Handshake beat=117 wlast=0
+[1245000] AXI S0_WVALID_RDY HANDSHAKE
+[1245000] S0 MEMORY WRITE beat=116 addr=0656c310 data=9cf590d1f6e646b1 id=15
+[1255000] AXI S0_WVALID_RDY HANDSHAKE
+[1255000] S0 MEMORY WRITE beat=117 addr=0656c350 data=2c6cd6b6a48401ab id=15
+[1255000] MASTER 1 W_VALID_RDY Handshake beat=118 wlast=0
+[1265000] MASTER 1 W_VALID_RDY Handshake beat=119 wlast=0
+[1265000] AXI S0_WVALID_RDY HANDSHAKE
+[1265000] S0 MEMORY WRITE beat=118 addr=0656c390 data=b74a22ba29161c43 id=15
+[1275000] AXI S0_WVALID_RDY HANDSHAKE
+[1275000] S0 MEMORY WRITE beat=119 addr=0656c3d0 data=1ffc62f4013a35d4 id=15
+[1275000] MASTER 1 W_VALID_RDY Handshake beat=120 wlast=0
+[1285000] MASTER 1 W_VALID_RDY Handshake beat=121 wlast=0
+[1285000] AXI S0_WVALID_RDY HANDSHAKE
+[1285000] S0 MEMORY WRITE beat=120 addr=0656c410 data=a5be377fd43fb38c id=15
+[1295000] AXI S0_WVALID_RDY HANDSHAKE
+[1295000] S0 MEMORY WRITE beat=121 addr=0656c450 data=fd55cfcfcc6939aa id=15
+[1295000] MASTER 1 W_VALID_RDY Handshake beat=122 wlast=0
+[1305000] MASTER 1 W_VALID_RDY Handshake beat=123 wlast=0
+[1305000] AXI S0_WVALID_RDY HANDSHAKE
+[1305000] S0 MEMORY WRITE beat=122 addr=0656c490 data=cda36f7edd085a3a id=15
+[1315000] AXI S0_WVALID_RDY HANDSHAKE
+[1315000] S0 MEMORY WRITE beat=123 addr=0656c4d0 data=31480dc61d5232c3 id=15
+[1315000] MASTER 1 W_VALID_RDY Handshake beat=124 wlast=0
+[1325000] MASTER 1 W_VALID_RDY Handshake beat=125 wlast=0
+[1325000] AXI S0_WVALID_RDY HANDSHAKE
+[1325000] S0 MEMORY WRITE beat=124 addr=0656c510 data=e9bb6c6df361a6fd id=15
+[1335000] AXI S0_WVALID_RDY HANDSHAKE
+[1335000] S0 MEMORY WRITE beat=125 addr=0656c550 data=d06a01372e9ddd95 id=15
+[1335000] MASTER 1 W_VALID_RDY Handshake beat=126 wlast=0
+[1345000] MASTER 1 W_VALID_RDY Handshake beat=127 wlast=0
+[1345000] AXI S0_WVALID_RDY HANDSHAKE
+[1345000] S0 MEMORY WRITE beat=126 addr=0656c590 data=cbf01058375edbeb id=15
+[1355000] AXI S0_WVALID_RDY HANDSHAKE
+[1355000] S0 MEMORY WRITE beat=127 addr=0656c5d0 data=aac082e881b20efd id=15
+[1355000] MASTER 1 W_VALID_RDY Handshake beat=128 wlast=0
+[1365000] MASTER 1 W_VALID_RDY Handshake beat=129 wlast=0
+[1365000] AXI S0_WVALID_RDY HANDSHAKE
+[1365000] S0 MEMORY WRITE beat=128 addr=0656c610 data=b04fec9235ab7cc5 id=15
+[1375000] AXI S0_WVALID_RDY HANDSHAKE
+[1375000] S0 MEMORY WRITE beat=129 addr=0656c650 data=ed0a58b0fb2a8420 id=15
+[1375000] MASTER 1 W_VALID_RDY Handshake beat=130 wlast=0
+[1385000] MASTER 1 W_VALID_RDY Handshake beat=131 wlast=0
+[1385000] AXI S0_WVALID_RDY HANDSHAKE
+[1385000] S0 MEMORY WRITE beat=130 addr=0656c690 data=fcdc931dfc3ffcea id=15
+[1395000] AXI S0_WVALID_RDY HANDSHAKE
+[1395000] S0 MEMORY WRITE beat=131 addr=0656c6d0 data=b1eb79af97cadb98 id=15
+[1395000] MASTER 1 W_VALID_RDY Handshake beat=132 wlast=0
+[1405000] MASTER 1 W_VALID_RDY Handshake beat=133 wlast=0
+[1405000] AXI S0_WVALID_RDY HANDSHAKE
+[1405000] S0 MEMORY WRITE beat=132 addr=0656c710 data=92f55fb82d2c7fb0 id=15
+[1415000] AXI S0_WVALID_RDY HANDSHAKE
+[1415000] S0 MEMORY WRITE beat=133 addr=0656c750 data=a96c7c9a9ef5d25f id=15
+[1415000] MASTER 1 W_VALID_RDY Handshake beat=134 wlast=0
+[1425000] MASTER 1 W_VALID_RDY Handshake beat=135 wlast=0
+[1425000] AXI S0_WVALID_RDY HANDSHAKE
+[1425000] S0 MEMORY WRITE beat=134 addr=0656c790 data=36c0adf80fd1f2d6 id=15
+[1435000] AXI S0_WVALID_RDY HANDSHAKE
+[1435000] S0 MEMORY WRITE beat=135 addr=0656c7d0 data=3cfe7286db57f64a id=15
+[1435000] MASTER 1 W_VALID_RDY Handshake beat=136 wlast=0
+[1445000] MASTER 1 W_VALID_RDY Handshake beat=137 wlast=1
+[1445000] AXI S0_WVALID_RDY HANDSHAKE
+[1445000] S0 MEMORY WRITE beat=136 addr=0656c810 data=fa4dc8a9c9b60db0 id=15
+[1455000] AXI S0_WVALID_RDY HANDSHAKE
+[1455000] S0 MEMORY WRITE beat=137 addr=0656c850 data=d9880086e66aef20 id=15
+[1465000] SLAVE0 sent B resp, id=5
+[1475000] AXI S0_AWVALID_RDY HANDSHAKE
+[1475000] [SLAVE MONITOR] mst_id=1 s_id=0 awaddr=656a610 awid=101 awlen=137 awsize=6 awburst=1 wdata=[83fbd398efdd17ed a71b1592d24cf4ab 18e307ba2b8f8022 9b6c980faf9ccbf0 81e9c09b9cdedb52 c86e5b74c287ada2 f22479929accc855 37aba3a8e3daf384 2662a126f40e3a2e 8edb02838019ff1c e3f4f2a098871ab8 8c9554e6c686a62b c6a0a5488a5793c6 22deae7f1b70576a e1f6fd95aa9597e8 34ed2bafaf740365 cae45acfa897a2dd d32d3ac6d7cbda2e 873fdd932cdb5865 d572fb42081a6675 dfe640a3d2243863 feff90c8a8a03608 b0ba9c7de7261e36 b94a5699d4728c0a fd12c21390a0dd20 f7c6fb57b849e761 cbc736cadcd5e90 3e6e3bb1b11151f0 e95b395209cf357f b79c940f36353708 e74688f8f617acbe ffe6e23df60acfc0 ac4006c8d0a1c24a c6b96f08b783764c 2d8e460d13868fc1 e428520bc6a05145 fe23c792d9ce4cd5 ed54dc962ae1c114 f18212592bb20d9f 85805a74d17d2ea2 fc5eefb6efa5d9eb 9b57e78af2d5370b c45265adede1020f dd86dbfb20d841ff 13ad790ac0b15563 ae925772f8dec385 99b70584d7ffdeb7 18b1341a8c19336d 4f7f6f3ad647e8e 85645d45c7438b8c d35cbefa9eaefc77 cc137b069e15915f e5591cecd854b5ed f703b264d177d84b ef8d69ab38b5dbe6 110a91d3c3172d6a 148f05b6d4e68697 d9c627d880e4437 cb2571a2041c6f61 d902f5f81ea6f450 a6b53887dfb47758 e3d0e6b9e69f5875 5464cc5f1daaa29 d18f21813cd3dcb1 23733526abfb854c 1dd62f76b560083a f233e4eb28b981eb d4b50737ef6550f7 24c5593295a71a11 be609bfcf28b36ad e1f087a596f93e1d 2ca0582f1315a334 85a0d9e106b5e0d7 9daf1ef4eb00f42b fe16975fe7916186 ee47425dca4f7723 35506b4f03b77141 eb48d2c70bf66152 d645d875b36702ae b71e73efd9901525 e58676778b9643c4 3efd4673226746b7 fbf75bdcbbcc4eec c76292b1f61bba62 98830119e17dd253 9d4a213f065fd924 fc7b9386947a5cf5 f5f82f48e4acb3f0 eb0c8d1414fe94a0 a978f19513425088 f7ef0478e788209b fc86b53b1f7120de 32b37166e2fb918d ca83b228a5ffa6d0 c570c7aeaaa275de 8d9e076bc70a6763 ed0a0e33f8243914 22c6aef3d821b993 9f2c20f6327ad5e2 aa9f0ef6b064b65e 8866ff20c362f2a 3eb1050ccd65bde9 fdca7448a7b290e8 b3e8c012e9501402 36b5d1ec0650e43a ae037522f299c51e dbe9d92134804634 3ad12a6ee1ec3535 d485fa53129fab0d c71ff141e8d49f90 cac0d4c5b06fd374 c30f7e8101f11baf eac5bb3f1f46cf19 cfb6a28d8a2f6fc2 8c208b7135869005 d4cd5f1e12c6210f 9cf590d1f6e646b1 2c6cd6b6a48401ab b74a22ba29161c43 1ffc62f4013a35d4 a5be377fd43fb38c fd55cfcfcc6939aa cda36f7edd085a3a 31480dc61d5232c3 e9bb6c6df361a6fd d06a01372e9ddd95 cbf01058375edbeb aac082e881b20efd b04fec9235ab7cc5 ed0a58b0fb2a8420 fcdc931dfc3ffcea b1eb79af97cadb98 92f55fb82d2c7fb0 a96c7c9a9ef5d25f 36c0adf80fd1f2d6 3cfe7286db57f64a fa4dc8a9c9b60db0 d9880086e66aef20 ] wstrb=[a1 6a c 52 14 2d d8 b5 97 e5 7 ab 12 e0 61 a9 c5 68 55 d7 48 b6 80 d 1e d5 e4 67 8b 65 74 aa 3a 59 11 c6 be 85 70 f8 de 81 be 9c 6 2e 95 e5 af 53 81 b6 82 16 9b 31 6a 1c e7 ec 33 82 1d 9d 9f 5 89 d2 87 a6 6f 26 ab f8 f8 33 9e 67 59 4a 5f 52 7d fe b9 d6 48 19 28 c5 17 e2 9b 5f fb c4 24 12 a6 bf 71 a1 83 95 b3 29 54 24 ca d8 b9 7d 1 d a1 cc e5 5a 49 e7 68 eb b3 4d 45 fc 34 ad e7 e7 fb 2d e4 2f da cb 17 d5 ] bresp=0 bid=10101
+[1475000] ARB MONITOR: slave=0 m0_req=0 m1_req=0 winner=0
+[1485000] MASTER 1 RECEIVED BRESP. BRESP=0
+[1485000] [MASTER DRIVER] mst_id=1 s_id=0 awaddr=656a610 awid=101 awlen=137 awsize=6 awburst=1 wdata=[83fbd398efdd17ed a71b1592d24cf4ab 18e307ba2b8f8022 9b6c980faf9ccbf0 81e9c09b9cdedb52 c86e5b74c287ada2 f22479929accc855 37aba3a8e3daf384 2662a126f40e3a2e 8edb02838019ff1c e3f4f2a098871ab8 8c9554e6c686a62b c6a0a5488a5793c6 22deae7f1b70576a e1f6fd95aa9597e8 34ed2bafaf740365 cae45acfa897a2dd d32d3ac6d7cbda2e 873fdd932cdb5865 d572fb42081a6675 dfe640a3d2243863 feff90c8a8a03608 b0ba9c7de7261e36 b94a5699d4728c0a fd12c21390a0dd20 f7c6fb57b849e761 cbc736cadcd5e90 3e6e3bb1b11151f0 e95b395209cf357f b79c940f36353708 e74688f8f617acbe ffe6e23df60acfc0 ac4006c8d0a1c24a c6b96f08b783764c 2d8e460d13868fc1 e428520bc6a05145 fe23c792d9ce4cd5 ed54dc962ae1c114 f18212592bb20d9f 85805a74d17d2ea2 fc5eefb6efa5d9eb 9b57e78af2d5370b c45265adede1020f dd86dbfb20d841ff 13ad790ac0b15563 ae925772f8dec385 99b70584d7ffdeb7 18b1341a8c19336d 4f7f6f3ad647e8e 85645d45c7438b8c d35cbefa9eaefc77 cc137b069e15915f e5591cecd854b5ed f703b264d177d84b ef8d69ab38b5dbe6 110a91d3c3172d6a 148f05b6d4e68697 d9c627d880e4437 cb2571a2041c6f61 d902f5f81ea6f450 a6b53887dfb47758 e3d0e6b9e69f5875 5464cc5f1daaa29 d18f21813cd3dcb1 23733526abfb854c 1dd62f76b560083a f233e4eb28b981eb d4b50737ef6550f7 24c5593295a71a11 be609bfcf28b36ad e1f087a596f93e1d 2ca0582f1315a334 85a0d9e106b5e0d7 9daf1ef4eb00f42b fe16975fe7916186 ee47425dca4f7723 35506b4f03b77141 eb48d2c70bf66152 d645d875b36702ae b71e73efd9901525 e58676778b9643c4 3efd4673226746b7 fbf75bdcbbcc4eec c76292b1f61bba62 98830119e17dd253 9d4a213f065fd924 fc7b9386947a5cf5 f5f82f48e4acb3f0 eb0c8d1414fe94a0 a978f19513425088 f7ef0478e788209b fc86b53b1f7120de 32b37166e2fb918d ca83b228a5ffa6d0 c570c7aeaaa275de 8d9e076bc70a6763 ed0a0e33f8243914 22c6aef3d821b993 9f2c20f6327ad5e2 aa9f0ef6b064b65e 8866ff20c362f2a 3eb1050ccd65bde9 fdca7448a7b290e8 b3e8c012e9501402 36b5d1ec0650e43a ae037522f299c51e dbe9d92134804634 3ad12a6ee1ec3535 d485fa53129fab0d c71ff141e8d49f90 cac0d4c5b06fd374 c30f7e8101f11baf eac5bb3f1f46cf19 cfb6a28d8a2f6fc2 8c208b7135869005 d4cd5f1e12c6210f 9cf590d1f6e646b1 2c6cd6b6a48401ab b74a22ba29161c43 1ffc62f4013a35d4 a5be377fd43fb38c fd55cfcfcc6939aa cda36f7edd085a3a 31480dc61d5232c3 e9bb6c6df361a6fd d06a01372e9ddd95 cbf01058375edbeb aac082e881b20efd b04fec9235ab7cc5 ed0a58b0fb2a8420 fcdc931dfc3ffcea b1eb79af97cadb98 92f55fb82d2c7fb0 a96c7c9a9ef5d25f 36c0adf80fd1f2d6 3cfe7286db57f64a fa4dc8a9c9b60db0 d9880086e66aef20 ] wstrb=[a1 6a c 52 14 2d d8 b5 97 e5 7 ab 12 e0 61 a9 c5 68 55 d7 48 b6 80 d 1e d5 e4 67 8b 65 74 aa 3a 59 11 c6 be 85 70 f8 de 81 be 9c 6 2e 95 e5 af 53 81 b6 82 16 9b 31 6a 1c e7 ec 33 82 1d 9d 9f 5 89 d2 87 a6 6f 26 ab f8 f8 33 9e 67 59 4a 5f 52 7d fe b9 d6 48 19 28 c5 17 e2 9b 5f fb c4 24 12 a6 bf 71 a1 83 95 b3 29 54 24 ca d8 b9 7d 1 d a1 cc e5 5a 49 e7 68 eb b3 4d 45 fc 34 ad e7 e7 fb 2d e4 2f da cb 17 d5 ] bresp=0 bid=101
+[1485000] MASTER 1 B_VALID_RDY Handshake
+[1485000] [MASTER MONITOR] mst_id=1 s_id=0 awaddr=656a610 awid=101 awlen=137 awsize=6 awburst=1 wdata=[83fbd398efdd17ed a71b1592d24cf4ab 18e307ba2b8f8022 9b6c980faf9ccbf0 81e9c09b9cdedb52 c86e5b74c287ada2 f22479929accc855 37aba3a8e3daf384 2662a126f40e3a2e 8edb02838019ff1c e3f4f2a098871ab8 8c9554e6c686a62b c6a0a5488a5793c6 22deae7f1b70576a e1f6fd95aa9597e8 34ed2bafaf740365 cae45acfa897a2dd d32d3ac6d7cbda2e 873fdd932cdb5865 d572fb42081a6675 dfe640a3d2243863 feff90c8a8a03608 b0ba9c7de7261e36 b94a5699d4728c0a fd12c21390a0dd20 f7c6fb57b849e761 cbc736cadcd5e90 3e6e3bb1b11151f0 e95b395209cf357f b79c940f36353708 e74688f8f617acbe ffe6e23df60acfc0 ac4006c8d0a1c24a c6b96f08b783764c 2d8e460d13868fc1 e428520bc6a05145 fe23c792d9ce4cd5 ed54dc962ae1c114 f18212592bb20d9f 85805a74d17d2ea2 fc5eefb6efa5d9eb 9b57e78af2d5370b c45265adede1020f dd86dbfb20d841ff 13ad790ac0b15563 ae925772f8dec385 99b70584d7ffdeb7 18b1341a8c19336d 4f7f6f3ad647e8e 85645d45c7438b8c d35cbefa9eaefc77 cc137b069e15915f e5591cecd854b5ed f703b264d177d84b ef8d69ab38b5dbe6 110a91d3c3172d6a 148f05b6d4e68697 d9c627d880e4437 cb2571a2041c6f61 d902f5f81ea6f450 a6b53887dfb47758 e3d0e6b9e69f5875 5464cc5f1daaa29 d18f21813cd3dcb1 23733526abfb854c 1dd62f76b560083a f233e4eb28b981eb d4b50737ef6550f7 24c5593295a71a11 be609bfcf28b36ad e1f087a596f93e1d 2ca0582f1315a334 85a0d9e106b5e0d7 9daf1ef4eb00f42b fe16975fe7916186 ee47425dca4f7723 35506b4f03b77141 eb48d2c70bf66152 d645d875b36702ae b71e73efd9901525 e58676778b9643c4 3efd4673226746b7 fbf75bdcbbcc4eec c76292b1f61bba62 98830119e17dd253 9d4a213f065fd924 fc7b9386947a5cf5 f5f82f48e4acb3f0 eb0c8d1414fe94a0 a978f19513425088 f7ef0478e788209b fc86b53b1f7120de 32b37166e2fb918d ca83b228a5ffa6d0 c570c7aeaaa275de 8d9e076bc70a6763 ed0a0e33f8243914 22c6aef3d821b993 9f2c20f6327ad5e2 aa9f0ef6b064b65e 8866ff20c362f2a 3eb1050ccd65bde9 fdca7448a7b290e8 b3e8c012e9501402 36b5d1ec0650e43a ae037522f299c51e dbe9d92134804634 3ad12a6ee1ec3535 d485fa53129fab0d c71ff141e8d49f90 cac0d4c5b06fd374 c30f7e8101f11baf eac5bb3f1f46cf19 cfb6a28d8a2f6fc2 8c208b7135869005 d4cd5f1e12c6210f 9cf590d1f6e646b1 2c6cd6b6a48401ab b74a22ba29161c43 1ffc62f4013a35d4 a5be377fd43fb38c fd55cfcfcc6939aa cda36f7edd085a3a 31480dc61d5232c3 e9bb6c6df361a6fd d06a01372e9ddd95 cbf01058375edbeb aac082e881b20efd b04fec9235ab7cc5 ed0a58b0fb2a8420 fcdc931dfc3ffcea b1eb79af97cadb98 92f55fb82d2c7fb0 a96c7c9a9ef5d25f 36c0adf80fd1f2d6 3cfe7286db57f64a fa4dc8a9c9b60db0 d9880086e66aef20 ] wstrb=[a1 6a c 52 14 2d d8 b5 97 e5 7 ab 12 e0 61 a9 c5 68 55 d7 48 b6 80 d 1e d5 e4 67 8b 65 74 aa 3a 59 11 c6 be 85 70 f8 de 81 be 9c 6 2e 95 e5 af 53 81 b6 82 16 9b 31 6a 1c e7 ec 33 82 1d 9d 9f 5 89 d2 87 a6 6f 26 ab f8 f8 33 9e 67 59 4a 5f 52 7d fe b9 d6 48 19 28 c5 17 e2 9b 5f fb c4 24 12 a6 bf 71 a1 83 95 b3 29 54 24 ca d8 b9 7d 1 d a1 cc e5 5a 49 e7 68 eb b3 4d 45 fc 34 ad e7 e7 fb 2d e4 2f da cb 17 d5 ] bresp=0 bid=101
+[1485000] AXI S0_WVALID_RDY HANDSHAKE
+[1485000] S0 MEMORY WRITE beat=0 addr=04f2b120 data=ceaea360a3cb17c4 id=0b
+[1485000] SCOREBOARD MATCH: decode_err expected = 0, actual =0
+[1485000] SCOREBOARD MATCH: slave_id expected = 0, actual =0
+[1485000] SCOREBOARD MATCH: awaddr passthrough expected = 656a610, actual =656a610
+[1485000] SCOREBOARD MATCH: awlen passthrough expected = 137, actual =137
+[1485000] SCOREBOARD MATCH: awsize passthrough expected = 6, actual =6
+[1485000] SCOREBOARD MATCH: awburst passthrough expected = 1, actual =1
+[1485000] SCOREBOARD MATCH: wdata size check expected = 8a, actual =8a
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=0 expected = 83fbd398efdd17ed, actual =83fbd398efdd17ed
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=1 expected = a71b1592d24cf4ab, actual =a71b1592d24cf4ab
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=2 expected = 18e307ba2b8f8022, actual =18e307ba2b8f8022
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=3 expected = 9b6c980faf9ccbf0, actual =9b6c980faf9ccbf0
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=4 expected = 81e9c09b9cdedb52, actual =81e9c09b9cdedb52
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=5 expected = c86e5b74c287ada2, actual =c86e5b74c287ada2
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=6 expected = f22479929accc855, actual =f22479929accc855
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=7 expected = 37aba3a8e3daf384, actual =37aba3a8e3daf384
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=8 expected = 2662a126f40e3a2e, actual =2662a126f40e3a2e
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=9 expected = 8edb02838019ff1c, actual =8edb02838019ff1c
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=10 expected = e3f4f2a098871ab8, actual =e3f4f2a098871ab8
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=11 expected = 8c9554e6c686a62b, actual =8c9554e6c686a62b
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=12 expected = c6a0a5488a5793c6, actual =c6a0a5488a5793c6
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=13 expected = 22deae7f1b70576a, actual =22deae7f1b70576a
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=14 expected = e1f6fd95aa9597e8, actual =e1f6fd95aa9597e8
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=15 expected = 34ed2bafaf740365, actual =34ed2bafaf740365
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=16 expected = cae45acfa897a2dd, actual =cae45acfa897a2dd
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=17 expected = d32d3ac6d7cbda2e, actual =d32d3ac6d7cbda2e
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=18 expected = 873fdd932cdb5865, actual =873fdd932cdb5865
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=19 expected = d572fb42081a6675, actual =d572fb42081a6675
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=20 expected = dfe640a3d2243863, actual =dfe640a3d2243863
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=21 expected = feff90c8a8a03608, actual =feff90c8a8a03608
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=22 expected = b0ba9c7de7261e36, actual =b0ba9c7de7261e36
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=23 expected = b94a5699d4728c0a, actual =b94a5699d4728c0a
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=24 expected = fd12c21390a0dd20, actual =fd12c21390a0dd20
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=25 expected = f7c6fb57b849e761, actual =f7c6fb57b849e761
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=26 expected = cbc736cadcd5e90, actual =cbc736cadcd5e90
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=27 expected = 3e6e3bb1b11151f0, actual =3e6e3bb1b11151f0
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=28 expected = e95b395209cf357f, actual =e95b395209cf357f
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=29 expected = b79c940f36353708, actual =b79c940f36353708
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=30 expected = e74688f8f617acbe, actual =e74688f8f617acbe
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=31 expected = ffe6e23df60acfc0, actual =ffe6e23df60acfc0
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=32 expected = ac4006c8d0a1c24a, actual =ac4006c8d0a1c24a
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=33 expected = c6b96f08b783764c, actual =c6b96f08b783764c
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=34 expected = 2d8e460d13868fc1, actual =2d8e460d13868fc1
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=35 expected = e428520bc6a05145, actual =e428520bc6a05145
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=36 expected = fe23c792d9ce4cd5, actual =fe23c792d9ce4cd5
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=37 expected = ed54dc962ae1c114, actual =ed54dc962ae1c114
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=38 expected = f18212592bb20d9f, actual =f18212592bb20d9f
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=39 expected = 85805a74d17d2ea2, actual =85805a74d17d2ea2
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=40 expected = fc5eefb6efa5d9eb, actual =fc5eefb6efa5d9eb
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=41 expected = 9b57e78af2d5370b, actual =9b57e78af2d5370b
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=42 expected = c45265adede1020f, actual =c45265adede1020f
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=43 expected = dd86dbfb20d841ff, actual =dd86dbfb20d841ff
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=44 expected = 13ad790ac0b15563, actual =13ad790ac0b15563
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=45 expected = ae925772f8dec385, actual =ae925772f8dec385
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=46 expected = 99b70584d7ffdeb7, actual =99b70584d7ffdeb7
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=47 expected = 18b1341a8c19336d, actual =18b1341a8c19336d
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=48 expected = 4f7f6f3ad647e8e, actual =4f7f6f3ad647e8e
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=49 expected = 85645d45c7438b8c, actual =85645d45c7438b8c
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=50 expected = d35cbefa9eaefc77, actual =d35cbefa9eaefc77
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=51 expected = cc137b069e15915f, actual =cc137b069e15915f
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=52 expected = e5591cecd854b5ed, actual =e5591cecd854b5ed
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=53 expected = f703b264d177d84b, actual =f703b264d177d84b
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=54 expected = ef8d69ab38b5dbe6, actual =ef8d69ab38b5dbe6
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=55 expected = 110a91d3c3172d6a, actual =110a91d3c3172d6a
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=56 expected = 148f05b6d4e68697, actual =148f05b6d4e68697
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=57 expected = d9c627d880e4437, actual =d9c627d880e4437
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=58 expected = cb2571a2041c6f61, actual =cb2571a2041c6f61
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=59 expected = d902f5f81ea6f450, actual =d902f5f81ea6f450
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=60 expected = a6b53887dfb47758, actual =a6b53887dfb47758
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=61 expected = e3d0e6b9e69f5875, actual =e3d0e6b9e69f5875
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=62 expected = 5464cc5f1daaa29, actual =5464cc5f1daaa29
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=63 expected = d18f21813cd3dcb1, actual =d18f21813cd3dcb1
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=64 expected = 23733526abfb854c, actual =23733526abfb854c
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=65 expected = 1dd62f76b560083a, actual =1dd62f76b560083a
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=66 expected = f233e4eb28b981eb, actual =f233e4eb28b981eb
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=67 expected = d4b50737ef6550f7, actual =d4b50737ef6550f7
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=68 expected = 24c5593295a71a11, actual =24c5593295a71a11
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=69 expected = be609bfcf28b36ad, actual =be609bfcf28b36ad
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=70 expected = e1f087a596f93e1d, actual =e1f087a596f93e1d
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=71 expected = 2ca0582f1315a334, actual =2ca0582f1315a334
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=72 expected = 85a0d9e106b5e0d7, actual =85a0d9e106b5e0d7
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=73 expected = 9daf1ef4eb00f42b, actual =9daf1ef4eb00f42b
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=74 expected = fe16975fe7916186, actual =fe16975fe7916186
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=75 expected = ee47425dca4f7723, actual =ee47425dca4f7723
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=76 expected = 35506b4f03b77141, actual =35506b4f03b77141
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=77 expected = eb48d2c70bf66152, actual =eb48d2c70bf66152
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=78 expected = d645d875b36702ae, actual =d645d875b36702ae
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=79 expected = b71e73efd9901525, actual =b71e73efd9901525
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=80 expected = e58676778b9643c4, actual =e58676778b9643c4
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=81 expected = 3efd4673226746b7, actual =3efd4673226746b7
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=82 expected = fbf75bdcbbcc4eec, actual =fbf75bdcbbcc4eec
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=83 expected = c76292b1f61bba62, actual =c76292b1f61bba62
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=84 expected = 98830119e17dd253, actual =98830119e17dd253
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=85 expected = 9d4a213f065fd924, actual =9d4a213f065fd924
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=86 expected = fc7b9386947a5cf5, actual =fc7b9386947a5cf5
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=87 expected = f5f82f48e4acb3f0, actual =f5f82f48e4acb3f0
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=88 expected = eb0c8d1414fe94a0, actual =eb0c8d1414fe94a0
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=89 expected = a978f19513425088, actual =a978f19513425088
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=90 expected = f7ef0478e788209b, actual =f7ef0478e788209b
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=91 expected = fc86b53b1f7120de, actual =fc86b53b1f7120de
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=92 expected = 32b37166e2fb918d, actual =32b37166e2fb918d
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=93 expected = ca83b228a5ffa6d0, actual =ca83b228a5ffa6d0
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=94 expected = c570c7aeaaa275de, actual =c570c7aeaaa275de
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=95 expected = 8d9e076bc70a6763, actual =8d9e076bc70a6763
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=96 expected = ed0a0e33f8243914, actual =ed0a0e33f8243914
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=97 expected = 22c6aef3d821b993, actual =22c6aef3d821b993
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=98 expected = 9f2c20f6327ad5e2, actual =9f2c20f6327ad5e2
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=99 expected = aa9f0ef6b064b65e, actual =aa9f0ef6b064b65e
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=100 expected = 8866ff20c362f2a, actual =8866ff20c362f2a
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=101 expected = 3eb1050ccd65bde9, actual =3eb1050ccd65bde9
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=102 expected = fdca7448a7b290e8, actual =fdca7448a7b290e8
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=103 expected = b3e8c012e9501402, actual =b3e8c012e9501402
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=104 expected = 36b5d1ec0650e43a, actual =36b5d1ec0650e43a
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=105 expected = ae037522f299c51e, actual =ae037522f299c51e
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=106 expected = dbe9d92134804634, actual =dbe9d92134804634
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=107 expected = 3ad12a6ee1ec3535, actual =3ad12a6ee1ec3535
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=108 expected = d485fa53129fab0d, actual =d485fa53129fab0d
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=109 expected = c71ff141e8d49f90, actual =c71ff141e8d49f90
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=110 expected = cac0d4c5b06fd374, actual =cac0d4c5b06fd374
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=111 expected = c30f7e8101f11baf, actual =c30f7e8101f11baf
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=112 expected = eac5bb3f1f46cf19, actual =eac5bb3f1f46cf19
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=113 expected = cfb6a28d8a2f6fc2, actual =cfb6a28d8a2f6fc2
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=114 expected = 8c208b7135869005, actual =8c208b7135869005
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=115 expected = d4cd5f1e12c6210f, actual =d4cd5f1e12c6210f
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=116 expected = 9cf590d1f6e646b1, actual =9cf590d1f6e646b1
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=117 expected = 2c6cd6b6a48401ab, actual =2c6cd6b6a48401ab
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=118 expected = b74a22ba29161c43, actual =b74a22ba29161c43
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=119 expected = 1ffc62f4013a35d4, actual =1ffc62f4013a35d4
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=120 expected = a5be377fd43fb38c, actual =a5be377fd43fb38c
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=121 expected = fd55cfcfcc6939aa, actual =fd55cfcfcc6939aa
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=122 expected = cda36f7edd085a3a, actual =cda36f7edd085a3a
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=123 expected = 31480dc61d5232c3, actual =31480dc61d5232c3
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=124 expected = e9bb6c6df361a6fd, actual =e9bb6c6df361a6fd
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=125 expected = d06a01372e9ddd95, actual =d06a01372e9ddd95
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=126 expected = cbf01058375edbeb, actual =cbf01058375edbeb
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=127 expected = aac082e881b20efd, actual =aac082e881b20efd
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=128 expected = b04fec9235ab7cc5, actual =b04fec9235ab7cc5
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=129 expected = ed0a58b0fb2a8420, actual =ed0a58b0fb2a8420
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=130 expected = fcdc931dfc3ffcea, actual =fcdc931dfc3ffcea
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=131 expected = b1eb79af97cadb98, actual =b1eb79af97cadb98
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=132 expected = 92f55fb82d2c7fb0, actual =92f55fb82d2c7fb0
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=133 expected = a96c7c9a9ef5d25f, actual =a96c7c9a9ef5d25f
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=134 expected = 36c0adf80fd1f2d6, actual =36c0adf80fd1f2d6
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=135 expected = 3cfe7286db57f64a, actual =3cfe7286db57f64a
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=136 expected = fa4dc8a9c9b60db0, actual =fa4dc8a9c9b60db0
+[1485000] SCOREBOARD MATCH: wdata passthrough beat=137 expected = d9880086e66aef20, actual =d9880086e66aef20
+[1485000] SCOREBOARD MATCH: wstrb size check expected = 8a, actual =8a
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=0 expected = a1, actual =a1
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=1 expected = 6a, actual =6a
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=2 expected = c, actual =c
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=3 expected = 52, actual =52
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=4 expected = 14, actual =14
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=5 expected = 2d, actual =2d
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=6 expected = d8, actual =d8
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=7 expected = b5, actual =b5
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=8 expected = 97, actual =97
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=9 expected = e5, actual =e5
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=10 expected = 7, actual =7
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=11 expected = ab, actual =ab
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=12 expected = 12, actual =12
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=13 expected = e0, actual =e0
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=14 expected = 61, actual =61
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=15 expected = a9, actual =a9
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=16 expected = c5, actual =c5
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=17 expected = 68, actual =68
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=18 expected = 55, actual =55
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=19 expected = d7, actual =d7
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=20 expected = 48, actual =48
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=21 expected = b6, actual =b6
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=22 expected = 80, actual =80
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=23 expected = d, actual =d
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=24 expected = 1e, actual =1e
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=25 expected = d5, actual =d5
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=26 expected = e4, actual =e4
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=27 expected = 67, actual =67
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=28 expected = 8b, actual =8b
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=29 expected = 65, actual =65
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=30 expected = 74, actual =74
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=31 expected = aa, actual =aa
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=32 expected = 3a, actual =3a
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=33 expected = 59, actual =59
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=34 expected = 11, actual =11
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=35 expected = c6, actual =c6
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=36 expected = be, actual =be
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=37 expected = 85, actual =85
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=38 expected = 70, actual =70
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=39 expected = f8, actual =f8
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=40 expected = de, actual =de
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=41 expected = 81, actual =81
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=42 expected = be, actual =be
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=43 expected = 9c, actual =9c
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=44 expected = 6, actual =6
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=45 expected = 2e, actual =2e
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=46 expected = 95, actual =95
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=47 expected = e5, actual =e5
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=48 expected = af, actual =af
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=49 expected = 53, actual =53
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=50 expected = 81, actual =81
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=51 expected = b6, actual =b6
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=52 expected = 82, actual =82
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=53 expected = 16, actual =16
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=54 expected = 9b, actual =9b
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=55 expected = 31, actual =31
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=56 expected = 6a, actual =6a
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=57 expected = 1c, actual =1c
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=58 expected = e7, actual =e7
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=59 expected = ec, actual =ec
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=60 expected = 33, actual =33
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=61 expected = 82, actual =82
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=62 expected = 1d, actual =1d
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=63 expected = 9d, actual =9d
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=64 expected = 9f, actual =9f
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=65 expected = 5, actual =5
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=66 expected = 89, actual =89
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=67 expected = d2, actual =d2
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=68 expected = 87, actual =87
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=69 expected = a6, actual =a6
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=70 expected = 6f, actual =6f
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=71 expected = 26, actual =26
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=72 expected = ab, actual =ab
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=73 expected = f8, actual =f8
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=74 expected = f8, actual =f8
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=75 expected = 33, actual =33
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=76 expected = 9e, actual =9e
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=77 expected = 67, actual =67
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=78 expected = 59, actual =59
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=79 expected = 4a, actual =4a
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=80 expected = 5f, actual =5f
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=81 expected = 52, actual =52
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=82 expected = 7d, actual =7d
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=83 expected = fe, actual =fe
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=84 expected = b9, actual =b9
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=85 expected = d6, actual =d6
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=86 expected = 48, actual =48
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=87 expected = 19, actual =19
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=88 expected = 28, actual =28
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=89 expected = c5, actual =c5
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=90 expected = 17, actual =17
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=91 expected = e2, actual =e2
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=92 expected = 9b, actual =9b
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=93 expected = 5f, actual =5f
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=94 expected = fb, actual =fb
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=95 expected = c4, actual =c4
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=96 expected = 24, actual =24
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=97 expected = 12, actual =12
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=98 expected = a6, actual =a6
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=99 expected = bf, actual =bf
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=100 expected = 71, actual =71
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=101 expected = a1, actual =a1
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=102 expected = 83, actual =83
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=103 expected = 95, actual =95
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=104 expected = b3, actual =b3
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=105 expected = 29, actual =29
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=106 expected = 54, actual =54
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=107 expected = 24, actual =24
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=108 expected = ca, actual =ca
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=109 expected = d8, actual =d8
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=110 expected = b9, actual =b9
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=111 expected = 7d, actual =7d
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=112 expected = 1, actual =1
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=113 expected = d, actual =d
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=114 expected = a1, actual =a1
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=115 expected = cc, actual =cc
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=116 expected = e5, actual =e5
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=117 expected = 5a, actual =5a
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=118 expected = 49, actual =49
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=119 expected = e7, actual =e7
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=120 expected = 68, actual =68
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=121 expected = eb, actual =eb
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=122 expected = b3, actual =b3
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=123 expected = 4d, actual =4d
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=124 expected = 45, actual =45
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=125 expected = fc, actual =fc
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=126 expected = 34, actual =34
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=127 expected = ad, actual =ad
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=128 expected = e7, actual =e7
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=129 expected = e7, actual =e7
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=130 expected = fb, actual =fb
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=131 expected = 2d, actual =2d
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=132 expected = e4, actual =e4
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=133 expected = 2f, actual =2f
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=134 expected = da, actual =da
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=135 expected = cb, actual =cb
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=136 expected = 17, actual =17
+[1485000] SCOREBOARD MATCH: wstrb passthrough beat=137 expected = d5, actual =d5
+[1485000] SCOREBOARD MATCH: bresp passthrough expected = 0, actual =0
+[1485000] SCOREBOARD MATCH: response routed to correct master (write) expected = 1, actual =1
+[1485000] [SCOREBOARD-M] mst_id=1 s_id=0 awaddr=656a610 awid=101 awlen=137 awsize=6 awburst=1 wdata=[83fbd398efdd17ed a71b1592d24cf4ab 18e307ba2b8f8022 9b6c980faf9ccbf0 81e9c09b9cdedb52 c86e5b74c287ada2 f22479929accc855 37aba3a8e3daf384 2662a126f40e3a2e 8edb02838019ff1c e3f4f2a098871ab8 8c9554e6c686a62b c6a0a5488a5793c6 22deae7f1b70576a e1f6fd95aa9597e8 34ed2bafaf740365 cae45acfa897a2dd d32d3ac6d7cbda2e 873fdd932cdb5865 d572fb42081a6675 dfe640a3d2243863 feff90c8a8a03608 b0ba9c7de7261e36 b94a5699d4728c0a fd12c21390a0dd20 f7c6fb57b849e761 cbc736cadcd5e90 3e6e3bb1b11151f0 e95b395209cf357f b79c940f36353708 e74688f8f617acbe ffe6e23df60acfc0 ac4006c8d0a1c24a c6b96f08b783764c 2d8e460d13868fc1 e428520bc6a05145 fe23c792d9ce4cd5 ed54dc962ae1c114 f18212592bb20d9f 85805a74d17d2ea2 fc5eefb6efa5d9eb 9b57e78af2d5370b c45265adede1020f dd86dbfb20d841ff 13ad790ac0b15563 ae925772f8dec385 99b70584d7ffdeb7 18b1341a8c19336d 4f7f6f3ad647e8e 85645d45c7438b8c d35cbefa9eaefc77 cc137b069e15915f e5591cecd854b5ed f703b264d177d84b ef8d69ab38b5dbe6 110a91d3c3172d6a 148f05b6d4e68697 d9c627d880e4437 cb2571a2041c6f61 d902f5f81ea6f450 a6b53887dfb47758 e3d0e6b9e69f5875 5464cc5f1daaa29 d18f21813cd3dcb1 23733526abfb854c 1dd62f76b560083a f233e4eb28b981eb d4b50737ef6550f7 24c5593295a71a11 be609bfcf28b36ad e1f087a596f93e1d 2ca0582f1315a334 85a0d9e106b5e0d7 9daf1ef4eb00f42b fe16975fe7916186 ee47425dca4f7723 35506b4f03b77141 eb48d2c70bf66152 d645d875b36702ae b71e73efd9901525 e58676778b9643c4 3efd4673226746b7 fbf75bdcbbcc4eec c76292b1f61bba62 98830119e17dd253 9d4a213f065fd924 fc7b9386947a5cf5 f5f82f48e4acb3f0 eb0c8d1414fe94a0 a978f19513425088 f7ef0478e788209b fc86b53b1f7120de 32b37166e2fb918d ca83b228a5ffa6d0 c570c7aeaaa275de 8d9e076bc70a6763 ed0a0e33f8243914 22c6aef3d821b993 9f2c20f6327ad5e2 aa9f0ef6b064b65e 8866ff20c362f2a 3eb1050ccd65bde9 fdca7448a7b290e8 b3e8c012e9501402 36b5d1ec0650e43a ae037522f299c51e dbe9d92134804634 3ad12a6ee1ec3535 d485fa53129fab0d c71ff141e8d49f90 cac0d4c5b06fd374 c30f7e8101f11baf eac5bb3f1f46cf19 cfb6a28d8a2f6fc2 8c208b7135869005 d4cd5f1e12c6210f 9cf590d1f6e646b1 2c6cd6b6a48401ab b74a22ba29161c43 1ffc62f4013a35d4 a5be377fd43fb38c fd55cfcfcc6939aa cda36f7edd085a3a 31480dc61d5232c3 e9bb6c6df361a6fd d06a01372e9ddd95 cbf01058375edbeb aac082e881b20efd b04fec9235ab7cc5 ed0a58b0fb2a8420 fcdc931dfc3ffcea b1eb79af97cadb98 92f55fb82d2c7fb0 a96c7c9a9ef5d25f 36c0adf80fd1f2d6 3cfe7286db57f64a fa4dc8a9c9b60db0 d9880086e66aef20 ] wstrb=[a1 6a c 52 14 2d d8 b5 97 e5 7 ab 12 e0 61 a9 c5 68 55 d7 48 b6 80 d 1e d5 e4 67 8b 65 74 aa 3a 59 11 c6 be 85 70 f8 de 81 be 9c 6 2e 95 e5 af 53 81 b6 82 16 9b 31 6a 1c e7 ec 33 82 1d 9d 9f 5 89 d2 87 a6 6f 26 ab f8 f8 33 9e 67 59 4a 5f 52 7d fe b9 d6 48 19 28 c5 17 e2 9b 5f fb c4 24 12 a6 bf 71 a1 83 95 b3 29 54 24 ca d8 b9 7d 1 d a1 cc e5 5a 49 e7 68 eb b3 4d 45 fc 34 ad e7 e7 fb 2d e4 2f da cb 17 d5 ] bresp=0 bid=101
+[1485000] [SCOREBOARD-S] mst_id=1 s_id=0 awaddr=656a610 awid=101 awlen=137 awsize=6 awburst=1 wdata=[83fbd398efdd17ed a71b1592d24cf4ab 18e307ba2b8f8022 9b6c980faf9ccbf0 81e9c09b9cdedb52 c86e5b74c287ada2 f22479929accc855 37aba3a8e3daf384 2662a126f40e3a2e 8edb02838019ff1c e3f4f2a098871ab8 8c9554e6c686a62b c6a0a5488a5793c6 22deae7f1b70576a e1f6fd95aa9597e8 34ed2bafaf740365 cae45acfa897a2dd d32d3ac6d7cbda2e 873fdd932cdb5865 d572fb42081a6675 dfe640a3d2243863 feff90c8a8a03608 b0ba9c7de7261e36 b94a5699d4728c0a fd12c21390a0dd20 f7c6fb57b849e761 cbc736cadcd5e90 3e6e3bb1b11151f0 e95b395209cf357f b79c940f36353708 e74688f8f617acbe ffe6e23df60acfc0 ac4006c8d0a1c24a c6b96f08b783764c 2d8e460d13868fc1 e428520bc6a05145 fe23c792d9ce4cd5 ed54dc962ae1c114 f18212592bb20d9f 85805a74d17d2ea2 fc5eefb6efa5d9eb 9b57e78af2d5370b c45265adede1020f dd86dbfb20d841ff 13ad790ac0b15563 ae925772f8dec385 99b70584d7ffdeb7 18b1341a8c19336d 4f7f6f3ad647e8e 85645d45c7438b8c d35cbefa9eaefc77 cc137b069e15915f e5591cecd854b5ed f703b264d177d84b ef8d69ab38b5dbe6 110a91d3c3172d6a 148f05b6d4e68697 d9c627d880e4437 cb2571a2041c6f61 d902f5f81ea6f450 a6b53887dfb47758 e3d0e6b9e69f5875 5464cc5f1daaa29 d18f21813cd3dcb1 23733526abfb854c 1dd62f76b560083a f233e4eb28b981eb d4b50737ef6550f7 24c5593295a71a11 be609bfcf28b36ad e1f087a596f93e1d 2ca0582f1315a334 85a0d9e106b5e0d7 9daf1ef4eb00f42b fe16975fe7916186 ee47425dca4f7723 35506b4f03b77141 eb48d2c70bf66152 d645d875b36702ae b71e73efd9901525 e58676778b9643c4 3efd4673226746b7 fbf75bdcbbcc4eec c76292b1f61bba62 98830119e17dd253 9d4a213f065fd924 fc7b9386947a5cf5 f5f82f48e4acb3f0 eb0c8d1414fe94a0 a978f19513425088 f7ef0478e788209b fc86b53b1f7120de 32b37166e2fb918d ca83b228a5ffa6d0 c570c7aeaaa275de 8d9e076bc70a6763 ed0a0e33f8243914 22c6aef3d821b993 9f2c20f6327ad5e2 aa9f0ef6b064b65e 8866ff20c362f2a 3eb1050ccd65bde9 fdca7448a7b290e8 b3e8c012e9501402 36b5d1ec0650e43a ae037522f299c51e dbe9d92134804634 3ad12a6ee1ec3535 d485fa53129fab0d c71ff141e8d49f90 cac0d4c5b06fd374 c30f7e8101f11baf eac5bb3f1f46cf19 cfb6a28d8a2f6fc2 8c208b7135869005 d4cd5f1e12c6210f 9cf590d1f6e646b1 2c6cd6b6a48401ab b74a22ba29161c43 1ffc62f4013a35d4 a5be377fd43fb38c fd55cfcfcc6939aa cda36f7edd085a3a 31480dc61d5232c3 e9bb6c6df361a6fd d06a01372e9ddd95 cbf01058375edbeb aac082e881b20efd b04fec9235ab7cc5 ed0a58b0fb2a8420 fcdc931dfc3ffcea b1eb79af97cadb98 92f55fb82d2c7fb0 a96c7c9a9ef5d25f 36c0adf80fd1f2d6 3cfe7286db57f64a fa4dc8a9c9b60db0 d9880086e66aef20 ] wstrb=[a1 6a c 52 14 2d d8 b5 97 e5 7 ab 12 e0 61 a9 c5 68 55 d7 48 b6 80 d 1e d5 e4 67 8b 65 74 aa 3a 59 11 c6 be 85 70 f8 de 81 be 9c 6 2e 95 e5 af 53 81 b6 82 16 9b 31 6a 1c e7 ec 33 82 1d 9d 9f 5 89 d2 87 a6 6f 26 ab f8 f8 33 9e 67 59 4a 5f 52 7d fe b9 d6 48 19 28 c5 17 e2 9b 5f fb c4 24 12 a6 bf 71 a1 83 95 b3 29 54 24 ca d8 b9 7d 1 d a1 cc e5 5a 49 e7 68 eb b3 4d 45 fc 34 ad e7 e7 fb 2d e4 2f da cb 17 d5 ] bresp=0 bid=10101
+[1485000] SCOREBOARD: Transaction 3 received. pass=334 fail=0
+[1485000] ALL PASS. Total transactions: 3
+[1495000] AXI S0_WVALID_RDY HANDSHAKE
+[1495000] S0 MEMORY WRITE beat=1 addr=04f2b120 data=f3cee1aaba60857a id=0b
+[1505000] AXI S0_WVALID_RDY HANDSHAKE
+[1505000] S0 MEMORY WRITE beat=2 addr=04f2b120 data=b3ee2ea03ad5814d id=0b
+[1515000] SLAVE0 sent B resp, id=11
+[1515000] AXI S1_AWVALID_RDY HANDSHAKE
+[1515000] [SLAVE MONITOR] mst_id=0 s_id=0 awaddr=4f2b120 awid=1011 awlen=2 awsize=7 awburst=0 wdata=[ceaea360a3cb17c4 f3cee1aaba60857a b3ee2ea03ad5814d ] wstrb=[7f 11 0 ] bresp=0 bid=1011
+[1515000] ARB MONITOR: slave=1 m0_req=0 m1_req=0 winner=0
+[1525000] S1 MEMORY WRITE beat=0 addr=1edf2f60 data=b56d02e0dba884f8 id=0c
+[1535000] S1 MEMORY WRITE beat=1 addr=1edf2f60 data=f7846ae520af141a id=0c
+[1535000] MASTER 0 B_VALID_RDY Handshake
+[1535000] [MASTER MONITOR] mst_id=0 s_id=0 awaddr=4f2b120 awid=1011 awlen=2 awsize=7 awburst=0 wdata=[ceaea360a3cb17c4 f3cee1aaba60857a b3ee2ea03ad5814d ] wstrb=[7f 11 0 ] bresp=0 bid=1011
+[1535000] MASTER 0 RECEIVED BRESP. BRESP=0
+[1535000] [MASTER DRIVER] mst_id=0 s_id=0 awaddr=4f2b120 awid=1011 awlen=2 awsize=7 awburst=0 wdata=[ceaea360a3cb17c4 f3cee1aaba60857a b3ee2ea03ad5814d ] wstrb=[7f 11 0 ] bresp=0 bid=1011
+[1535000] SCOREBOARD MATCH: decode_err expected = 0, actual =0
+[1535000] SCOREBOARD MATCH: slave_id expected = 0, actual =0
+[1535000] SCOREBOARD MATCH: awaddr passthrough expected = 4f2b120, actual =4f2b120
+[1535000] SCOREBOARD MATCH: awlen passthrough expected = 2, actual =2
+[1535000] SCOREBOARD MATCH: awsize passthrough expected = 7, actual =7
+[1535000] SCOREBOARD MATCH: awburst passthrough expected = 0, actual =0
+[1535000] SCOREBOARD MATCH: wdata size check expected = 3, actual =3
+[1535000] SCOREBOARD MATCH: wdata passthrough beat=0 expected = ceaea360a3cb17c4, actual =ceaea360a3cb17c4
+[1535000] SCOREBOARD MATCH: wdata passthrough beat=1 expected = f3cee1aaba60857a, actual =f3cee1aaba60857a
+[1535000] SCOREBOARD MATCH: wdata passthrough beat=2 expected = b3ee2ea03ad5814d, actual =b3ee2ea03ad5814d
+[1535000] SCOREBOARD MATCH: wstrb size check expected = 3, actual =3
+[1535000] SCOREBOARD MATCH: wstrb passthrough beat=0 expected = 7f, actual =7f
+[1535000] SCOREBOARD MATCH: wstrb passthrough beat=1 expected = 11, actual =11
+[1535000] SCOREBOARD MATCH: wstrb passthrough beat=2 expected = 0, actual =0
+[1535000] SCOREBOARD MATCH: bresp passthrough expected = 0, actual =0
+[1535000] SCOREBOARD MATCH: response routed to correct master (write) expected = 0, actual =0
+[1535000] [SCOREBOARD-M] mst_id=0 s_id=0 awaddr=4f2b120 awid=1011 awlen=2 awsize=7 awburst=0 wdata=[ceaea360a3cb17c4 f3cee1aaba60857a b3ee2ea03ad5814d ] wstrb=[7f 11 0 ] bresp=0 bid=1011
+[1535000] [SCOREBOARD-S] mst_id=0 s_id=0 awaddr=4f2b120 awid=1011 awlen=2 awsize=7 awburst=0 wdata=[ceaea360a3cb17c4 f3cee1aaba60857a b3ee2ea03ad5814d ] wstrb=[7f 11 0 ] bresp=0 bid=1011
+[1535000] SCOREBOARD: Transaction 4 received. pass=350 fail=0
+[1535000] ALL PASS. Total transactions: 4
+[1545000] S1 MEMORY WRITE beat=2 addr=1edf2f60 data=0c7fe508e4f2600f id=0c
+[1555000] S1 MEMORY WRITE beat=3 addr=1edf2f60 data=c09ae507bc767ce1 id=0c
+[1565000] S1 MEMORY WRITE beat=4 addr=1edf2f60 data=dd2590fbc1ece7e8 id=0c
+[1575000] SLAVE1 sent B resp, id=12
+[1575000] [SLAVE MONITOR] mst_id=0 s_id=1 awaddr=1edf2f60 awid=1100 awlen=4 awsize=0 awburst=0 wdata=[b56d02e0dba884f8 f7846ae520af141a c7fe508e4f2600f c09ae507bc767ce1 dd2590fbc1ece7e8 ] wstrb=[ec f7 3 ce ff ] bresp=0 bid=1100
+[1595000] MASTER 0 B_VALID_RDY Handshake
+[1595000] [MASTER MONITOR] mst_id=0 s_id=1 awaddr=1edf2f60 awid=1100 awlen=4 awsize=0 awburst=0 wdata=[b56d02e0dba884f8 f7846ae520af141a c7fe508e4f2600f c09ae507bc767ce1 dd2590fbc1ece7e8 ] wstrb=[ec f7 3 ce ff ] bresp=0 bid=1100
+[1595000] MASTER 0 RECEIVED BRESP. BRESP=0
+[1595000] [MASTER DRIVER] mst_id=0 s_id=0 awaddr=1edf2f60 awid=1100 awlen=4 awsize=0 awburst=0 wdata=[b56d02e0dba884f8 f7846ae520af141a c7fe508e4f2600f c09ae507bc767ce1 dd2590fbc1ece7e8 ] wstrb=[ec f7 3 ce ff ] bresp=0 bid=1100
+[1595000] SCOREBOARD MATCH: decode_err expected = 0, actual =0
+[1595000] SCOREBOARD MATCH: slave_id expected = 1, actual =1
+[1595000] SCOREBOARD MATCH: awaddr passthrough expected = 1edf2f60, actual =1edf2f60
+[1595000] SCOREBOARD MATCH: awlen passthrough expected = 4, actual =4
+[1595000] SCOREBOARD MATCH: awsize passthrough expected = 0, actual =0
+[1595000] SCOREBOARD MATCH: awburst passthrough expected = 0, actual =0
+[1595000] SCOREBOARD MATCH: wdata size check expected = 5, actual =5
+[1595000] SCOREBOARD MATCH: wdata passthrough beat=0 expected = b56d02e0dba884f8, actual =b56d02e0dba884f8
+[1595000] SCOREBOARD MATCH: wdata passthrough beat=1 expected = f7846ae520af141a, actual =f7846ae520af141a
+[1595000] SCOREBOARD MATCH: wdata passthrough beat=2 expected = c7fe508e4f2600f, actual =c7fe508e4f2600f
+[1595000] SCOREBOARD MATCH: wdata passthrough beat=3 expected = c09ae507bc767ce1, actual =c09ae507bc767ce1
+[1595000] SCOREBOARD MATCH: wdata passthrough beat=4 expected = dd2590fbc1ece7e8, actual =dd2590fbc1ece7e8
+[1595000] SCOREBOARD MATCH: wstrb size check expected = 5, actual =5
+[1595000] SCOREBOARD MATCH: wstrb passthrough beat=0 expected = ec, actual =ec
+[1595000] SCOREBOARD MATCH: wstrb passthrough beat=1 expected = f7, actual =f7
+[1595000] SCOREBOARD MATCH: wstrb passthrough beat=2 expected = 3, actual =3
+[1595000] SCOREBOARD MATCH: wstrb passthrough beat=3 expected = ce, actual =ce
+[1595000] SCOREBOARD MATCH: wstrb passthrough beat=4 expected = ff, actual =ff
+[1595000] SCOREBOARD MATCH: bresp passthrough expected = 0, actual =0
+[1595000] SCOREBOARD MATCH: response routed to correct master (write) expected = 0, actual =0
+[1595000] [SCOREBOARD-M] mst_id=0 s_id=1 awaddr=1edf2f60 awid=1100 awlen=4 awsize=0 awburst=0 wdata=[b56d02e0dba884f8 f7846ae520af141a c7fe508e4f2600f c09ae507bc767ce1 dd2590fbc1ece7e8 ] wstrb=[ec f7 3 ce ff ] bresp=0 bid=1100
+[1595000] [SCOREBOARD-S] mst_id=0 s_id=1 awaddr=1edf2f60 awid=1100 awlen=4 awsize=0 awburst=0 wdata=[b56d02e0dba884f8 f7846ae520af141a c7fe508e4f2600f c09ae507bc767ce1 dd2590fbc1ece7e8 ] wstrb=[ec f7 3 ce ff ] bresp=0 bid=1100
+[1595000] SCOREBOARD: Transaction 5 received. pass=370 fail=0
+[1595000] SCOREBOARD: Expected 5 transactions completed, PASS=370 FAIL=0
+[1595000] ALL PASS. Total transactions: 5
+[1595000] ALL TRANSACTIONS MONITORED
+$finish called at time : 1615 ns : File "/home/nashita/Desktop/practice/axi_xbar/tb/top/axi_tb_top.sv" Line 220
+exit
+INFO: xsimkernel Simulation Memory Usage: 289468 KB (Peak: 337868 KB), Simulation CPU Usage: 1210 ms
+INFO: [Common 17-206] Exiting xsim at Fri Sep 11 11:52:22 2026...

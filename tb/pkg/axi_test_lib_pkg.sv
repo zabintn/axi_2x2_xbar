@@ -12,4 +12,6 @@ package axi_test_lib_pkg;
 	`include "../test_lib/axi_multi_txn.sv"
 	`include "../test_lib/axi_burst_write.sv"
 	`include "../test_lib/axi_reset_test.sv"
+	`include "../test_lib/axi_burst_read.sv"
+	`include "../test_lib/axi_read_error.sv"
 endpackage

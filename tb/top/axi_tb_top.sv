@@ -10,8 +10,10 @@ module tb_top;
 	write_path_test wt;
 	burst_write_test bwt;
 	read_path_test rt;
+	burst_read_test brt;
 	arb_test at;
 	error_test et;
+	read_error_test ret;
 	write_read_test wrt;
 	no_contention_test noc;
 	partial_contention_test pc;
@@ -183,9 +185,18 @@ module tb_top;
                                 rst = new(axi_vif);
                                 test = rst;
                         end
+			else if ($test$plusargs("BRT")) begin
+                                $display("[%0t] RUNNING BURST READ TEST", $time);
+                                brt = new(axi_vif);
+                                test = brt;
+                        end
+			else if ($test$plusargs("RET")) begin
+                                $display("[%0t] RUNNING READ ERROR TEST", $time);
+                                ret = new(axi_vif);
+                                test = ret;
+                        end
+
 			
-
-
 			else if ($test$plusargs("BT")) begin
 				$display("[%0t] RUNNING BASE TEST", $time);
 				test = new(axi_vif);

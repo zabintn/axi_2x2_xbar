@@ -204,6 +204,7 @@ class scoreboard;
 					$sformatf("%0d", predicted),
 					$sformatf("%0d", evt.observed_winner));
 				end
+
 				ref_model.update_w_arb_state(evt.slave_id, evt.observed_winner);
 			end
 
@@ -215,6 +216,7 @@ class scoreboard;
 						$sformatf("%0d", predicted),
 						$sformatf("%0d", evt.observed_winner));
 				end
+
                 ref_model.update_r_arb_state(evt.slave_id, evt.observed_winner);
                 end
             end

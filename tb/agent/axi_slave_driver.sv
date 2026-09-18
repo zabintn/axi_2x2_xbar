@@ -357,8 +357,8 @@ task run_s1_ar();
             end
             else begin
                 read_data = 64'hBAAD_F00D_1234_5678;
-                $display("[%0t] MEMORY READ MISS beat=%0d addr=%0h -> default data id=%0d",
-                          $time, beat_cnt, beat_addr, captured_id);
+                $display("[%0t] MEMORY READ MISS beat=%0d addr=%0h -> default data=%0h",
+                          $time, beat_cnt, beat_addr, read_data);
             end
 
             axi_vif.s1_rid    <= captured_id;
