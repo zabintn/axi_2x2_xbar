@@ -12,7 +12,7 @@ Slave Address Map:
   
 The design supports all functionalities of the AXI4 channels and transaction types save for the following signals: LOCK, PROT, QOS, and CACHE.
 
-####Microarchitecture Design
+#### Microarchitecture Design
 
 Complete top-level microarchitecture design for the 2x2 AXI Crossbar:
 
@@ -20,14 +20,14 @@ Complete top-level microarchitecture design for the 2x2 AXI Crossbar:
 
 A clearer picture of read/write transaction can be seen in the following diagrams:
 
-##WRITE PATH
+## WRITE PATH
 
 <img width="817" height="621" alt="image" src="https://github.com/user-attachments/assets/b39d5d9f-3513-4c21-8c8f-c645956b16ce" />
 
-##WRITE RESPONSE PATH
+## WRITE RESPONSE PATH
 
 <img width="743" height="555" alt="image" src="https://github.com/user-attachments/assets/6df9b2ab-d381-45d9-9aa1-e670f133f3cc" />
 
-##READ PATH
+## READ PATH
 
 <img width="796" height="600" alt="image" src="https://github.com/user-attachments/assets/4099c231-1ad5-4ae7-9ece-13a1f3f84937" />
