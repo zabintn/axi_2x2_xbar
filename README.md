@@ -1,0 +1,1 @@
+Complete design of an AXI4 Interconnect (2 master and 2 slaves) with round robin-based arbitration, error response handling, and multiple outstanding transaction support for single-beat and multibeat transfers. Capable of supporting three types of bursts: FIXED, INCR, and WRAP. Specifications are as follows:
