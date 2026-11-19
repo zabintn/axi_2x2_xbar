@@ -12,7 +12,7 @@ Slave Address Map:
   
 The design supports all functionalities of the AXI4 channels and transaction types save for the following signals: LOCK, PROT, QOS, and CACHE.
 
-#### Microarchitecture Design
+# Microarchitecture Design
 
 Complete top-level microarchitecture design for the 2x2 AXI Crossbar:
 
